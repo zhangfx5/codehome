@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	font-family: "宋体";
+	
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+	border: none;
+}
+ul,ol,dl{
+	list-style: none;
+}
+html,body{
+	height: 100%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.btn-com{
+	height: 82px;
+	width: 82px;
+	background: #000000;
+	padding: 18px 0 0 18px;
+	color: #FFFFFF;
+	font-weight: 900;
+	font-size: 30px;
+	cursor: pointer;
+}
+.changepage-btn{
+	height: 22px;
+	width: 22px;
+	border: 1px solid #CCCCCC;
+	color: #FFFFFF;
+	background: #000000;
+	line-height: 22px;
+	text-align: center;
+	margin-left: 438px;
+	cursor: pointer;
+}

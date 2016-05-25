@@ -1,0 +1,416 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+img{
+	border:0;
+}
+body{
+	width:100%;
+	height:100%;
+	background:#fff;
+	font-family: "微软雅黑";
+}
+#header{
+	width:100%;
+	height:26px;
+	background:#F1F1F1;
+}
+.header{
+	width:981px;
+	height:26px;
+	font-size:12px;
+	line-height:25px;
+	margin:0 auto;
+}
+.header a{
+	color:#666;
+}
+.header a:hover{
+	color:#e60012;
+}
+.nav_left .mall a{
+	display:block;
+	height:14px;
+	line-height:14px;
+	padding-right:8px;
+	margin-top:6px;
+	border-right:1px solid #aaa;
+}
+.mobile_buy{
+	width:100px;
+	position:relative;
+}
+.mobile_buy a{
+	padding-left:20px;
+}
+.mobile_buy i{
+	position:absolute;
+	overflow:hidden;
+	display:block;
+	float:left;
+	/*font-size:10px;
+	line-height:10px;*/
+}
+.mobile_buy .mobile{
+	width:8px;
+	height:13px;
+	left:8px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -152px -80px;
+}
+.mobile_buy .tip{
+	width:12px;
+	height:8px;
+	left:76px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+.nav_right ul li{
+	position:relative;
+	float:left;
+}
+.nav_right ul .myBuy a{
+	padding-right:20px;
+}
+.nav_right ul li a{
+	display:block;
+	height:14px;
+	line-height:14px;
+	margin-top:6px;
+	padding:0 10px;
+	border-right:1px solid #666;
+}
+.nav_right ul li a:hover{
+	color:#e60012;
+}
+.nav_right ul li .login_link{
+	color:#e60012;
+	border-right:0;
+}
+.nav_right ul li .regist_link{
+	border-right:1px solid #666;
+}
+.nav_right ul .publicNotice{
+	height:14px;
+	line-height:14px;
+	margin-top:6px;
+	padding:0 20px 0 10px;
+	border-right:1px solid #666;
+}
+.nav_right ul .more{
+	padding-left:10px;
+}
+.nav_right ul li i{
+	position:absolute;
+	display:block;
+	float:left;
+	width:12px;
+	height:8px;
+}
+.nav_right ul li .i_01{
+	left:60px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+.nav_right ul li .i_02{
+	left:39px;
+	top:1px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+.nav_right ul li .i_03{
+	left:39px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+#to_mall{
+	width:981px;
+	height:54px;
+	margin:0 auto;
+	line-height:54px;
+}
+#to_mall .ft_big{
+	margin-right:65px;
+	font-size:22px;
+	color:#666;
+}
+#to_mall .ft_sm a{
+	font-size:14px;
+	color:#3366CC;
+	text-decoration:underline;
+}
+#to_mall .ft_sm a:hover{
+	color:#e60012;
+	text-decoration:0;
+}
+#cut_off{
+	width:100%;
+	height:2px;
+	border:0;
+	background:#F59E01;
+}
+#main{
+	width:990px;
+	padding-top:21px;
+	height:100%;
+	margin:0 auto;
+}
+.main_top{
+	width:990px;
+	height:634px;
+	/*padding-top:21px;*/
+	margin:0 auto;
+}
+.reg_tab{
+	width:990px;
+	height:29px;
+	padding-left:120px;
+	border-bottom:1px solid #eee;	
+}
+/*.mobile_reg{
+	width:102px;
+	height:30px;
+	margin:0 27px 0 120px;
+	text-align:center;
+	line-height:30px;
+	color:#A0410A;
+	font-size:14px;
+	font-weight:900;
+	background:url(../img/reg_tab_bg.png) no-repeat;
+	cursor:pointer;
+}*/
+.tolerant{ /*手机注册、邮箱注册默认样式*/
+	width:102px;
+	height:30px;
+	margin:0 27px 0 0;
+	text-align:center;
+	line-height:30px;
+	color:#A0410A;
+	font-size:14px;
+	font-weight:900;
+	background:url(../img/reg_tab_bg.png) no-repeat;
+	cursor:pointer;
+}
+.mobile_reg:hover{
+	color:#e60012;
+}
+.emali_reg:hover{
+	color:#e60012;
+}
+.emali_reg{
+	height:30px;
+	margin-right:20px;
+	text-align:center;
+	line-height:30px;
+	color:#666;
+	font-size:14px;
+	cursor:pointer;
+}
+.content{
+	width:990px;
+	height:417px;
+	padding-top:20px;
+	margin-bottom:157px;
+}
+.cont_left{
+	width:595px;
+	height:417px;
+}
+.same_hei{
+	width:595px;
+	height:35px;
+	padding-bottom:27px;
+	font-size:12px;
+	color:#ccc;
+}
+.same_hei .word{
+	width:120px;
+	height:35px;
+	font-size:14px;
+	color:#000;
+	line-height:35px;
+	float:left;
+	text-align:right;
+}
+.same_hei input{
+	outline:none;/*清除input默认边框，所有浏览器都支持*/
+	width:325px;
+	height:33px;
+	border: 1px solid #ccc;
+	background:url(../img/ipt_bg.png) repeat-x;
+}
+.same_hei .ipt_wid{
+	width:112px;
+	display:block;
+	float:left;
+}
+.word i{
+	font-style:normal;
+	color:#e60012;
+}
+.tel_checkcode{
+	display:block;
+	float:left;
+	width:102px;
+	height:24px;
+	margin:4px 0 0 10px;
+	border:1px solid #ccc;
+	border-radius:2px;
+	text-align:center;
+	line-height:24px;
+	color:#333333;
+	cursor:pointer;
+	background:url(../img/tel_checkcode.png) no-repeat -1px 0px;
+}
+.check_img{
+	float:left;
+	width:128px;
+	height:33px;
+}
+.check_box{
+	height:30px;
+	padding-left:120px;
+	font-size:12px;
+	color:#666;
+}
+.check_box a{
+	color:#3366CC;
+	cursor:pointer;
+}
+.check_box a:hover{
+	color:#e60012;
+}
+.reg_now{
+	cursor:pointer;
+	display:block;
+	float:left;
+	width:142px;
+	height:50px;
+	margin-left:120px;
+	background:url(../img/login_regist.png) 0px 0px;
+}
+.reg_now:hover{
+	background:url(../img/login_regist.png) 0px -53px;
+}
+.cont_right{
+	width:375px;
+	height:392px;
+	padding:25px 0 0 15px;
+	border-left:1px dashed #ccc;
+}
+.cont_right p{
+	height:35px;
+	font-size:14px;
+	color:#999999;
+}
+.login_yg{
+	display:block;
+	width:98px;
+	height:31px;
+	margin-bottom:24px;
+	background:url(../img/login_regist.png) no-repeat -148px -137px;
+	cursor:pointer;
+}
+.login_yg:hover{
+	background:url(../img/login_regist.png) no-repeat -148px -172px;
+}
+
+.cooperation{
+	height:50px;
+}
+.cooperation p{
+	height:30px;
+	font-size:12px;
+	color:#000;
+}
+.cooperation a{
+	display:block;
+	float:left;
+	padding-right:7px;
+	padding-left:34px;
+	height:18px;
+	line-height:16px;
+	font-size:12px;
+	color:#3366CC;
+	border-right:1px solid #ccc;
+	/*overflow:visible;*/
+}
+.cooperation a:hover{
+	color:#e60012;
+}
+.sina{
+	background:url(../img/login_regist.png) no-repeat -145px -207px;
+}
+.zfb{
+	background:url(../img/login_regist.png) no-repeat -314px -67px;
+}
+.qq{
+	background:url(../img/login_regist.png) no-repeat -312px -90px;
+}
+.rr{
+	background:url(../img/login_regist.png) no-repeat -312px -114px;
+}
+.wx{
+	background:url(../img/login_regist.png) no-repeat -149px -226px;
+}
+.main_foot{
+	text-align:center;
+	font-size:12px;
+	color:#aaa;
+}
+/*判断密码强度*/
+.pwdStrength{
+	width:270px;
+	height:15px;
+	margin:3px 0 0 120px;
+}
+.pwdStrength em{
+	display:block;
+	float:left;
+	width:89px;
+	height:15px;
+	color:#aaa;
+	background:#eee;
+	margin-right:1px;
+	text-align:center;
+	line-height:15px;
+}
+.pwdStrength .pwdLow{
+	display:block;
+	float:left;
+	width:89px;
+	height:15px;
+	margin-right:1px;
+	text-align:center;
+	line-height:15px;
+}
+.pwdStrength .red{
+	color:#fff;
+	background:red;
+}
+.pwdStrength .yellow{
+	color:#fff;
+	background:yellow;
+}
+.pwdStrength .green{
+	color:#fff;
+	background:green;
+}
+
+
+
+
+
+

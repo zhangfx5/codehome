@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person6main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person6main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#person6main3AddressInfoSub
+			{
+				cursor: pointer;
+			}
+			#person6main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person6main3
+			{
+				height: 520px;
+				width: 811px;
+				
+				line-height: 40px;
+			}
+			#person6main3 input
+			{
+				height: 30px;
+				width: 200px;
+				border: 0;
+				border: 1px solid #ccc;
+			}
+			#person6main3 select
+			{
+				height: 20px;
+				width: 100px;
+				border: 0;
+				border: 1px solid #ccc;
+			}
+			.person6main3infoList
+			{
+				min-height: 70px;
+				max-height: 260px;
+				overflow:auto;
+				width: 791px;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px dashed #ccc;
+				background: #fff;
+			}
+			.person6main3infoList .allInfo
+			{
+				height: 40px;
+				width: 811px;
+			}
+			#person6main3 .insertInfo
+			{
+				height: 190px;
+				width: 480px;
+				border: 1px solid #999999;
+				margin-top: 20px;
+				margin-left: 40px;
+				padding: 10px 0 0 20px;
+			}
+			.person6main3infoListHead
+			{
+				height: 31px;
+				width: 791px;
+				border-bottom: 1px solid #CCCCCC;
+				margin-top: 20px;
+				background: #EDEEF5;
+			}
+			.person6main3infoListHead1
+			{
+				height: 31px;
+				width: 791px;
+				border-bottom: 1px solid #CCCCCC;
+				background: #fff;
+			}
+			.person6main3infoListHead li
+			{
+				height: 31px;
+				width: 112px;
+				text-align: center;
+				line-height: 31px;
+			}
+			.person6main3infoListHead1 li
+			{
+				height: 31px;
+				width: 112px;
+				text-align: center;
+				line-height: 31px;
+			}
+			.person6main3AddressInfo
+			{
+				width: 100px;
+				text-align: right;
+				margin-left: 30px;
+			}
+			#person6main3AddressInfoSub
+			{
+				margin-left: 170px;
+				border: 0;
+				border: 1px solid #A60D1C;
+				background: #A90A0A;
+				text-align: center;
+				line-height: 20px;
+				height: 30px;
+				width: 100px;
+				color: #fff;
+				font-size: 16px;
+			}
+			.errorInfo
+			{
+				color: red;
+				margin-left: 20px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="person6main1">
+			<a href="#">账户信息</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>收货地址</span>
+		</div>
+		<div id="person6main2">
+			<div class="btn1">收货地址</div>
+		</div>
+		<div id="person6main3">
+			<div class="person6main3infoList">
+				<ul class="person6main3infoListHead">
+					<li class="left">收货人</li>
+					<li class="left">所在地区</li>
+					<li class="left">街道地址</li>
+					<li class="left">邮编</li>
+					<li class="left">手机</li>
+					<li class="left">默认</li>
+					<li class="left">操作</li>
+				</ul>
+			</div>
+			<p style="margin-left: 30px; color: #FF6600; font-weight: 900; margin-top: 30px;">新增收货地址</p>
+			<p><p class="left person6main3AddressInfo">收货人姓名：</p><input type="text"/><span class="errorInfo">收货人姓名不能为空</span></p>
+			<p><p class="left person6main3AddressInfo">地区：</p><select id="bigCity"></select><select id="smallCity"></select></p>
+			<p><p class="left person6main3AddressInfo">街道地址：</p><input type="text" /><span class="errorInfo">街道地址不能为空</span></p>
+			<p><p class="left person6main3AddressInfo">邮政编码：</p><input type="text" /><span class="errorInfo">邮政编码填写错误</span></p>
+			<p><p class="left person6main3AddressInfo">手机号码：</p><input type="text" /><span class="errorInfo">手机号码填写错误</span></p>
+			<button id="person6main3AddressInfoSub">提交地址</button>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script>
+		var inputs=$("#person6main3 input");
+		$("#person6main3 textarea").val("");
+		$("#person6main2 .btn1").css({"background":"#fff","color":"red"});
+		$("#person6main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person6main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person6main3").css("display","block");
+			$("#person6main4").css("display","none");
+		});
+		$("#person6main3AddressInfoSub").on("click",function()
+		{
+			$(".errorInfo").css("display","none");
+			var i=1;
+			if(inputs.eq(0).val()=="")
+			{
+				$(".errorInfo").eq(0).css("display","inline");
+				i=0;
+			}
+			if(inputs.eq(1).val()=="")
+			{
+				$(".errorInfo").eq(1).css("display","inline");
+				i=0;
+			}
+		
+			if((inputs.eq(2).val()=="")||(!(/^\d{6}$/.test(inputs.eq(2).val()))))
+			{
+				$(".errorInfo").eq(2).css("display","inline");
+				i=0;
+				
+			}
+			if((inputs.eq(3).val()=="")||!(/^1\d{10}$/.test(inputs.eq(3).val())))
+			{
+				$(".errorInfo").eq(3).css("display","inline");
+				i=0;
+			}
+			if(i==1)
+			{
+				var smallCityStr;
+				if($("#smallCity").val()==null)
+				{
+					smallCityStr="";
+				}
+				else
+				{
+					smallCityStr=$("#smallCity").val();
+				}
+				var str="<ul class='person6main3infoListHead1'><li class='left'>"+inputs.eq(0).val()+"</li><li class='left'>"+$("#bigCity").val()+smallCityStr+"</li><li class='left'>"+inputs.eq(1).val()+"</li><li class='left'>"+inputs.eq(2).val()+"</li><li class='left'>"+inputs.eq(3).val()+"</li><li class='left'>默认</li><li class='left'><button id='person6InfoDelete'>删除</button></li></ul>";
+				$(".person6main3infoList").append(str);
+				
+				var d=new Date();
+				d.setDate(d.getDate()+3);
+				if(getCookie1("address")==null)
+				{
+					document.cookie="address=[{receiveName:'"+inputs.eq(0).val()+"',receiveDiqu:'"+$("#bigCity").val()+smallCityStr+"',receiveJiedao:'"+inputs.eq(1).val()+"',receiveYouzheng:'"+inputs.eq(2).val()+"',receivePhone:'"+inputs.eq(3).val()+"'}];expires="+d;
+					//document.cookie="list=haha;expires="+d;
+					console.log(document.cookie);
+				}
+				else
+				{
+					var str="{receiveName:'"+inputs.eq(0).val()+"',receiveDiqu:'"+$("#bigCity").val()+smallCityStr+"',receiveJiedao:'"+inputs.eq(1).val()+"',receiveYouzheng:'"+inputs.eq(2).val()+"',receivePhone:'"+inputs.eq(3).val()+"'}";
+					var allStr=getCookie1("address").replace("]",","+str+"]");
+					document.cookie="address="+allStr;
+					console.log(document.cookie);
+				}
+				$("input").val("");
+			}
+		});
+		$(".person6main3infoList").delegate("#person6InfoDelete","click",function()
+		{
+			$(this).parent().parent().fadeOut();
+		});
+		$.ajax
+		({
+		type:'GET',
+        	url:"http://api.laoxiangbang.com.cn/index.php?index.php?m=Home&c=Api&a=area&format=html", 
+        //data:{mobile:13013054321,password:123456,channel_id:12345678},
+        //dataType:'json',      
+	        success:function(data)
+	        {
+	        	
+	        	var dataArr=data.data;
+	        	for( var i=0;i<dataArr.length;i++)
+	        	{
+	        		
+	        		var options=$("<option></option>");
+	        		options.html(dataArr[i].name);
+	        		$("#bigCity").append(options);
+	        	}
+	        	$("#bigCity").on("change",function()
+	        	{
+	        		$("#smallCity").html("");
+	        		var index=$("option").index($(this).children("option:selected"));
+	        		var dataArr2=dataArr[index].child;
+	        		console.info(dataArr2);
+	        		if(dataArr2=="")
+	        		{
+	        			$("#smallCity").html("");
+	        		}
+	        		else
+	        		{
+		        		for(var j=0;j<dataArr2.length;j++)
+		        		{
+		        			var smallOption=$("<option></option>");
+		        			smallOption.html(dataArr2[j].name);
+		        			$("#smallCity").append(smallOption);
+		        		}
+	        		}
+	        	});
+	        }
+     	});
+     	if(getCookie1("address"))
+     	{
+     		var obj=eval(getCookie1("address"));
+     		for(var i=0;i<obj.length;i++)
+     		{
+     			var str="<ul class='person6main3infoListHead1'><li class='left'>"+obj[i].receiveName+"</li><li class='left'>"+obj[i].receiveDiqu+"</li><li class='left'>"+obj[i].receiveJiedao+"</li><li class='left'>"+obj[i].receiveYouzheng+"</li><li class='left'>"+obj[i].receivePhone+"</li><li class='left'>默认</li><li class='left'><button id='person6InfoDelete'>删除</button></li></ul>";
+				$(".person6main3infoList").append(str);
+     		}
+     	}
+	</script>
+</html>

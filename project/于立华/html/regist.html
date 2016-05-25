@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<!--<link rel="stylesheet" type="text/css" href="../css/login.css"/>-->
+	<link rel="stylesheet" type="text/css" href="../css/regist.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+	<script src="../js/regist.js"></script>
+	<script src="../js/cookieControl.js"></script>
+	<body>
+		<div id="header">
+			<div class="header">
+				<div class="nav_left left">
+					<div class="mall left">
+						<a href="">时尚商城</a> 
+					</div>
+					<div class="mobile_buy left">
+						<a href="">手机优购</a>
+						<i class="mobile"></i>
+						<i class="tip">121</i>
+					</div>
+				</div>
+				<div class="nav_right right">
+					<ul>
+						<li><a class="login_link" href="login.html">登录</a></li>
+						<li><a class="login_link regist_link" href="">注册</a></li>
+						<li class="myBuy"><a href="">我的优购</a><i class="i_01"></i></li>
+						<li><a href="">我的订单</a></li>
+						<li class="publicNotice">公告<i class="i_02"></i></li>
+						<li class="more">更多<i class="i_03"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="to_mall">
+			<span class="ft_big">新用户注册</span><span class="ft_sm"><a href="index.html">返回时尚商城</a></span>
+		</div>
+		<hr id="cut_off" />
+		<div id="main">
+			<div class="main_top">
+				<div class="reg_tab">
+					<div class="mobile_reg tolerant left">手机号注册</div>
+					<div class="emali_reg left">邮箱注册</div>
+				</div>
+				<div class="content content_mobile" style="display:block;">
+					<div class="cont_left left">
+						<div class="same_hei tele_phone">
+							<div class="word"><i>*</i>手机号码：</div>
+							<input style="float:left;" type="text" name="" id="ipt_tel" value="" placeholder=" 请输入您的手机号码"/>
+							<div id="tips" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 5px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="same_hei password">
+							<div class="word"><i>*</i>密码：</div>
+							<input style="float:left;" type="password" name="" id="password" value="" placeholder=" 字母/数字/符号均可，6-25个字符以内"/>
+			                <div id="tips2" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+							<div id="pwdStrength" class="pwdStrength none" style="display: none;">
+			                	<em class="pwdLow">低</em>
+			                	<em class="">中</em>
+			                	<em class="">高</em>
+			                </div>
+						</div>
+						<div class="same_hei confirm_psd">
+							<div class="word"><i>*</i>确认密码：</div>
+							<input style="float:left;" type="password" name="" id="confirm_pwd" value=""/>
+							<div id="tips3" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="same_hei check_word">
+							<div class="word"><i>*</i>验证码：</div>
+							<input class="ipt_wid" type="text" name="" id="ipt_wid1" value=""/>
+							<div class="check_img">
+								<img src="../img/check_img.png" />
+							</div>
+							<div style="float:left;margin-right:50px;cursor:pointer;line-height:33px;"><a>换一张</a></div>
+							<div id="tips4" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="same_hei">
+							<div class="word check_tel"><i>*</i>短信验证码：</div>
+							<input class="ipt_wid" type="text" name="" id="ipt_wid2" value=""/>
+							<a class="tel_checkcode">获取短信验证码</a>
+							<div id="tips5" style="display:none;float:left;margin-left:100px;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="check_box">
+							<input type="checkbox" name="" id="" value="" checked="checked"/>
+							我已阅读并同意《<a>优购会员注册协议</a>》
+						</div>
+						<div class="reg_now reg_now1"></div>
+					</div>
+					<div class="cont_right left">
+						<p class="par">已有优购账号，请直接登录</p>
+						<a href="login.html" class="login_yg"></a>
+						<div class="cooperation">
+						<p>使用合作网站账号登录优购：</p>
+						<a class="sina" href="">新浪微博</a>
+						<a class="zfb" href="">支付宝</a>
+						<a class="qq" href="">QQ</a>
+						<a class="rr" href="">人人网</a>
+						<a class="wx" href="" style="border:0;">微信</a>
+					</div>
+					</div>
+				</div>
+				<div class="content content_email" style="display:none;">
+					<div class="cont_left left">
+						<div class="same_hei tele_phone">
+							<div class="word"><i>*</i>Email：</div>
+							<input style="float:left;" type="text" name="" id="email" value="" placeholder=" 为保证邮件畅通，不建议填写gmail、hotmail、qq邮箱"/>
+							<div id="tips1" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="same_hei password">
+							<div class="word"><i>*</i>密码：</div>
+							<input style="float:left;" type="password" name="" id="em_pwd" value="" placeholder=" 字母/数字/符号均可，6-25个字符以内"/>
+							<div id="tips22" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+							<div id="em_pwdStrength" class="pwdStrength none" style="display: none;">
+			                	<em class="pwdLow">低</em>
+			                	<em class="">中</em>
+			                	<em class="">高</em>
+			                </div>
+						</div>
+						<div class="same_hei confirm_psd">
+							<div class="word"><i>*</i>确认密码：</div>
+							<input style="float:left;" type="password" name="" id="em_confirm_pwd" value=""/>
+							<div id="tips33" style="display:none;float:left;line-height:35px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="same_hei check_word">
+							<div class="word"><i>*</i>验证码：</div>
+							<input style="float:left;" class="ipt_wid" type="text" name="" id="em_conf_code" value=""/>
+							<div class="check_img">
+								<img src="../img/check_img.png" />
+							</div>
+							<div style="cursor:pointer;line-height:33px;float:left;"><a>换一张</a></div>
+							<div id="tips44" style="display:none;float:left;line-height:35px;margin-left:48px;">
+								<i style="display:block;float:left;width:16px;height:16px;margin:9px 0 0 1px;"></i>
+								<span style="margin-left:5px;color:#E60012;"></span>
+							</div>
+						</div>
+						<div class="check_box">
+							<input type="checkbox" name="" id="" value="" checked="checked"/>
+							我已阅读并同意《<a>优购会员注册协议</a>》
+						</div>
+						<div class="reg_now reg_now2"></div>
+					</div>
+					<div class="cont_right left">
+						<p class="par">已有优购账号，请直接登录</p>
+						<a href="login.html" class="login_yg"></a>
+						<div class="cooperation">
+						<p>使用合作网站账号登录优购：</p>
+						<a class="sina" href="">新浪微博</a>
+						<a class="zfb" href="">支付宝</a>
+						<a class="qq" href="">QQ</a>
+						<a class="rr" href="">人人网</a>
+						<a class="wx" href="" style="border:0;">微信</a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_foot">
+				Copyright © 2011-2014 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证：粤 B2-20090203
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

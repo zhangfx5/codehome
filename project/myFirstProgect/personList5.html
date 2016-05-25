@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person5main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person5main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#person5main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person5main2 .btn2
+			{
+				position: absolute;
+				left: 200px;
+				top: 20px;
+				cursor: pointer;
+			}
+			#person5main3
+			{
+				height: 540px;
+				width: 811px;
+				line-height: 40px;
+			}
+			.person5main3infoList
+			{
+				min-height: 70px;
+				max-height: 260px;
+				overflow:auto;
+				width: 791px;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px dashed #ccc;
+				background: #fff;
+			}
+			.person5main3infoList .allInfo
+			{
+				height: 40px;
+				width: 811px;
+			}
+			#person5main3 .insertInfo
+			{
+				height: 190px;
+				width: 480px;
+				border: 1px solid #999999;
+				margin-top: 20px;
+				margin-left: 40px;
+				padding: 10px 0 0 20px;
+			}
+			#person5main3 .insertInfo textarea
+			{
+				height: 110px;
+				width: 400px;
+			}
+			#person5main3 .insertInfo p
+			{
+				height: 20px;
+				line-height: 20px;
+			}
+			#person5main3 .insertInfo .quesBtn
+			{
+				height: 40px;
+				width: 100px;
+				background: #A60D1C;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 900;
+				text-align: center;
+				line-height: 40px;
+				margin-top: -10px;
+				float: right;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			#person5main3 .infoNum
+			{
+				width: 811px;
+				height: 50px;
+			}
+			#person5main3 .infoNum .showInfoNum
+			{
+				width: 100px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			.person5main3infoListHead
+			{
+				height: 31px;
+				width: 791px;
+				border-bottom: 1px solid #CCCCCC;
+				margin-top: 20px;
+				background: #EDEEF5;
+			}
+			.person5main3infoListHead a
+			{
+				padding: 60px 0 0 60px;
+			}
+			.person5main3infoListInfo
+			{
+				height: 50px;
+				width: 791px;
+			}
+			.person5main3infoListInfoDex
+			{
+				float: right;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="person5main1">
+			<a href="#">售后服务</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>退款管理</span>
+		</div>
+		<div id="person5main2">
+			<div class="btn1">退款管理</div>
+		</div>
+		<div id="person5main3">
+			<div class="person5main3infoList">
+				<div class="person5main3infoListHead">
+					<a>订单组号</a>
+					<a>宝贝信息</a>
+					<a>交易金额</a>
+					<a>退款金额</a>
+					<a>退款时间</a>
+					<a>退款状态</a>
+				</div>
+				<div class="person5main3infoListInfo">
+					<div class="person5main3infoListInfoDex"><span style="color: red;">0</span>条,共<span>1</span>页</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script>
+		$("#person5main3 textarea").val("");
+		$("#person5main2 .btn1").css({"background":"#fff","color":"red"});
+		$("#person5main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person5main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person5main3").css("display","block");
+			$("#person5main4").css("display","none");
+		});
+		var i=0;
+		$("#person5main3 .quesBtn").on("click",function()
+		{
+			var nowDate=new Date();
+			var hour=nowDate.getHours();
+			var min=nowDate.getMinutes();
+			var second=nowDate.getSeconds();
+			if($("#person5main3 textarea").val()=="")
+			{
+				alert("请输入您的建议！");
+			}
+			else
+			{
+				i++;
+				$("#person5main3ListNum").html(i);
+				var timeStr=hour+":"+min+":"+second;
+				var str="<p class='allInfo'>"+$("#person5main3 textarea").val()+"<span class='right'>"+timeStr+"</span></p>";
+				$("#person5main3 .person5main3infoList").append(str);
+			}
+		});
+	</script>
+
+</html>

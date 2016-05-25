@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person1main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person1main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#person1main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person1main2 .btn2
+			{
+				position: absolute;
+				left: 140px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-bottom: 0;
+				border-radius: 10%;
+				text-align: center;
+				line-height: 29px;
+				background: #eee;
+				cursor: pointer;
+			}
+			#person1main2 .btn3
+			{
+				position: absolute;
+				left: 280px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-bottom: 0;
+				border-radius: 10%;
+				text-align: center;
+				line-height: 29px;
+				background: #eee;
+				cursor: pointer;
+			}
+			#person1main3
+			{
+				height: 490px;
+				width: 801px;
+				border: 1px solid #ccc;
+				line-height: 50px;
+				padding-left: 10px;
+				font-size: 14px;
+				background: #fff;
+			}
+			#person1main4
+			{
+				height: 480px;
+				width: 801px;
+				border: 1px solid #ccc;
+				display: none;
+				line-height: 50px;
+				padding: 10px 0 0 10px;
+				font-size: 14px;
+				background: #fff;
+			}
+			#person1main5
+			{
+				height: 480px;
+				width: 801px;
+				border: 1px solid #ccc;
+				display: none;
+				line-height: 50px;
+				padding: 10px 0 0 10px;
+				font-size: 14px;
+				background: #fff;
+			}
+			.person1main3Top
+			{
+				height: 31px;
+				width: 791px;
+				border-bottom: 1px solid #ccc;
+				background:#EDEEF5;
+				margin-top: 20px;
+			}
+			.person1main3Top li
+			{
+				height: 31px;
+				width: 112px;
+				text-align: center;
+				line-height: 31px;
+			}
+			.person1main3BotBot
+			{
+				height: 31px;
+				width: 781px;
+				background: #f3f3f3;
+				line-height: 31px;
+				color: #999;
+			}
+			.person1main3Bot ul
+			{
+				height: 31px;
+				width: 791px;
+			}
+			.person1main3Bot ul li
+			{
+				height: 31px;
+				width: 112px;
+				text-align: center;
+				line-height: 31px;
+				border-right: 1px dashed #bbb;
+			}
+			#MyCode
+			{
+				height: 30px;
+				width: 781px;
+				border: 1px dashed #F9DFB2;
+				background: #FFFFE0;
+				margin: 10px 0 0 10px;
+				line-height: 30px;
+				padding-left: 10pxs;
+			}
+			.blue
+			{
+				color: blue;
+			}
+			.red
+			{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="person1main1">
+			<a href="#">我的订单</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>订单管理</span>
+		</div>
+		<div id="MyCode">
+			我的交易提醒:<span class="blue">待付款</span><span class="red">(0)</span><span class="blue">待确认收货</span><span class="red">(0)</span><span class="blue">待评价</span><span class="red">(0)</span>
+		</div>
+		<div id="person1main2">
+			<div class="btn1">我的订单</div>
+			<div class="btn2">未付款订单</div>
+			<div class="btn3">待确认收货</div>
+		</div>
+		<div id="person1main3">
+			<ul class="person1main3Top" style="margin-top: 30px;">
+				<li class="left">宝贝</li>
+				<li class="left">单价(元)</li>
+				<li class="left">数量</li>
+				<li class="left">售后</li>
+				<li class="left">实付款(元)</li>
+				<li class="left">交易状态</li>
+				<li class="left">状态操作</li>
+			</ul>
+			<div class="person1main3Bot">
+				<ul>
+					<li class="left">时尚运动衫</li>
+					<li class="left">187</li>
+					<li class="left">1</li>
+					<li class="left">七天内包换</li>
+					<li class="left">187</li>
+					<li class="left">未付款</li>
+					<li class="left">不可操作</li>
+				</ul>
+				<div class="person1main3BotBot">
+					<span class="right">(1条，共1页)</span>
+				</div>
+			</div>
+			
+		</div>
+		<div id="person1main4">
+			<ul class="person1main3Top">
+				<li class="left">宝贝</li>
+				<li class="left">单价(元)</li>
+				<li class="left">数量</li>
+				<li class="left">售后</li>
+				<li class="left">实付款(元)</li>
+				<li class="left">交易状态</li>
+				<li class="left">状态操作</li>
+			</ul>
+			<div class="person1main3Bot">
+				<ul>
+					<li class="left">时尚运动衫</li>
+					<li class="left">187</li>
+					<li class="left">1</li>
+					<li class="left">七天内包换</li>
+					<li class="left">187</li>
+					<li class="left">未付款</li>
+					<li class="left">不可操作</li>
+				</ul>
+				<div class="person1main3BotBot">
+					<span class="right">(1条，共1页)</span>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div id="person1main5">
+			<ul class="person1main3Top">
+				<li class="left">宝贝</li>
+				<li class="left">单价(元)</li>
+				<li class="left">数量</li>
+				<li class="left">售后</li>
+				<li class="left">实付款(元)</li>
+				<li class="left">交易状态</li>
+				<li class="left">状态操作</li>
+			</ul>
+			<div class="person1main3BotBot">
+				<span class="right">(0条，共1页)</span>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script>
+		$("#person1main2 .btn1").css({"background":"#fff","color":"red"});
+		$("#person1main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person1main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person1main2 .btn3").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person1main3").css("display","block");
+			$("#person1main4").css("display","none");
+			$("#person1main5").css("display","none");
+		});
+		$("#person1main2").delegate(".btn2","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person1main2 .btn1").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person1main2 .btn3").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person1main4").css("display","block");
+			$("#person1main3").css("display","none");
+			$("#person1main5").css("display","none");
+		});
+		$("#person1main2").delegate(".btn3","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person1main2 .btn1").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person1main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person1main5").css("display","block");
+			$("#person1main3").css("display","none");
+			$("#person1main4").css("display","none");
+		});
+	</script>
+</html>

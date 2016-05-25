@@ -1,0 +1,11 @@
+$(function(){
+	$(".ordersub-main-btn-befor,.ordersub-main-btn-next").hover(function(){
+		$(this).toggleClass("ordersub-main-btn-active");
+	})
+	$(".ordersub-main-btn-next").click(function(){
+		alert("跳转至支付宝登录页面")
+	})
+	$(".ordersub-main-btn-befor").click(function(){
+		window.location.href="myOrder.html";
+	})
+})

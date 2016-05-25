@@ -1,0 +1,24 @@
+{
+
+	"goodslist": [
+		{
+			"id": "1",
+			"price": "254",
+			"vprice": "250",
+			"integral": "1",
+			"number": "2"
+		}, {
+			"id": "2",
+			"price": "132",
+			"vprice": "130",
+			"integral": "1",
+			"number": "2"
+		}, {
+			"id": "3",
+			"price": "100",
+			"vprice": "90",
+			"integral": "1",
+			"number": "2"
+		}
+	]
+}

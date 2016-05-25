@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.outer {
+				position: relative;
+				margin: 200px auto 0 auto;
+				width: 300px;
+				height: 300px;
+				transform-style: preserve-3d;
+				transform: ;
+				/*-moz-perspective: 800px;*/
+				-moz-animation-name: na;
+				-moz-animation-duration: 5s;
+				-moz-animation-timing-function: ease-in-out;
+				-moz-animation-iteration-count: infinite;
+				/*-moz-animation-delay: 3s;*/
+			}
+			
+			.sma {
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				left: 100px;
+				top: 100px;
+				transform-origin: center;
+				transform-style: preserve-3d;
+				/*transform: rotateX(20deg);*/
+				-moz-animation-name: nai;
+				-moz-animation-duration: 5s;
+				-moz-animation-timing-function: ease-in-out;
+				-moz-animation-iteration-count: infinite;
+			}
+			.sma >div{
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				opacity: 0.6;
+				overflow: hidden;
+				
+			}
+			.ne1{background: yellow;}
+			.ne2{background: red;transform: translateZ(30px) translateY(30px) rotateX(90deg);}
+			.ne3{background: saddlebrown;transform: translateZ(30px) translateY(-30px) rotateX(90deg);}
+			.ne4{background: lawngreen;transform: translateZ(30px) translateX(30px) rotateY(90deg);}
+			.ne5{background: fuchsia;transform: translateZ(30px) translateX(-30px) rotateY(90deg);}
+			.ne6{background: olive;transform: translateZ(60px);}
+			
+			.outer img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 300px;
+				height: 300px;
+				opacity: 0.5;
+				-moz-animation-name: n;
+				-moz-animation-duration: 5s;
+				-moz-animation-iteration-count: infinite;
+				-moz-animation-timing-function: ease-out;
+			}
+			
+			.view1{
+				transform:translateZ(-150px);
+			}
+			.view2 {
+				transform:translateX(150px) rotateY(90deg);
+			}
+			
+			.view3 {
+				transform:translateX(-150px) rotateY(90deg);
+			}
+			
+			.view4 {
+				transform:translateY(150px) rotateX(90deg);
+			}
+			
+			.view5 {
+				transform:translateY(-150px) rotateX(-90deg);
+			}
+			
+			.view6 {
+				transform:translateZ(150px);
+			}
+			
+			@-moz-keyframes na {
+				0% {
+					transform: rotateZ(60deg) rotateX(30deg) rotateY(30deg);
+				}
+				20% {
+					transform: rotateZ(100deg) rotateX(100deg) rotateY(100deg);
+				}
+				50% {
+					transform: rotateZ(30deg) rotateX(60deg) rotateY(20deg);
+				}
+				100% {
+					transform: rotateZ(50deg) rotateX(-100deg) rotateY(0deg);
+				}
+			}
+			@-moz-keyframes nai{
+				from{transform: rotateZ(60deg) rotateX(30deg) rotateY(30deg) skew(30deg);}
+				to{transform: rotateZ(260deg) rotateX(230deg) rotateY(230deg) skew(30deg);}
+			}
+			/*@-moz-keyframes n{
+				from{width: 600px;height: 600px;}
+				to{width: 300px;height: 300px;}
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<div class="outer">
+			<img src="img/kobe1.jpg" alt="" class="view1" />
+			<img src="img/kobe2.gif" alt="" class="view2" />
+			<img src="img/kobe3.jpg" alt="" class="view3" />
+			<img src="img/kobe4.jpg" alt="" class="view4" />
+			<img src="img/kobe5.jpg" alt="" class="view5" />
+			<img src="img/kobe6.jpg" alt="" class="view6" />
+			<div class="sma">
+				<div class="ne1">111111111111111</div>
+				<div class="ne2">2222222222222222</div>
+				<div class="ne3">333333333333333333333</div>
+				<div class="ne4">44444444444444444</div>
+				<div class="ne5">5555555555555555555555</div>
+				<div class="ne6">66666666666666666</div>
+			</div>
+		</div>
+		
+	</body>
+
+</html>

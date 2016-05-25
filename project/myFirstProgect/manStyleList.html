@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*
+			{
+				margin: 0;
+				padding: 0;
+			}
+			#manBorder
+			{
+				height: 3650px;
+				width: 1000px;
+			}
+			.style6
+			{
+				height: 331px;
+				width: 303px;
+				border: 1px solid #BBBBBB;
+				margin-right: 20px;
+				padding: 14px 0 0 15px;
+				margin-top: 10px;
+			}
+			.style6Last
+			{
+				margin-right: 0px;
+			}
+			.left
+			{
+				float: left;
+			}
+			.style6InfoTop
+			{
+				height: 50px;
+				width: 290px;
+				line-height: 20px;
+				color: #999999;
+				
+			}
+			.style6InfoMid
+			{
+				height: 239px;
+				width: 290px;
+				
+			}
+			.style6InfoMidTop
+			{
+				height: 190px;
+				width: 288px;
+				border: 1px solid #A60D1C;
+				
+			}
+			.style6InfoMidBot
+			{
+				height: 46px;
+				width: 290px;
+				border-top: 1px solid #EEEEEE;
+				background: url(img/manStylebg.png) repeat-x;
+				position:  relative;
+			}
+			.style6InfoMidBot img
+			{
+				position: absolute;
+				left: 193px;
+				top: 9px;
+			}
+			.style6InfoMidBot .style6PriceNow
+			{
+				position: absolute;
+				left: 8px;
+				top: 10px;
+				font-size: 20px;
+				color: #fff;
+				font-weight: 900;
+				
+			}
+			.style6ProPrice
+			{
+				text-decoration: line-through;
+			}
+			.style6InfoBot
+			{
+				height: 30px;
+				width: 285px;
+				padding: 10px 0 0 5px ;
+				color: #999999;
+				
+			}
+			.right
+			{
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="manBorder">
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script>
+		$.getJSON("js/data.json", function(json){
+		  var MDataArr=json.data.rows;
+		  var count=1;
+		  for(var i=0;i<MDataArr.length;i++)
+		  {
+		  	//alert(MDataArr[i].id);
+		  	if(MDataArr[i].id.substring(0,2)=="MA")
+		  	{
+		  		if(count%3!=0)
+		  		{
+		  			var str="<div class='style6 left'><div class='style6InfoTop'>"+MDataArr[i].content+"</div><div class='style6InfoMid'><div class='style6InfoMidTop'><img src='"+MDataArr[i].imgUrl+"' /></div><div class='style6InfoMidBot'><img src='img/qkk.jpg' /><p class='style6PriceNow'>"+MDataArr[i].nowPrice+"</p></div></div><div class='style6InfoBot'>原价：<span class='style6ProPrice'>"+MDataArr[i].beforePrice+"</span><span class='right'>折扣：<span style='color: red;' class='discount'>"+MDataArr[i].discount+"</span></span></div></div>";
+		  			$("#manBorder").append(str);
+		  			$(".style6").hover(function()
+		  			{
+		  				$(this).addClass("box-shadow-6");
+		  				$(this).css("border","1px solid red");
+		  			},
+		  			function()
+		  			{
+		  				$(this).removeClass("box-shadow-6");
+		  				$(this).css("border","");
+		  			});
+		  		}
+		  		else
+		  		{
+		  			var str1="<div class='style6 left style6Last'><div class='style6InfoTop'>"+MDataArr[i].content+"</div><div class='style6InfoMid'><div class='style6InfoMidTop'><img src='"+MDataArr[i].imgUrl+"' /></div><div class='style6InfoMidBot'><img src='img/qkk.jpg' /><p class='style6PriceNow'>"+MDataArr[i].nowPrice+"</p></div></div><div class='style6InfoBot'>原价：<span class='style6ProPrice'>"+MDataArr[i].beforePrice+"</span><span class='right'>折扣：<span style='color: red;' class='discount'>"+MDataArr[i].discount+"</span></span></div></div>";
+		  			$("#manBorder").append(str1);
+		  			$(".style6").hover(function()
+		  			{
+		  				$(this).addClass("box-shadow-6");
+		  				$(this).css("border","1px solid red");
+		  			},
+		  			function()
+		  			{
+		  				$(this).removeClass("box-shadow-6");
+		  				$(this).css("border","");
+		  			});
+		  		}
+		  		count++;
+		  	}
+		  }
+		});
+		$("#manBorder").delegate(".style6","click",function()
+		{
+			var index=$(".style6").index($(this));
+			var d=new Date();
+			d.setTime(d.getTime()+365*24*3600*1000);
+			document.cookie="detailId=MA2"+index+"; expires="+d;
+			window.location.href="detail.html";
+		});
+	</script>
+</html>

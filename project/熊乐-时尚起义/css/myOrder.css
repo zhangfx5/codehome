@@ -1,0 +1,68 @@
+.myorder-tit{
+	background-image: url(../images/myorder_tit.png);
+}
+.myorder-time{
+	height: 36px;
+	width: 929px;
+	
+}
+.myorder-time select{
+	height: 18px;
+	width: 134px;
+	border: 1px solid #CCCCCC;
+	margin-left: 5px;
+}
+.myorder-table-theader{
+}
+.myorder-table-theader-td{
+	height: 43px;
+	background: #000000;
+	color: #FFFFFF;
+	line-height: 43px;
+	text-align: center;
+}
+.myorder-table-tbody-td{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #CCCCCC;
+	text-align: center;
+}
+.myorder-table-oid{
+	width: 205px;
+}
+.myorder-table-odate{
+	width: 146px;
+}
+.myorder-table-omoney{
+	width: 142px;
+}
+.myorder-table-opay{
+	width: 160px;
+}
+.myorder-table-ostate{
+	width: 175px;
+}
+.myorder-table-oaction{
+	width: 101px;
+}
+.myorder-table-oaction-btn{
+	height: 15px;
+	width: 48px;
+	border: solid 1px #CCCCCC;
+	line-height: 15px;
+	text-align: center;
+	margin: 21px 0 0 22px;
+	cursor: pointer;
+}
+
+.myorder-pagebtn{
+	margin: 35px 0 0 453px;
+	height: 22px;
+	width: 22px;
+	border: 1px solid #CCCCCC;
+	line-height: 22px;
+	text-align: center;
+	background: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+}

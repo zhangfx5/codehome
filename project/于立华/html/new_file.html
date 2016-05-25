@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a1{
+				width: 200px;
+				height: 200px;
+				display: block;
+			}
+			
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var flag=true;
+				var aaa=document.getElementsByClassName("a1")[0];
+				aaa.onclick=function(){
+					if(flag){
+						this.style.background="red";
+					return flag=false;
+					};
+					if(flag==false){
+						this.style.background="yellow";
+					return flag=true;
+					}
+				}
+				
+				
+				$(".btn").click(function(){
+//					alert(0)
+					$("#sss").append($(".aaa"));
+				})
+				
+				
+			}
+		</script>
+	</head>
+	<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+	<!--	<input type="button" checked="" />-->
+	<span class="a1">
+		1
+	</span>
+		<div id="sss">
+			<div class="aaa">11111111111111</div>
+			<div class="aaa">222222222222222222</div>
+			<div>3333333333333</div>
+			<div>444444444444444444</div>
+			<div>5555555555555555555</div>
+		</div>
+		<button class="btn">click</button>
+	</body>
+</html>

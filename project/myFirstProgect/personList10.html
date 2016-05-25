@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person10main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person10main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#turnPic
+			{
+				cursor: pointer;
+			}
+			#person10main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person10main2 .btn2
+			{
+				position: absolute;
+				left: 140px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-bottom: 0;
+				border-radius: 10%;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person10main3
+			{
+				height: 530px;
+				width: 811px;
+				border: 1px solid #ccc;
+				line-height: 40px;
+				background: #fff;
+			}
+			#person10main4
+			{
+				height: 530px;
+				width: 811px;
+				border: 1px solid #ccc;
+				display: none;
+				background: #fff;
+			}
+			.person10Info1
+			{
+				height: 60px;
+				line-height: 60px;
+				font-size: 14px;
+				margin-left: 60px;
+				
+			}
+			.person10Form
+			{
+				height: 440px;
+				width: 480px;
+				margin-left: 30px;
+				position: relative;
+				padding: 0px 0 0 20px;
+			}
+			.person10Form p
+			{
+				width: 70px;
+				color: #999999;
+				font-size: 14px;
+			}
+			.person10Form #mypicTrue
+			{
+				position: absolute;
+				left: 90px;
+				top: 130px;
+				height: 200px;
+				width: 200px;
+				background: #fff;
+			}
+			.person10Form #mypicTrue img
+			{
+				
+				height: 200px;
+				width: 200px;
+				
+			}
+			.person10Form button
+			{
+				position: absolute;
+				left: 120px;
+				top: 340px;
+				height: 30px;
+				width: 120px;
+				border: 0;
+				border: 1px solid #A60D1C;
+			}
+			.person10Form #person10SaveBtn
+			{
+				height: 30px;
+				width: 80px;
+				background: #A60D1C;
+				color: #fff;
+				font-size: 14px;
+				text-align: center;
+				line-height: 30px;
+				font-weight: 900;
+				position: absolute;
+				left: 140px;
+				top: 400px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="person10main1">
+			<a href="#">账户信息</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>个人资料</span>
+		</div>
+		<div id="person10main2">
+			<div class="btn1">我的信息</div>
+			<div class="btn2">其他</div>
+		</div>
+		<div id="person10main3">
+			<p class="person10Info1">亲爱的<span class="person10Username" style="font-weight: 900;">hahaha</span>,填写真实的资料，有助于您参加步淘网推出的各种活动哦</p>
+			<div class="person10Form">
+				<p class="left">用户名：</p><input type="text" /><br />
+				<p class="left">性别：</p><input type="radio" name="sex" />&nbsp;男&nbsp;<input type="radio" name="sex" />&nbsp;女<br />
+				<p class="left">生日：</p><input type="text" onClick="WdatePicker()"/><br />
+				<p class="left">我的头像：</p><div id="mypicTrue"><img src="img/noStainPic.png" id="headImg" /></div>
+				<button id="turnPic">选择你要上传的图片</button>
+				<div id="person10SaveBtn">
+					保存
+				</div>
+			</div>
+		</div>
+		<div id="person10main4">
+			其他
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	  <script type="text/javascript" src="My97DatePicker/WdatePicker.js"></script> 
+	<script>
+		$("#person10main2 .btn1").css({"background":"#fff","color":"red"});
+		$("#person10main2 .btn2").css({"background":"#eee","color":""});
+		$("#person10main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person10main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person10main3").css("display","block");
+			$("#person10main4").css("display","none");
+		});
+		$("#person10main2").delegate(".btn2","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person10main2 .btn1").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person10main4").css("display","block");
+			$("#person10main3").css("display","none");
+		});
+		//这里是实现图片随机切换
+		var imgArr=["img/hearImg0.jpg","img/hearImg1.jpg","img/hearImg2.jpg","img/hearImg3.jpg","img/hearImg4.jpg","img/hearImg5.jpg","img/hearImg6.jpg","img/hearImg7.jpg","img/hearImg8.jpg","img/hearImg9.jpg","img/hearImg10.jpg","img/hearImg11.jpg","img/hearImg12.jpg"];
+		$("#turnPic").on("click",function()
+		{
+			var randomNum=Math.random()*13;
+			$("#mypicTrue img")[0].src=imgArr[parseInt(randomNum)];
+		});
+		var strcook=getCookie1("userName");
+		$(".person10Username").html(strcook);
+	</script>
+</html>

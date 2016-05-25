@@ -1,0 +1,75 @@
+#ordersub-main{
+	width: 801px;
+	height: 500px;
+	margin: 0 auto 85px;
+	
+}
+.ordersub-main-banner{
+	
+	height: 153px;
+	background:  url(../images/ordersub_banner.png) no-repeat center ;
+}
+.ordersub-main-show{
+	border-left: 1px solid #CCCCCC;
+	height: 183px;
+}
+.ordersub-main-show-tit{
+	height: 34px;
+	line-height: 34px;
+	background: #000000;
+	color: #FFFFFF;
+	padding-left: 8px;
+}
+.ordersub-main-show-body-thead,.ordersub-main-show-body-tbody{
+	width: 199px;
+	border-bottom:1px solid #CCCCCC ;
+	border-right:1px solid #CCCCCC ;
+	text-align: center;
+}
+.ordersub-main-show-body-thead{
+	height: 49px;
+	line-height: 49px;
+	
+}
+.ordersub-main-show-body-tbody{
+	height: 98px;
+	line-height: 98px;
+}
+.ordersub-main-show-body-tbody-money{
+	font-size: 23px;
+	color: #33B7FF;
+}
+.ordersub-main-notic{
+	height: 48px;
+	line-height: 48px;
+	padding-left: 8px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.ordersub-main-btnbox{
+	height: 100px;
+}
+.ordersub-main-btn-befor,.ordersub-main-btn-next{
+	height: 80px;
+	width: 80px;
+	padding: 20px 0 0 20px;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: 900;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.ordersub-main-btn-befor{
+	background: #B0B0B0 url(../images/ordersub_main_btn_befor.png) no-repeat center;
+	
+	
+	
+}
+.ordersub-main-btn-next{
+	background: #000000 url(../images/ordersub_main_btn_next.png) no-repeat center;
+
+}
+.ordersub-main-btnbox .ordersub-main-btn-active{
+	text-indent: 0;
+	background-image: none;
+}	

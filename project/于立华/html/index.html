@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<!--<meta name="viewport" content="width=device-width",initail-scale=1,user-scalable="yes" />-->
+		<title>优购时尚商城-时尚服饰鞋包网购首选-优生活，购时尚！</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="../js/common.js" ></script>
+	<!--<script type="text/javascript" src="../js/common2.js" ></script>-->
+	<script type="text/javascript" src="../js/index.js"></script>	
+	<script type="text/javascript" src="../js/cookieControl.js"></script>	
+	<body>
+		<!--header=============================================-->
+		<div id="header">
+			<a href="" target="_blank"></a>
+		</div>
+		<!--header_nav=========================================-->
+		<div id="header_nav">
+			<div class="header_nav">
+				<div class="fashion_mall fontSize left"><a href="">时尚商城</a></div>
+				<div class="Seoul fontSize left">
+					<a href=""><span class="hide">首尔站</span> <span class="show"> Seoul Station</span></a>
+				</div>
+				<div class="mobile_buy fontSize left" id="mobile_buy">
+					<a href="">手机优购</a>
+					<i class="mobile_buy_bg1"></i>
+					<i class="mobile_buy_bg1 mobile_buy_bg2"></i>
+					<div class="buy_hidebox" style="position:absolute;left:-1px;top:31px;">
+						<div class="hidebox_top">
+							<div class="top_code left"></div>
+							<div class="top_right left">
+								<div class="apple"></div>
+								<div class="android"></div>
+							</div>
+						</div>
+						<p><span class="load">下载安装</span><span class="app">优购客户端</span></p>
+					</div>
+				</div>
+				<div class="header_nav_right right">
+					<div class="login-div"><span><a href="login.html" id="cookieUser">登录</a></span><span><a href="regist.html" id="quit">注册</span></a>|</div>
+					<div class="myBuy">
+						<a href="">我的优购</a>
+						<div class="mycollection">我的收藏</div>
+					</div>
+					<div class="myOrder"><a href="">我的订单</a></div>
+					<div class="publicNotice">
+						<a href="">公告</a>
+						<div class="public_hide">
+							<p><a href="">我是战靴</a></p>
+							<p><a href="">漫步于你的春天</a></p>
+							<p><a href="">潮流新款男女鞋</a></p>
+							<p><a href="">夹克/卫衣CP感满满</a></p>
+							<p><a href="">提醒会员谨防诈骗电话</a></p>
+						</div>
+					</div>
+					<div class="more publicNotice">
+						<a href="">更多</a>
+						<div class="more_hide">
+							<p><a>收藏优购</a></p>
+							<p><a>帮助</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--header_logo===========================================-->
+		<div id="header_logo">
+			<div class="logo left">
+				<a href=""></a>
+			</div>
+			<div class="input_box left">
+				<div class="search_box">
+					<input type="text" name="keyword" id="keyword" value="" />
+					<a href=""></a>
+				</div>
+				<div class="search_link">
+					<a class="red" href="">￥99专场</a>|<a href="">跑步鞋</a>|
+					<a href="">乐福鞋 </a>|
+					<a href="">毛毛虫</a>|
+					<a href="">冲锋衣</a>|
+					<a href="">衬衣</a>|
+					<a href="">夹克</a>|
+					<a href="">高跟鞋</a>|<a class="red" href="">女鞋满减会场</a>
+				</div>
+			</div>
+			<div class="shopping_box right">
+				<div class="shopping_car">
+					<i class="car"></i>
+					<a href="shoppingCar.html" style="color:#666;">购物车(<span>0</span>)件</a>
+					<i class="tip"></i>
+				</div>
+				<p>香港上市公司百丽国际旗下购物网站</p>
+				<div class="shop_tip">
+					您的购物车里还没有任何商品！
+				</div>
+			</div>
+		</div>
+		<!--content_nav==================================================-->
+		<div id="content_nav">
+			<div class="allGoods_category left">全部商品分类</div>
+			<div class="category_nav left">
+				<ul>
+					<li class="sport"><a href="category.html">运动馆</a></li>
+					<li><a href="">户外馆</a></li>
+					<li><a href="">鞋靴馆</a></li>
+					<li><a href="">服装馆</a></li>
+					<li><a href="">母婴童</a></li>
+					<li><a href="">生活馆</a></li>
+					<li class="red"><a href="">首尔馆</a><i class="new_tip"></i></li>
+				</ul>
+			</div>
+			<div class="category_right category_nav left">
+				<ul>
+					<li><a href="">秒杀</a></li>
+					<li><a href="">闪团</a></li>
+					<li><a href="">聚优购</a></li>
+					<li><a href="">潮流馆</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr id="line" />
+		<!--content============================================================-->
+		<div id="content">
+			<div class="second_menu left">
+				<ul class="outer_ul">
+					<li>
+						<i class="first_category"></i>
+						<div class="us_block left">
+							<h3><a>运动</a></h3>
+							<p><a>运动鞋</a> <a>夹克</a> <a>长裤</a> <a>运动包</a></p>
+						</div>
+						<div class="category_block">
+							<ul>
+								<li>
+									<div class="move_right"><h3>运动鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动服</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动包配</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>热门品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="second_category"></i>
+						<div class="us_block left">
+							<h3><a>户外</a></h3>
+							<p><a>冲锋衣</a> <a>鞋靴</a> <a>羽绒服 </a><a>冲锋裤</a></p>
+						</div>
+						<div class="category_block" style="top:-67px;">
+							<ul>
+								<li>
+									<div class="move_right"><h3>热卖品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>户外服装</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>户外鞋靴</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>户外包配</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="thrid_category"></i>
+						<div class="us_block left">
+							<h3><a>女鞋/男鞋</a></h3>
+							<p><a>浅口 </a><a>乐福鞋</a> <a>休闲 </a><a>正装鞋</a></p>
+						</div>
+						<div class="category_block" style="top:-134px;">
+							<ul>
+								<li>
+									<div class="move_right"><h3>精美女鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>时尚品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>精品男鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>潮流品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="fourth_category"></i>
+						<div class="us_block left">
+							<h3><a>男装/女装</a></h3>
+							<p><a>运动鞋</a> <a>夹克</a> <a>长裤</a> <a>运动包</a></p>
+						</div>
+						<div class="category_block" style="top:-201px;">
+							<ul>
+								<li>
+									<div class="move_right"><h3>热门品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>舒适童鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>可爱童装</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>配饰母婴</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="fifth_category"></i>
+						<div class="us_block left">
+							<h3><a>童装/童鞋/母婴</a></h3>
+							<p><a>运动鞋</a> <a>夹克</a> <a>长裤</a> <a>运动包</a></p>
+						</div>
+						<div class="category_block" style="top:-268px;">
+							<ul>
+								<li>
+									<div class="move_right"><h3>运动鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动服</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动包配</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>热门品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="sixth_category"></i>
+						<div class="us_block left">
+							<h3><a>家品/内衣</a></h3>
+							<p><a>运动鞋</a> <a>夹克</a> <a>长裤</a> <a>运动包</a></p>
+						</div>
+						<div class="category_block" style="top:-335px;">
+							<ul>
+								<li>
+									<div class="move_right"><h3>运动鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动服</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动包配</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>热门品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="seventh_category"></i>
+						<div class="us_block left">
+							<h3><a>箱包/配饰</a></h3>
+							<p><a>运动鞋</a> <a>夹克 </a><a>长裤</a> <a>运动包</a></p>
+						</div>
+						<div class="category_block" style="top:-402px;">
+							<ul>
+								<li>
+									<div class="move_right"><h3>运动鞋</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动服</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>运动包配</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+								<li>
+									<div class="move_right"><h3>热门品牌</h3></div>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+									<p><a>跑步鞋</a><a>篮球鞋</a></p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="banner left">
+				<div class="banner_inner" id="banner">
+					<img src="../img/banner1.jpg" />
+					<!--<img src="../img/banner2.jpg" />
+					<img src="../img/banner3.jpg" />
+					<img src="../img/banner4.jpg" />
+					<img src="../img/banner5.jpg" />
+					<img src="../img/banner6.jpg" />
+					<img src="../img/banner7.jpg" />
+					<img src="../img/banner8.jpg" />-->
+				</div>
+				<ul id="banner_order">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+				</ul>
+			</div>
+		</div>
+		<!--content_main=====================================================================-->
+		<div id="content_main">
+			<div class="main1">
+				<div class="title">
+					<b>热门品牌 </b><span style="font-size:16px;">HOT BRAND</span>
+					<span class="more">more ></span>
+				</div>
+				<div class="details">
+					<div class="details_pic">
+						<a href="details.html"><img src="../img/shoe_kw.jpg" alt="" /></a>
+						<a href=""><img src="../img/BeLLE.jpg" alt="" /></a>
+						<a href=""><img src="../img/seoul_station.jpg" alt="" /></a>
+						<a class="lastA" href=""><img src="../img/Columbia.jpg" alt="" /></a>
+					</div>
+					<div class="detail_pic_bottom">
+						<div id="prePage"></div>
+						<div id="nextPage"></div>
+						<div class="tab_outer">
+							<ul id="AList">
+								<li style="display:block;">
+									<a href=""><img src="../img/ln_logo.jpg" alt="" /></a>
+									<a href=""><img src="../img/adidas_black.jpg" alt="" /></a>
+									<a href=""><img src="../img/adidas_blue.jpg" alt="" /></a>
+									<a href=""><img src="../img/NB.jpg" alt="" /></a>
+									<a href=""><img src="../img/converse.jpg" alt="" /></a>
+									<a href=""><img src="../img/puma.jpg" alt="" /></a>
+									<a href=""><img src="../img/vans.jpg" alt="" /></a>
+									<a href=""><img src="../img/asics.jpg" alt="" /></a>
+									<a href=""><img src="../img/lacoste.jpg" alt="" /></a>
+									<a href=""><img src="../img/belle_logo.jpg" alt="" /></a>
+									<a href=""><img src="../img/tata.png" alt="" /></a>
+									<a href=""><img src="../img/teenmix.jpg" alt="" /></a>
+									<a href=""><img src="../img/staccato.jpg" alt="" /></a>
+									<a href=""><img src="../img/bata.jpg" alt="" /></a>
+									<a href=""><img src="../img/senda.jpg" alt="" /></a>
+									<a href=""><img src="../img/columbia507642261.jpg" alt="" /></a>
+									<a href=""><img src="../img/thenorthface507728112.jpg" alt="" /></a>
+									<a href=""><img src="../img/chrischristy506750291.jpg" alt="" /></a>
+									<a href=""><img src="../img/hum506750357.jpg" alt="" /></a>
+									<a href=""><img src="../img/wrangler460210389.jpg" alt="" /></a>
+								</li>
+								<li>
+									<a href=""><img src="../img/Levis.jpg" alt="" /></a>
+									<a href=""><img src="../img/Hush.jpg" alt="" /></a>
+									<a href=""><img src="../img/Li-Ning.jpg" alt="" /></a>
+									<a href=""><img src="../img/CAMEL.jpg" alt="" /></a>
+									<a href=""><img src="../img/BASTO.jpg" alt="" /></a>
+									<a href=""><img src="../img/JOSiny.jpg" alt="" /></a>
+									<a href=""><img src="../img/INNET.jpg" alt="" /></a>
+									<a href=""><img src="../img/TOREAD.jpg" alt="" /></a>
+									<a href=""><img src="../img/Walker_Shop.jpg" alt="" /></a>
+									<a href=""><img src="../img/CAT.jpg" alt="" /></a>
+									<a href=""><img src="../img/JACK.jpg" alt="" /></a>
+									<a href=""><img src="../img/GIORDANO.jpg" alt="" /></a>
+									<a href=""><img src="../img/FAIRWHALE.jpg" alt="" /></a>
+									<a href=""><img src="../img/markfairwhale.jpg" alt="" /></a>
+									<a href=""><img src="../img/FIRS.jpg" alt="" /></a>
+									<a href=""><img src="../img/D_X.jpg" alt="" /></a>
+									<a href=""><img src="../img/Lesmort.jpg" alt="" /></a>
+									<a href=""><img src="../img/aihuashi.jpg" alt="" /></a>
+									<a href=""><img src="../img/dog.jpg" alt="" /></a>
+									<a href=""><img src="../img/le_saunda.jpg" alt="" /></a>
+								</li>
+								<li>
+									<a href=""><img src="../img/adidas_green.jpg" alt="" /></a>
+									<a href=""><img src="../img/nautca.jpg" alt="" /></a>
+									<a href=""><img src="../img/MOUSSY.jpg" alt="" /></a>
+									<a href=""><img src="../img/FUGUINAO.jpg" alt="" /></a>
+									<a href=""><img src="../img/CK.jpg" alt="" /></a>
+									<a href=""><img src="../img/Onitsuka.jpg" alt="" /></a>
+									<a href=""><img src="../img/S.jpg" alt="" /></a>
+									<a href=""><img src="../img/GLM.jpg" alt="" /></a>
+									<a href=""><img src="../img/shuixingjiaf.jpg" alt="" /></a>
+									<a href=""><img src="../img/RAX.jpg" alt="" /></a>
+									<a href=""><img src="../img/X.jpg" alt="" /></a>
+									<a href=""><img src="../img/CROCODILE.jpg" alt="" /></a>
+									<a href=""><img src="../img/MERRELL.jpg" alt="" /></a>
+									<a href=""><img src="../img/miffy.jpg" alt="" /></a>
+									<a href=""><img src="../img/le_Coopoc.jpg" alt="" /></a>
+									<a href=""><img src="../img/jmbear.jpg" alt="" /></a>
+									<a href=""><img src="../img/XXX.jpg" alt="" /></a>
+									<a href=""><img src="../img/Lee.jpg" alt="" /></a>
+									<a href=""><img src="../img/Timberland.jpg" alt="" /></a>
+									<a href=""><img src="../img/Vishow.jpg" alt="" /></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Sproter">
+				<div class="title">
+					<b>运动馆</b> <span style="font-size:16px;">SPORT</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/shoe_close.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/adidas_black.jpg" alt="" /></a>
+							<a href=""><img src="../img/ln_logo.jpg" alt="" /></a>
+							<a href=""><img src="../img/adidas_blue.jpg" alt="" /></a>
+							<a href=""><img src="../img/NB.jpg" alt="" /></a>
+							<a href=""><img src="../img/puma.jpg" alt="" /></a>
+							<a href=""><img src="../img/Onitsuka.jpg" alt="" /></a>
+							<a href=""><img src="../img/converse.jpg" alt="" /></a>
+							<a href=""><img src="../img/monkey.jpg" alt="" /></a>
+							<a href=""><img src="../img/Li-Ning.jpg" alt="" /></a>
+							<a href=""><img src="../img/X.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/sport_adidas.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/shoe_nike.jpg" alt="" /></a>
+						<a><img src="../img/shoe_nb.jpg" alt="" /></a>
+						<a><img src="../img/shoe_gui.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/shoe_lacoste.jpg" alt="" /></a>
+						<a><img src="../img/close_biaoma.jpg" alt="" /></a>
+						<a><img src="../img/shoe_CBA.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="women_shoes">
+				<div class="title">
+					<b>女鞋馆</b> <span style="font-size:16px;">WOMEN'S SHOES</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/belle_logo.jpg" alt="" /></a>
+							<a href=""><img src="../img/tata.png" alt="" /></a>
+							<a href=""><img src="../img/teenmix.jpg" alt="" /></a>
+							<a href=""><img src="../img/staccato.jpg" alt="" /></a>
+							<a href=""><img src="../img/bata.jpg" alt="" /></a>
+							<a href=""><img src="../img/Hush.jpg" alt="" /></a>
+							<a href=""><img src="../img/BASTO.jpg" alt="" /></a>
+							<a href=""><img src="../img/crocs.jpg" alt="" /></a>
+							<a href=""><img src="../img/skap.jpg" alt="" /></a>
+							<a href=""><img src="../img/le_saunda.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/women_shoe.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/tianmeiyi.jpg" alt="" /></a>
+						<a><img src="../img/bajia.jpg" alt="" /></a>
+						<a><img src="../img/0ea.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/kaluochi.jpg" alt="" /></a>
+						<a><img src="../img/aokasuo.jpg" alt="" /></a>
+						<a><img src="../img/mafeimatu.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Outdoor">
+				<div class="title">
+					<b>户外馆</b> <span style="font-size:16px;">OUTDOOR</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top3.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/thenorthface507728112.jpg" alt="" /></a>
+							<a href=""><img src="../img/columbia507642261.jpg" alt="" /></a>
+							<a href=""><img src="../img/CAT.jpg" alt="" /></a>
+							<a href=""><img src="../img/MERRELL.jpg" alt="" /></a>
+							<a href=""><img src="../img/JACK.jpg" alt="" /></a>
+							<a href=""><img src="../img/TOREAD.jpg" alt="" /></a>
+							<a href=""><img src="../img/RAX.jpg" alt="" /></a>
+							<a href=""><img src="../img/blackyak.jpg" alt="" /></a>
+							<a href=""><img src="../img/Timberland.jpg" alt="" /></a>
+							<a href=""><img src="../img/ozark.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/kate.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/lsfs.jpg" alt="" /></a>
+						<a><img src="../img/tlz.jpg" alt="" /></a>
+						<a><img src="../img/glby.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/RAX_shoe.jpg" alt="" /></a>
+						<a><img src="../img/kate_shoe.jpg" alt="" /></a>
+						<a><img src="../img/maile.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Seul">
+				<div class="title">
+					<b>首尔站</b> <span style="font-size:16px;">SEOUL STATION</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top4.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/NII.jpg" alt="" /></a>
+							<a href=""><img src="../img/NAIN.jpg" alt="" /></a>
+							<a href=""><img src="../img/chrischristy506750291.jpg" alt="" /></a>
+							<a href=""><img src="../img/buckaroo.jpg" alt="" /></a>
+							<a href=""><img src="../img/beyondcloset4.jpg" alt="" /></a>
+							<a href=""><img src="../img/biliwili.jpg" alt="" /></a>
+							<a href=""><img src="../img/advisory.jpg" alt="" /></a>
+							<a href=""><img src="../img/agatha.jpg" alt="" /></a>
+							<a href=""><img src="../img/usnthem.jpg" alt="" /></a>
+							<a href=""><img src="../img/andew.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/hum.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/chenshan.jpg" alt="" /></a>
+						<a><img src="../img/weiyi.jpg" alt="" /></a>
+						<a><img src="../img/waitao.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/lianyiqun.jpg" alt="" /></a>
+						<a><img src="../img/t_shirt.jpg" alt="" /></a>
+						<a><img src="../img/waitao2.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Cloth">
+				<div class="title">
+					<b>服装馆</b> <span style="font-size:16px;">MEN' & WOMEN' CLOTHING</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top5.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/Lee.jpg" alt="" /></a>
+							<a href=""><img src="../img/Levis.jpg" alt="" /></a>
+							<a href=""><img src="../img/CK.jpg" alt="" /></a>
+							<a href=""><img src="../img/CAT.jpg" alt="" /></a>
+							<a href=""><img src="../img/MOUSSY.jpg" alt="" /></a>
+							<a href=""><img src="../img/Lesmort.jpg" alt="" /></a>
+							<a href=""><img src="../img/wrangler460210389.jpg" alt="" /></a>
+							<a href=""><img src="../img/markfairwhale.jpg" alt="" /></a>
+							<a href=""><img src="../img/hstyle.jpg" alt="" /></a>
+							<a href=""><img src="../img/ugo.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/weige.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/lee_close.jpg" alt="" /></a>
+						<a><img src="../img/alt.jpg" alt="" /></a>
+						<a><img src="../img/disckies.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/xianshi.jpg" alt="" /></a>
+						<a><img src="../img/shiguang.jpg" alt="" /></a>
+						<a><img src="../img/ttcolor.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Man_shoes">
+				<div class="title">
+					<b>男鞋馆</b> <span style="font-size:16px;">MEN' SHOES</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top6.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/belle_logo.jpg" alt="" /></a>
+							<a href=""><img src="../img/teenmix.jpg" alt="" /></a>
+							<a href=""><img src="../img/senda.jpg" alt="" /></a>
+							<a href=""><img src="../img/tata.png" alt="" /></a>
+							<a href=""><img src="../img/CAMEL.jpg" alt="" /></a>
+							<a href=""><img src="../img/Hush.jpg" alt="" /></a>
+							<a href=""><img src="../img/geox.jpg" alt="" /></a>
+							<a href=""><img src="../img/crocs.jpg" alt="" /></a>
+							<a href=""><img src="../img/bata.jpg" alt="" /></a>
+							<a href=""><img src="../img/S.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/bata_big.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/baili.jpg" alt="" /></a>
+						<a><img src="../img/tata.jpg" alt="" /></a>
+						<a><img src="../img/xiabushi.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/juegenshi.jpg" alt="" /></a>
+						<a><img src="../img/luotuo.jpg" alt="" /></a>
+						<a><img src="../img/simier.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Children">
+				<div class="title">
+					<b>孕婴童</b> <span style="font-size:16px;">CHILDREN'S</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top7.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/adidas_blue.jpg" alt="" /></a>
+							<a href=""><img src="../img/qtonbaby.jpg" alt="" /></a>
+							<a href=""><img src="../img/adidas_black.jpg" alt="" /></a>
+							<a href=""><img src="../img/hellokitty5.jpg" alt="" /></a>
+							<a href=""><img src="../img/Li-Ning.jpg" alt="" /></a>
+							<a href=""><img src="../img/sanliuyi.jpg" alt="" /></a>
+							<a href=""><img src="../img/puma.jpg" alt="" /></a>
+							<a href=""><img src="../img/jmbear.jpg" alt="" /></a>
+							<a href=""><img src="../img/Onitsuka.jpg" alt="" /></a>
+							<a href=""><img src="../img/davebella.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/children.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/child_aidi.jpg" alt="" /></a>
+						<a><img src="../img/child_nike.jpg" alt="" /></a>
+						<a><img src="../img/child_biaoma.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/child_two.jpg" alt="" /></a>
+						<a><img src="../img/child_baopei.jpg" alt="" /></a>
+						<a><img src="../img/child_weiyi.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_same" id="Life">
+				<div class="title">
+					<b>生活馆</b> <span style="font-size:16px;">OUTDOOR</span>
+					<span class="more">MORE>></span>
+				</div>
+				<div class="main_detail">
+					<div class="mleft left">
+						<div class="mleft_top">
+							<img src="../img/ml_top8.jpg"/>
+						</div>
+						<div class="mleft_foot">
+							<a href=""><img src="../img/istbelle.jpg" alt="" /></a>
+							<a href=""><img src="../img/swarovski.jpg" alt="" /></a>
+							<a href=""><img src="../img/draconite.jpg" alt="" /></a>
+							<a href=""><img src="../img/casio.jpg" alt="" /></a>
+							<a href=""><img src="../img/bostanten.jpg" alt="" /></a>
+							<a href=""><img src="../img/Levis.jpg" alt="" /></a>
+							<a href=""><img src="../img/shuixingjiaf.jpg" alt="" /></a>
+							<a href=""><img src="../img/esprit.jpg" alt="" /></a>
+							<a href=""><img src="../img/icolor.jpg" alt="" /></a>
+							<a href=""><img src="../img/FIRS.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="mcenter left">
+						<img src="../img/icolor_big.jpg" />
+					</div>
+					<div class="mright left">
+						<a><img src="../img/bag_ahs.jpg" alt="" /></a>
+						<a><img src="../img/hairun.jpg" alt="" /></a>
+						<a><img src="../img/fokadi.jpg" alt="" /></a>
+						<hr />
+						<a><img src="../img/qixi.jpg" alt="" /></a>
+						<a><img src="../img/niweida.jpg" alt="" /></a>
+						<a><img src="../img/yulu.jpg" alt="" /></a>
+						<hr />
+					</div>
+				</div>
+			</div>
+			<div class="main_model2">
+				<div class="title">
+					<h3>特卖专区</h3>
+				</div>
+				<div class="model2_content">
+					<div id="tab_list" class="left">
+						<ul class="tab">
+							<li>户外馆<i>></i></li>
+							<li>运动馆<i>></i></li>
+							<li>鞋靴馆<i>></i></li>
+							<li>男装馆<i>></i></li>
+							<li>女装馆<i>></i></li>
+							<li>母婴馆<i>></i></li>
+							<li>生活馆<i>></i></li>
+							<li class="bg_purple">秒杀专区<i>></i></li>
+							<li class="bg_purple" style="border:0;">超值团专区<i>></i></li>
+						</ul>
+					</div>
+					<div id="tab_content" class="left">
+						<div style="display:block;">
+							<dl>
+								<dt><a href=""><img src="../img/hw01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/hw02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥699</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/hw03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥599</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/hw04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><a href=""><img src="../img/yd01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/yd02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥699</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/yd03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/yd04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><a href=""><img src="../img/xx01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/xx02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥1699</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/xx03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/xx04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><a href=""><img src="../img/nz01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥39</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/nz02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥699</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/nz03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/nz04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><a href=""><img src="../img/nvz01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/nvz02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥69</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/nvz03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/nvz04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><a href=""><img src="../img/my01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/my02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥699</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/my03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/my04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<dl>
+								<dt><a href=""><img src="../img/sh01.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/sh02.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥699</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/sh03.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥399</span> <span class="line_through">￥789</span>
+								</dd>
+							</dl>
+							<dl>
+								<dt><a href=""><img src="../img/sh04.jpg"</a></dt>
+								<dd>
+									<a href="">The North Face乐斯菲斯 专柜同款 女子抓绒上衣CAR6W1H</a><br />
+									<span class="color_red">￥718</span> <span class="line_through">￥1098</span>
+								</dd>
+							</dl>
+						</div>
+						<div>
+							<a href=""><img src="../img/ms01.jpg"</a>
+						</div>
+						<div>
+							<a href=""><img src="../img/cz01.jpg"</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="model3">
+				<div class="title">
+					优购导购
+				</div>
+				<div class="shopping_guide">
+					<a class="active1" href="#"></a>
+					<div class="guide_top">
+						<span class="pre"><</span>
+						<span class="next">></span>
+						<a href=""><img src="../img/ln_logo.jpg" alt="" />耐克</a>
+						<a href=""><img src="../img/adidas_black.jpg" alt="" />阿迪达斯</a>
+						<a href=""><img src="../img/adidas_blue.jpg" alt="" />阿迪三叶草</a>
+						<a href=""><img src="../img/NB.jpg" alt="" />New Balance</a>
+						<a href=""><img src="../img/belle_logo.jpg" alt="" />百丽</a>
+						<a href=""><img src="../img/tata.png" alt="" />他她</a>
+						<a href=""><img src="../img/teenmix.jpg" alt="" />天美意</a>
+						<a href=""><img src="../img/senda.jpg" alt="" />森达</a>
+						<a href=""><img src="../img/le_saunda.jpg" alt="" />莱尔丹斯</a>
+						<a href=""><img src="../img/puma.jpg" alt="" />彪马</a>
+						<a href=""><img src="../img/Onitsuka.jpg" alt="" />鬼冢虎</a>
+						<a class="twelf" href=""><img src="../img/converse.jpg" alt="" />匡威</a>
+						<a href=""><img src="../img/adidas_green.jpg" alt="" />阿迪休闲</a>
+						<a href=""><img src="../img/S.jpg" alt="" />斯凯奇</a>
+						<a href=""><img src="../img/BASTO.jpg" alt="" />百思图</a>
+						<a href=""><img src="../img/FAIRWHALE.jpg" alt="" />马克华菲</a>
+						<a href=""><img src="../img/staccato.jpg" alt="" />思加图</a>
+						<a href=""><img src="../img/JACK.jpg" alt="" />JACK WOLFSKIN</a>
+						<a href=""><img src="../img/Lee.jpg" alt="" />LEE</a>
+						<a href=""><img src="../img/CAT.jpg" alt="" />卡特</a>
+						<a href=""><img src="../img/bata.jpg" alt="" />拔佳</a>
+						<a href=""><img src="../img/vans.jpg" alt="" />万斯</a>
+						<a href=""><img src="../img/X.jpg" alt="" />特步</a>
+						<a class="twelf" href=""><img src="../img/aile.jpg" alt="" />爱乐</a>
+						<a href=""><img src="../img/GIORDANO.jpg" alt="" />佐丹奴</a>
+						<a href=""><img src="../img/Timberland.jpg" alt="" />添柏岚</a>
+						<a href=""><img src="../img/TOREAD.jpg" alt="" />探路者</a>
+						<a href=""><img src="../img/Hush.jpg" alt="" />暇步士</a>
+						<a href=""><img src="../img/swarovski.jpg" alt="" />施华洛世奇</a>
+						<a href=""><img src="../img/RAX.jpg" alt="" />RAX</a>
+						<a href=""><img src="../img/elle.jpg" alt="" />ELLE</a>
+						<a href=""><img src="../img/aihuashi.jpg" alt="" />爱华仕</a>
+						<a href=""><img src="../img/monkey.jpg" alt="" />Paul Frank</a>
+						<a href=""><img src="../img/Levis.jpg" alt="" />LEVIS</a>
+						<a href=""><img src="../img/thenorthface507728112.jpg" alt="" />乐斯菲斯</a>
+						<a class="twelf" href=""><img src="../img/columbia507642261.jpg" alt="" />哥伦比亚</a>
+						<a class="border_bottom" href=""><img src="../img/dog.jpg" alt="" />史努比</a>
+						<a class="border_bottom" href=""><img src="../img/Li-Ning.jpg" alt="" />李宁</a>
+						<a class="border_bottom" href=""><img src="../img/erke.jpg" alt="" />鸿星尔克</a>
+						<a class="border_bottom" href=""><img src="../img/icewatch.jpg" alt="" />ICE-WATCH</a>
+						<a class="border_bottom" href=""><img src="../img/dickies.jpg" alt="" />Dickies</a>
+						<a class="border_bottom" href=""><img src="../img/asics.jpg" alt="" />亚瑟士</a>
+						<a class="border_bottom" href=""><img src="../img/warrior.jpg" alt="" />回力</a>
+						<a class="border_bottom" href=""><img src="../img/le_Coopoc.jpg" alt="" />lee Cooper</a>
+						<a class="border_bottom" href=""><img src="../img/minutes.jpg" alt="" />15分钟</a>
+						<a class="border_bottom" href=""><img src="../img/shiguangriji.jpg" alt="" />拾光日记</a>
+						<a class="border_bottom" href=""><img src="../img/osuoka.jpg" alt="" />奥索卡</a>
+						<a class="twelf border_bottom" href=""><img src="../img/INNET.jpg" alt="" />茵奈儿</a>
+					</div>
+					<div class="guide_foot">
+						<div class="guide_list left">
+							<ul>
+								<li><span class="ft_we"><a>时尚运动</a>&nbsp;</span>&nbsp;<a>跑步鞋</a>&nbsp; <a>板鞋</a> &nbsp;<a>篮球鞋</a>&nbsp; <a>夹克</a> &nbsp;<a>卫衣</a>&nbsp; <a>长裤</a><span class="more_pst"><a>更多>></a></span></li>
+								<li><span class="ft_we"><a>潮流女鞋</a>&nbsp;</span>&nbsp;<a>跑步鞋 </a>&nbsp;<a>板鞋</a>&nbsp; <a>篮球鞋</a>&nbsp; <a>夹克</a>&nbsp; <a>卫衣</a>&nbsp;<a> 长裤</a><span class="more_pst"><a>更多>></a></span></li>
+								<li><span class="ft_we"><a>魅力女装</a>&nbsp;</span><a>跑步鞋</a>&nbsp; <a>板鞋</a>&nbsp;<a> 篮球鞋</a>&nbsp; <a>夹克</a>&nbsp; <a>卫衣</a>&nbsp; <a>长裤</a>&nbsp;<span class="more_pst"><a>更多>></a></span></li>
+								<li><span class="ft_we"><a>精品男装</a>&nbsp;</span><a>跑步鞋 </a>&nbsp;<a>板鞋</a>&nbsp; <a>篮球鞋 </a>&nbsp;<a>夹克</a>&nbsp; <a>卫衣</a>&nbsp; <a>长裤</a><span class="more_pst"><a>更多>></a></span></li>
+							</ul>
+						</div>
+						<div class="guide_list left margin_right">
+							<ul>
+								<li><span class="ft_we"><a>流行男鞋</a>&nbsp;</span><a>跑步鞋</a> &nbsp;<a>板鞋</a>&nbsp; <a>篮球鞋</a> &nbsp;<a>夹克</a>&nbsp; <a>卫衣</a>&nbsp;<a> 长裤</a><span class="more_pst"><a>更多>></a></span></li>
+								<li><span class="ft_we"><a>童鞋童装</a>&nbsp;</span><a>跑步鞋</a>&nbsp;<a>板鞋</a>&nbsp; <a>篮球鞋</a>&nbsp; <a>夹克</a>&nbsp; <a>卫衣</a>&nbsp;<a> 长裤</a><span class="more_pst"><a>更多>></a></span></li>
+								<li><span class="ft_we"><a>户外休闲</a>&nbsp;</span><a>跑步鞋</a>&nbsp; <a>板鞋 </a>&nbsp;<a>篮球鞋</a>&nbsp;<a>夹克 </a>&nbsp;<a>卫衣</a>&nbsp; <a>长裤</a><span class="more_pst"><a>更多>></a></span></li>
+								<li><span class="ft_we"><a>高档箱包</a>&nbsp;</span><a>跑步鞋 </a>&nbsp;<a>板鞋</a>&nbsp; <a>篮球鞋</a> &nbsp;<a>夹克 </a>&nbsp;<a>卫衣</a> &nbsp;<a>长裤</a><span class="more_pst"><a>更多>></a></span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr id="cut_off" />
+		<div id="link">
+			<div class="link_cont">
+				<div class="cont_top">
+					<div class="left"><i></i><a href=""><span class="color_red">正品</span><span class="color_black">保证</span></a></div>
+					<div class="left"><i class="i_02"></i><a href=""><span class="color_red">10天</span><span class="color_black">退换货</span></a></div>
+					<div class="left"><i class="i_03"></i><a href=""><span class="color_red">10天调价</span><span class="color_black">补差额</span></a></div>
+					<div class="left"><i class="i_04"></i><a href=""><span class="color_red">7X24小时</span><span class="color_black">在线客服</span></a></div>
+				</div>
+				<div class="cont_foot">
+					<dl>
+						<dt>新手帮助</dt>
+						<dd>
+							<a href="">交易条款协议</a><br />
+							<a href="">注册新用户</a><br />
+							<a href="">会员积分详情</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<a href="">交易条款协议</a><br />
+							<a href="">注册新用户</a><br />
+							<a href="">会员积分详情</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付/配送</dt>
+						<dd>
+							<a href="">交易条款协议</a><br />
+							<a href="">注册新用户</a><br />
+							<a href="">会员积分详情</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>售后服务</dt>
+						<dd>
+							<a href="">交易条款协议</a><br />
+							<a href="">注册新用户</a><br />
+							<a href="">会员积分详情</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>会员服务</dt>
+						<dd>
+							<a href="">找回密码</a><br />
+							<a href="">联系我们</a><br />
+						</dd>
+					</dl>
+					<dl class="mg_right50">
+						<dt>优购客服</dt>
+						<dd>
+							<i></i>
+							<a href="">在线咨询</a><br />
+							<a href="">Email:<span class="color_red">service@yougou.com</span></a><br />
+						</dd>
+					</dl>
+					<dl class="mg_right50">
+						<a href=""><img src="../img/code1.jpg"/></a>
+					</dl>
+					<dl class="mg_right50 mg_rg0">
+						<img src="../img/code2.jpg"/>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="footer">
+				<div class="footer_logo left">
+					<a href=""><img src="../img/footer_logo.gif"/></a>
+				</div>
+				<div class="footer_right left">
+					<p class="par1">
+						<a href="">关于优购 |</a>
+						<a href="">品牌招商 |</a>
+						<a href="">集团采购 |</a>
+						<a href="">招贤纳士 |</a>
+						<a href="">手机优购 |</a>
+						<a href="">联系我们 |</a>
+						<a href="">品牌大全 |</a>
+						<a href="">网站地图 |</a>
+						<a href="">销售排行 |</a>
+						<a href="">优购资讯 |</a>
+						<a href="">网站联盟 |</a>
+						<a href="">友情链接</a>
+					</p>
+					<p class="par2">Copyright &copy; 2011-2015 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证：粤 B2-20090203 深公网安备：4403101910665</p>
+					<p class="par3">
+						<a href=""><img class="img_size" src="../img/footer01.png"/></a>
+						<a href=""><img src="../img/footer02.png"/></a>
+						<a href=""><img src="../img/footer03.jpg"/></a>
+						<a href=""><img src="../img/footer04.png"/></a>
+						<a href=""><img src="../img/footer05.png"/></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--top 返回顶部 跳转楼层================================================-->
+		<div id="top">
+			<ul>
+				<li class="jump"><a href="#Sproter"></a></li>
+				<li class="jump"><a href="#women_shoes"></a></li>
+				<li class="jump"><a href="#Outdoor"></a></li>
+				<li class="jump"><a href="#Man_shoes"></a></li>
+				<li class="jump"><a href="#Cloth"></a></li>
+				<li class="jump"><a href="#Children"></a></li>
+				<li class="jump"><a href="#Life"></a></li>
+				<li class="jump"><a href="#Seul"></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+		<!--<div id="top">
+			<div style="position: absolute; top: 2769px; right: -110px; z-index: 7777;" id="cen_scroll" class="cen_scroll">
+				<img src="../img/float_img.png" alt="" usemap="#Map1456780011" height="407" border="0" width="100"> 
+				<map name="Map1456780011">
+					<area shape="rect" coords="31,3,72,33" href="#href56e0cfc845b9a8b706000027">
+				    <area shape="rect" coords="33,39,72,74" href="#href56e0cfc845b9a8b70600001a">
+				    <area shape="rect" coords="32,77,72,108" href="#href56e0cfc845b9a8b70600002b">
+				    <area shape="rect" coords="35,112,71,146" href="#href56e0cfc945b9a8b70600003b">
+				    <area shape="rect" coords="33,149,71,180" href="#href56e0cfc945b9a8b70600002f">
+				    <area shape="rect" coords="33,183,71,217" href="#href56e0cfc845b9a8b70600001e">
+				    <area shape="rect" coords="35,220,69,253" href="#href56e0cfc945b9a8b706000033">
+				    <area shape="rect" coords="34,336,70,368" href="http://www.yougou.com/topics/1407418979590.shtml" target="_blank">
+		  			<area shape="rect" coords="33,370,72,406" href="http://www.yougou.com/">
+					<area shape="rect" coords="33,258,72,294" href="http://seoul.yougou.com" target="_blank">
+					<area shape="rect" coords="34,296,71,330" href="http://www.yougou.com/topics/miaosha.shtml" target="_blank">
+				</map>
+			</div>
+		</div>-->
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

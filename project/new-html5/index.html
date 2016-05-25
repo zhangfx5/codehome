@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			input{vertical-align: top;}
+		</style>
+	</head>
+	<body>
+		<form>
+			email:<input type="email" /><!--multiple="multiple"   可以提交多个--><br />
+			url:<input type="url" /><br />
+			date-list:<input type="text" list="date-list" /><br />
+			<datalist id="date-list">
+				<option value="aaaaa" label="mjico"></option>
+				<option value="bbbbb"></option>
+				<option value="cccccc"></option>
+				<option value="ddddd"></option>
+			</datalist>
+			默认提示：<input type="text" placeholder="默认提示" /><br />
+			<input type="text" id="in1" name="country_code" pattern="[A-Z]{10}" title="三位字母的国家代码" value="A"/><br />
+			
+			submit:<input type="submit" /><br />
+			
+	    </form>
+	    
+	   		<video id="myvideo" width="800" height="400" controls="controls" loop="loop">
+				<source src="img/movie.mp4"></source>
+			</video>
+			
+			<input type="button" value="播放" id="bo" />
+			<input type="button" value="停止" id="stop" />
+			<input type="button"  value="暂停" id="zan"/>
+			
+	    
+	    
+	    
+		<script type="text/javascript">
+			alert(document.getElementById("in1").validity.patternMismatch)
+		</script>
+		
+		
+	</body>
+</html>

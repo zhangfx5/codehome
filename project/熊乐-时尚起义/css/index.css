@@ -1,0 +1,117 @@
+
+/*          banner      */
+#banner-box{
+	width: 100%;
+	height: 880px;
+	border-bottom: 2px solid #000;
+}
+#banner{
+	width: 1185px;
+	height: 880px;
+	margin: 0 auto;
+}
+#banner img{
+	cursor: pointer;
+}
+
+.banner-left-center{
+	margin: 1px 0;
+}
+.banner-center{
+	margin: 0 1px;
+}
+.banner-center-top{
+	margin-bottom: 1px;
+}
+.banner-right-left{
+	margin-right: 1px;
+}
+.banner-right-center{
+	margin: 1px 0;
+}
+/*  lbt部分  **********************************/
+#lbt{
+	height: 220px;
+	width: 1158px;
+	margin: 0 auto;
+	padding-top: 54px;
+}
+.lbt-img-list-box{
+	width: 1110px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.lbt-img-list{
+	width: 2300px;
+}
+.lbt-img{
+	float: left;
+	margin-left: 2px;
+	overflow: hidden;
+	cursor: pointer;	
+}
+.lbt-left-btn{
+	display: block;
+	height: 220px;
+	width: 24px;
+	background: url(../images/lbt-left-btn.png) no-repeat left center;
+}
+.lbt-right-btn{
+	display: block;
+	height: 220px;
+	width: 24px;
+	background:url(../images/lbt-right-btn.png) no-repeat right center;
+}
+/*main************************/
+#main{
+	height:9188px ;
+	width: 1160px;
+	margin: 0 auto;
+}
+.main-tit{
+	height: 60px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+	padding-top: 108px;
+}
+.main-bestseller{
+	height: 492px;
+}
+.main-bestseller-img{
+	margin: 0 0 20px 17px;
+}
+.main-goods{
+	height: 448px;
+	width: 240px;
+	margin: 0 66px 56px 0;
+}
+.main-goods p{
+	float: left;
+	width: 240px;
+}
+.main-goods .main-goods-inf{
+	height: 15px;
+	font-size: 14px;
+}
+.main-goods-type , .main-goods-price{
+	height: 44px;
+	line-height: 44px;
+	font-size: 18px;
+}
+.main-goods-type{
+	color: #EF8436;
+}
+.main-goods-right{
+	margin-right: 0;
+}
+.main-goods-bottom{
+	margin-bottom: 0;
+}
+.main-new-arrival{
+	height: 1456px;
+}
+.main-clothing-best{
+	height: 4984px;
+}

@@ -1,0 +1,218 @@
+#mycar-main{
+	width: 1160px;
+	margin: 38px auto 0;
+}
+.mycar-main-titimg{
+	height: 116px;
+	padding-left: 224px;
+}
+.mycar-main-list-theader{
+	width: 1160px;
+	height: 35px;
+}
+.mycar-main-list-theader .mycar-main-list-td{
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	font-weight: 900;
+	color: #FFFFFF;	
+	background: #2B2B2B;
+}
+.mycar-main-list-theader .mycar-main-list-goodsinfo{
+	width: 409px;
+}
+.mycar-main-list-theader .mycar-main-list-integral{
+	width: 100px;
+}
+.mycar-main-list-theader .mycar-main-list-price{
+	width: 158px;
+}
+.mycar-main-list-theader .mycar-main-list-vipprice{
+	width: 158px;
+}
+.mycar-main-list-theader .mycar-main-list-number{
+	width: 100px;
+}
+.mycar-main-list-theader .mycar-main-list-count{
+	width: 158px;
+}
+.mycar-main-list-theader .mycar-main-list-active{
+	width: 77px;
+}
+.mycar-main-list-tbody{
+	width: 1160px;
+	height: 108px;
+}
+.mycar-main-list-null{
+	width: 1160px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 900;
+	display: none;
+}
+.mycar-main-list-tbody .mycar-main-list-td{
+	height: 108px;
+	line-height: 108px;
+	text-align: center;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;	
+	color: #888888;
+}
+.mycar-main-list-tbody .mycar-main-list-goodsinfo{
+	width: 389px;
+	padding-left:20px;
+	line-height: 19px;
+	text-align: left;
+}
+.mycar-main-list-goodsinfo-check{
+	height: 13px;
+	width: 13px;
+	margin: 47px 27px 0 0;
+}
+.mycar-main-list-goodsinfo-img{
+	height: 83px;
+	width: 60px;
+	margin: 12px 21px 0 0;
+}
+.mycar-main-list-goodsinfo-txt{
+	margin-top: 25px;
+}
+.mycar-main-list-tbody .mycar-main-list-integral{
+	width: 99px;
+}
+.mycar-main-list-tbody .mycar-main-list-price{
+	width: 157px;
+}
+.mycar-main-list-tbody .mycar-main-list-vipprice{
+	width: 157px;
+	height: 84px;
+	font-weight: 900;
+	line-height: 24px;
+	padding-top: 24px;
+}
+.mycar-main-list-tbody .mycar-main-list-number{
+	width: 99px;
+}
+
+.mycar-main-list-number-box{
+	height: 19px;
+	width: 33px;
+	margin: 42px 0 0 30px;	
+}
+.mycar-main-list-number-show{
+	height: 17px;
+	width: 20px;
+	border: 1px solid #D8D8D8;
+	text-align: center;
+	line-height: 17px;
+}
+.mycar-main-list-number-add,.mycar-main-list-number-minus{
+	height: 8px;
+	width: 9px;
+	border: 1px solid #D8D8D8;
+	cursor: pointer;
+}
+.mycar-main-list-number-add{
+	border-bottom:none ;
+	background: url(../images/ginfo-information-info-number-add.png) ;
+}
+.mycar-main-list-number-minus{
+	background: url(../images/ginfo-information-info-number-minus.png) ;
+}
+
+
+.mycar-main-list-tbody .mycar-main-list-count{
+	width: 157px;
+	color: #33B7FF;
+}
+.mycar-main-list-tbody .mycar-main-list-active{
+	width: 50px;
+	height: 88px;
+	padding:20px 0 0 26px;
+	border-right: none;
+}
+.mycar-main-list-active-change,.mycar-main-list-active-del,.mycar-main-list-active-addtolove{
+	height: 21px;
+	width: 21px;
+	cursor: pointer;
+	position: relative;
+}
+.mycar-main-list-active-change{
+	background: url(../images/mycar_main_list_active_change.png);
+}
+.mycar-main-list-active-del{
+	background: url(../images/mycar_main_list_active_del.png);	
+	margin: 2px 0;
+}
+.mycar-main-list-active-addtolove{
+	background: url(../images/mycar_main_list_active_addtolove.png);	
+}
+.mycar-main-list-active .mycar-main-list-active-change-hover{
+	background: url(../images/mycar_main_list_active_change_hover.png);
+}
+.mycar-main-list-active .mycar-main-list-active-del-hover{
+	background: url(../images/mycar_main_list_active_del_hover.png);
+}
+.mycar-main-list-active .mycar-main-list-active-addtolove-hover{
+	background: url(../images/mycar_main_list_active_addtolove_hover.png);
+}
+.mycar-main-list-active-btnname{
+	position: absolute;
+	width: 28px;
+	height: 16px;
+	border: 1px solid #000000;
+	line-height: 16px;
+	text-align: center;
+	color: #000000;
+	top: 30px;
+	display: none;
+	z-index: 10;
+}
+.mycar-main-list-tfoot{
+	height: 43px;
+	line-height: 43px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.mycar-main-list-checkall{
+	margin: 15px 23px 15px 20px;
+}
+#mycar-bottom{
+	height: 100px;
+	width: 1160px;
+	margin: 16px auto 78px;
+}
+.mycar-bottom-befor,.mycar-bottom-next{
+	height: 80px;
+	width: 100px;
+	cursor: pointer;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #FFFFFF;
+	font-weight: 90;
+	
+}
+.mycar-bottom-befor{
+	background: #B0B0B0 url(../images/mycar_bottom_befor.png) no-repeat center;
+}
+.mycar-bottom-next{
+	background: #000000 url(../images/mycar_bottom_next.png) no-repeat center;
+	
+}
+.mycar-bottom-tit,.mycar-bottom-txt{
+	height: 100px;
+	line-height: 33px;
+	font-weight: 900;
+	font-size: 15px;
+}
+.mycar-bottom-tit{
+	width: 900px;
+	text-align: right;
+}
+.mycar-bottom-txt{
+	width: 60px;
+	text-align: left;
+}

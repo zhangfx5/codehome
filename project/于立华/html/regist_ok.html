@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册成功</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/regist_ok.css"/>
+	<script type="text/javascript" src="../js/jquery-1.11.3.js" ></script>
+	<body>
+		<!--header==================================================================-->
+		<div id="header">
+			<div class="header">
+				<div class="nav_left left">
+					<div class="mall left">
+						<a href="">时尚商城</a> 
+					</div>
+					<div class="mobile_buy left">
+						<a href="">手机优购</a>
+						<i class="mobile"></i>
+						<i class="tip">121</i>
+					</div>
+				</div>
+				<div class="nav_right right">
+					<ul>
+						<li><a class="login_link" href="login.html">登录</a></li>
+						<li><a class="login_link regist_link" href="">注册</a></li>
+						<li class="myBuy"><a href="">我的优购</a><i class="i_01"></i></li>
+						<li><a href="">我的订单</a></li>
+						<li class="publicNotice">公告<i class="i_02"></i></li>
+						<li class="more">更多<i class="i_03"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--to_mall====================================================-->
+		<div id="to_mall">
+			<span class="ft_big">注册成功</span><span class="ft_sm"><a href="index.html">返回时尚商城</a></span>
+		</div>
+		<hr id="cut_off" />
+		<!--regist_success=============================================-->
+		<div id="registed">
+			<div class="registed_left left">
+				<div><img src="../img/regist_left.png"/></div>
+				<div class="nowBack">
+					<a id="backNow" href="index.html">立刻返回</a>
+					<span><i id="timeEnd">3</i>秒后，带您自动返回</span>
+				</div>
+			</div>
+			<div class="registed_right left">
+				<img src="../img/regist_right.png"/>
+			</div>
+		</div>
+		<!--you_like=========================-->
+		<div id="you_like">
+			<img src="../img/you_like.png"/>
+		</div>
+		<!--copyright========================================================-->
+		<div id="main_foot">
+			Copyright © 2011-2014 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证：粤 B2-20090203
+		</div>
+	</body>
+	<script type="text/javascript">
+		var num = $("#timeEnd").text();
+//		console.log(num);
+		var t = setInterval(function(){
+			num--;
+			if(num<=0){
+				num = 0;
+				clearInterval(t);
+				window.location.href = "index.html";
+			}
+			$("#timeEnd").text(num);
+		},1000)
+		
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

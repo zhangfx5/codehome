@@ -1,0 +1,716 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.red{
+	color:#E60012;
+}
+.blue{
+	color:#3366CC;
+}
+img{
+	border:0;
+}
+body{
+	width:100%;
+	height:100%;
+	background:#fff;
+	font-family: "微软雅黑";
+}
+#header{
+	width:100%;
+	height:26px;
+	background:#F1F1F1;
+}
+.header{
+	width:981px;
+	height:26px;
+	font-size:12px;
+	line-height:25px;
+	margin:0 auto;
+}
+.header a{
+	color:#666;
+}
+.header a:hover{
+	color:#e60012;
+}
+.nav_left .mall a{
+	display:block;
+	height:14px;
+	line-height:14px;
+	padding-right:8px;
+	margin-top:6px;
+	border-right:1px solid #aaa;
+}
+.mobile_buy{
+	width:100px;
+	position:relative;
+}
+.buy_hidebox{
+	display:none;
+	width:243px;
+	height:150px;
+	padding:15px 0 0 20px;
+	background:#fff;
+	box-shadow:0px 2px 5px #ccc;
+	z-index:99;
+}
+.hidebox_top{
+	width:243px;
+	height:107px;
+	position:relative;
+}
+.top_code{
+	width:93px;
+	height:98px;
+	margin-right:10px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:url(../img/buy_hidebox.jpg) no-repeat 0 0;
+}
+.top_right{
+	padding-top:6px;
+}
+.apple{
+	width:116px;
+	height:44px;
+	position:absolute;
+	left:103px;
+	top:0;
+	background:url(../img/buy_hidebox.jpg) no-repeat -106px 0;
+}
+.android{
+	width:116px;
+	height:44px;
+	position:absolute;
+	left:103px;
+	top:54px;
+	background:url(../img/buy_hidebox.jpg) no-repeat -106px -50px;
+}
+.buy_hidebox p{
+	text-align:left;
+	font-size:18px;
+}
+.buy_hidebox p .load{
+	color:#666666;
+}
+.buy_hidebox p .app{
+	margin-left:10px;
+	color:#000;
+	font-weight:900;
+}
+.mobile_buy a{
+	padding-left:20px;
+}
+.mobile_buy i{
+	position:absolute;
+	overflow:hidden;
+	display:block;
+	float:left;
+	/*font-size:10px;
+	line-height:10px;*/
+}
+.mobile_buy .mobile{
+	width:8px;
+	height:13px;
+	left:8px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -152px -80px;
+}
+.mobile_buy .tip{
+	width:12px;
+	height:8px;
+	left:76px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+.nav_right ul li{
+	position:relative;
+	float:left;
+}
+
+.myBuy .mycollection{
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	top:26px;
+	left:-1px;
+	width:78px;
+	height:90px;
+	text-indent:8px;
+	color:#666;
+	background:#fff;
+	z-index:999;
+}
+.myBuy:hover{
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.myBuy:hover a{
+	display:block;
+	float:left;
+	border-right:0;
+	height:26px;
+}
+/*.myBuy:hover .nav_right>ul>li>a.login_link{
+	border-right:0;
+}*/
+.myBuy:hover .mycollection{
+	display:block;
+	border-top:0;
+	border:1px solid #ccc;
+}
+.nav_right ul .myBuy a{
+	padding-right:20px;
+}
+.nav_right ul li a{
+	display:block;
+	height:14px;
+	line-height:14px;
+	margin-top:6px;
+	padding:0 10px;
+	border-right:1px solid #666;
+}
+.nav_right ul li a:hover{
+	color:#e60012;
+}
+.nav_right ul li .regist_link{
+	border-right:1px solid #666;
+}
+.nav_right ul .publicNotice{
+	padding:0 20px 0 10px;
+	/*border-right:1px solid #666;*/
+}
+.nav_right ul .publicNotice:hover{
+	border:1px solid #ccc;
+	border-bottom:0;
+}
+.publicNotice:hover .public_hide{
+	display:block;
+}
+.publicNotice:hover>a{
+	display:block;
+	float:left;
+	width:55px;
+	height:26px;
+	background:url(../img/all.png) no-repeat -145px -830px;;
+}
+.public_hide{
+	z-index:999;
+	display:none;
+	position:absolute;
+	top:26px;
+	right:-1px;
+	width:205px;
+	height:120px;
+	padding:4px 0 0 20px;
+	border:1px solid #ccc;
+	border-top:0;
+	background:#fff;
+}
+.public_hide p{
+	height:16px;
+	line-height:22px;
+	text-align:left;
+}
+.public_hide p a:hover{
+	color:#E60012;
+}
+.nav_right ul .more{
+	padding-left:10px;
+}
+.nav_right ul li i{
+	position:absolute;
+	display:block;
+	float:left;
+	width:12px;
+	height:8px;
+}
+.nav_right ul li .i_01{
+	left:60px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+.nav_right ul li .i_02{
+	left:39px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+.nav_right ul li .i_03{
+	left:39px;
+	top:7px;
+	background:url(../img/all.png) no-repeat -189px -840px;
+}
+/*main_header-------------------------------------------------------------------*/
+#main_header{
+	width:990px;
+	height:60px;
+	padding-top:15px;
+	margin:0 auto;
+}
+.shop_logo{
+	width:390px;
+	height:60px;
+	position:relative;
+}
+.shop_logo i{
+	display:block;
+	position:absolute;
+	left:166px;
+	top:19px;
+	width:188px;
+	height:27px;
+	background:url(../img/shopping_zh.jpg) -164px -18px;
+}
+.shop_step{
+	width:600px;
+	height:20px;
+	padding:20px 0;
+}
+.shop_step ul{
+	width:600px;
+	height:20px;
+	background: #e8e8e8;
+    overflow: hidden;
+    position: relative;
+	font: 12px/20px tahoma,微软雅黑;
+}
+.shop_step ul li{
+	float:left;
+	width:200px;
+    text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.shop_step ul li.current{
+	color: #fff;
+    background: #f90;
+    z-index: 1;
+}
+.shop_step ul li em, .shop_step ul li i {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    position: absolute;
+}
+.shop_step ul li em{
+	right: -12px;
+    top: -2px;
+    border: 12px dashed transparent;
+    border-left: 12px solid #fff;
+    border-right: 0;
+}
+.shop_step ul li i{
+	right: -9px;
+    top: 0;
+    border: 10px dashed transparent;
+    border-left: 10px solid #e8e8e8;
+    border-right: 0;
+}
+.shop_step ul li.current i{
+	border-color: transparent transparent transparent #f90;
+}
+/*address---------------------------------------------*/
+#address{
+	width:990px;
+	height:251px;
+	margin:0 auto;
+}
+.choose{
+	padding-top:20px;
+	height:22px;
+	border-bottom:1px solid #ccc;
+}
+.choose h3{
+	float:left;
+	font-size:14px;
+	color:#666;
+}
+.choose span a{
+	font-size:12px;
+}
+.choose span a:hover{
+	color:#E4E4E4;
+}
+.choose .goCar{
+	margin-left:15px;
+}
+.choose .opration{
+	float:right;
+}
+.detail_address{
+	width:982px;
+	height:189px;
+	padding:20px 0 0 8px;
+	font-size:12px;
+}
+.height_32{
+	width:982px;
+	height:32px;
+}
+.height_32 .ipt_left{
+	width:78px;
+	text-align:left;
+}
+.height_32 div .ipt{
+	width:186px;
+	height:24px;
+}
+#tipName i{
+	position:absolute;
+	top:-10px;
+	left:-9px;
+	display:none;
+	float:left;
+	width:16px;
+	height:16px;
+	margin:9px 0 0 5px;
+	/*background:url(../img/login_regist.png) no-repeat -318px -33px;*/
+}
+.postcode span i{
+	position:absolute;
+	top:-9px;
+	left:-9px;
+	display:none;
+	float:left;
+	width:16px;
+	height:16px;
+	margin:9px 0 0 5px;
+	background:url(../img/login_regist.png) no-repeat -318px -33px;
+}
+.contacterTel span i{
+	position:absolute;
+	top:-9px;
+	left:0px;
+	display:none;
+	float:left;
+	width:16px;
+	height:16px;
+	margin:9px 0 0 5px;
+	font-style:normal;
+	background:url(../img/login_regist.png) no-repeat -318px -33px;
+}
+.postcode{
+	margin-left:20px;
+}
+#postcode{
+	width:56px;
+	height:20px;
+}
+.xxadd{
+	width:256px;
+	height:24px;
+}
+/*付款方式部分------------------------------------*/
+#payStyle{
+	width:990px;
+	height:523px;
+	margin:0 auto;
+}
+.choosePay{
+	height:19px;
+	border-bottom:1px solid #ccc;
+}
+.choosePay h3{
+	float:left;
+	font-size:14px;
+	color:#666; 
+}
+.choosePay span{
+	float:right;
+}
+.choosePay span a{
+	font-size:12px;
+}
+.choosePay span a:hover{
+	color:#E60012;
+}
+.pay_online{
+	height:24px;
+	padding-top:19px;
+	font-size:12px;
+	color:#000;
+}
+.bank{
+	width:988px;
+	height:438px;
+	border:1px solid #ccc;
+	padding:20px 0 0 16px;
+}
+.bank_pic{
+	height:109px;
+}
+.bank_pic div{
+	float:left;
+	width:;
+	height:;
+	margin-right: 17px;
+	position: relative;
+	height: auto;
+	margin-bottom:5px;
+}
+.bank_pic div span input{
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 8px;
+	top: 13px;
+}
+.bank_pic div img{
+	border:1px solid #ccc;
+}
+/*goods_money货到付款-------------------------------*/
+#goods_money{
+	width:990px;
+	height:78px;
+	margin:0 auto;
+	padding:25px 0 0 41px;
+	font-size:12px;
+}
+/*conform_order确认订单信息------------------------------------------*/
+#conform_order{
+	width:990px;
+	height:100%;
+	margin:0 auto;
+}
+.conf-title{
+	height:28px;
+	font-size:14px;
+}
+.goods_info{
+	width:990px;
+	height:100%;
+}
+.thread{
+	height:32px;
+	line-height:32px;
+	font-size:12px;
+	color:#939598;
+	border:1px solid #ccc;
+}
+.good_info{
+	width:988px;
+	height:103px;
+	border:1px solid #ccc;
+}
+.good_info div{
+	height:102px;
+	float:left;
+	font-size:12px;
+	color:#333;
+}
+.good_info .picture{
+	position:relative;
+}
+.picture img{
+	position:absolute;
+	left:15px;
+	top:10px;
+	padding:5px;
+	border:1px solid #ccc;
+}
+.confr_btn{
+	width:966px;
+	height:185px;
+	padding:31px 0 0 23px;
+	font-size:12px;
+	border:1px solid #ccc;
+	border-top:0 none;
+}
+.confr_left{
+	width:588px;
+}
+.confr_right{
+	width:378px;
+}
+.confr_right div{
+	height:27px;
+}
+.confr_right div span{
+	display:block;
+	float:left;
+	width:210px;
+	margin-right:40px;
+	text-align:right;
+}
+.confr_right .btn_confr_info{
+	width:348;
+	padding:20px 0 0 30px;
+	text-align:center;
+	height:59px;
+}
+.confr_right .jifen i{
+	font-style:normal;
+} 
+.btn_confr_info .blue{
+	width:140px;
+	height:30px;
+	padding:20px 10px 0 0;
+	text-decoration:underline;
+}
+#conform_btn{
+	width:167px;
+	height:48px;
+	line-height:48px;
+	font-size:14px;
+	color:#fff;
+	background:#FF5000;
+	cursor:pointer;
+}
+/*clear_float--------------------------*/
+.clear_float:after{
+	content:".";
+	clear:both;
+	display:block;
+	height:0;
+	overflow:hidden;
+	visibility:hidden;
+}
+/*smtips------------------------------------------------------------------------*/
+#smtips{
+	margin:0 auto;
+	width:990px;
+	height:115px;
+	/*border-bottom:1px solid #ccc;*/
+	text-align:right;
+	font-size:12px;
+	color:#999;
+}
+#smtips p{
+	height:21px;
+}
+#smtips p a:hover{
+	cursor:pointer;
+	color:#E60012;
+}
+.buytips{
+	height:24px;
+	padding-top:19px;
+	padding-left:627px;
+}
+.buytips span{
+	display:block;
+	float:left;
+	margin-left:30px;
+	position:relative;
+}
+.buytips span i{
+	display:block;
+	float:left;
+	position:absolute;
+	left:-15px;
+	top:2px;
+	width:15px;
+	height:15px;
+	
+}
+.buytips span .i_01{
+	background:url(../img/shopCar_zh2.png) 0px 0px;
+}
+.buytips span .i_02{
+	background:url(../img/shopCar_zh2.png) 0px -18px;
+}
+.buytips span .i_03{
+	background:url(../img/shopCar_zh2.png) 0px -38px;
+}
+/*copyright--------------------------------------------------*/
+#copyright{
+	width:990px;
+	padding:15px 0;
+	height:100%;
+	margin:0 auto;
+	text-align:center;
+	color:#939598;
+	font-size:12px;
+	border-top:1px solid #ccc;
+}
+#copyright a{
+	color:#666666;
+}
+#copyright a:hover{
+	color:#E60012;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

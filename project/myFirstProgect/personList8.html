@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person8main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person8main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#person8main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person8main2 .btn2
+			{
+				position: absolute;
+				left: 140px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-bottom: 0;
+				border-radius: 10%;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#person8main3
+			{
+				height: 510px;
+				width: 731px;
+				border: 1px solid #ccc;
+				line-height: 40px;
+				padding-left: 80px;
+				font-size: 14px;
+				background: #fff;
+				padding-top: 20px;
+			}
+			#person8main4
+			{
+				height: 510px;
+				width: 721px;
+				border: 1px solid #ccc;
+				display: none;
+				line-height: 50px;
+				padding: 20px 0 0 90px;
+				background: #fff;
+			}
+			.person8main3 input
+			{
+				margin-top: 20px;
+				
+			}
+			#loopEmail
+			{
+				margin-left: 20px;
+				cursor: pointer;
+			}
+			#phoneLoop
+			{
+				margin-left: 20px;
+				color: #00f;
+				cursor: pointer;
+			}
+			.person8main3Last
+			{
+				color: #ccc;
+				margin-left: 40px;
+				margin-top: -10px;
+			}
+			#person8main4 p
+			{
+				width: 100px;
+				height: 30px;
+				text-align: left;
+				line-height: 50px;
+			}
+			#person8main4 input
+			{
+				width: 300px;
+				height: 30px;
+				border: 0px;
+				border: 1px solid #ccc;
+			}
+			#linkKefu
+			{
+				margin-left: 200px;
+				margin-top: -10px;
+			}
+			#linkKefu span
+			{
+				cursor: pointer;
+			}
+			#changePasswordBtn
+			{
+				height: 40px;
+				width: 100px;
+				background: #A60D1C;
+				color: #fff;
+				text-align: center;
+				line-height: 40px;
+				font-size: 16px;
+				font-weight: 900;
+				margin-left: 200px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="person8main1">
+			<a href="#">账户信息</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>登录信息</span>
+		</div>
+		<div id="person8main2">
+			<div class="btn1">登录信息</div>
+			<div class="btn2">修改登录密码</div>
+		</div>
+		<div id="person8main3">
+			<p>您的帐号来自帐号登录</p>
+			<p>用户名:<span class="userName">haha</span></p>
+			<p class="left">邮箱:</p><input type="text" /><a href="#" id="loopEmail">绑定邮箱</a><br />
+			<p class="left">手机:</p><input type="text" /><a id="phoneLoop">绑定手机</a>
+			<p class="person8main3Last">绑定手机后，您即可享受步淘安全登录，找回密码，领取优惠卷等等服务。</p>
+		</div>
+		<div id="person8main4">
+			<p class="left">原密码:</p><input type="text" /><br />
+			<p class="left">新密码:</p><input type="text" /><br />
+			<p class="left">确认新密码:</p><input type="text" /><br />
+			<div id="changePasswordBtn">提交</div>
+			<p id="linkKefu" style="width: 400px;">如果您忘记密码,您可以点击这里<span style="color: red;">联系客服</span></p>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script>
+	$("#person8main2 .btn1").css({"background":"#fff","color":"red"});
+	$("#person8main2 .btn2").css({"background":"#eee","color":""});
+		$("#person8main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person8main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person8main3").css("display","block");
+			$("#person8main4").css("display","none");
+		});
+		$("#person8main2").delegate(".btn2","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person8main2 .btn1").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person8main4").css("display","block");
+			$("#person8main3").css("display","none");
+			
+		});
+		$("#person8main3 .userName").html(getCookie1("userName"));
+	</script>
+</html>

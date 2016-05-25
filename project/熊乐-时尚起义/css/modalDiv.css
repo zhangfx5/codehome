@@ -1,0 +1,42 @@
+/*覆盖图片一部分的模态窗口*/
+.img-modal{
+	position: absolute;
+	background:rgba(0,0,0,0.6);
+	color: #fff;
+	text-align: center;
+	display: none;
+}
+.img-modal p{
+	margin-top: 8px;
+	line-height: 11px;
+	text-align: center;
+	font-size:11px ;
+	
+}
+/*覆盖图片全部的模态窗口*/
+.img-modal-all{
+	position: absolute;
+	background:rgba(0,0,0,0.6);
+	color: #fff;
+	text-align: center;
+	display: none;
+	text-align: center;
+	z-index: 100;
+
+}
+.img-modal-all .img-modal-all-spanbox{
+	margin-top: 45px;
+}
+.img-modal-all .img-modal-all-spanbox span{
+	display: block;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/*首页banner部分的模态*/
+.banner-left-modal{
+	height: 67px;
+
+	
+}
+

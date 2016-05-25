@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/order_form.css"/>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/shoppingCar.js"></script>
+	<script src="../js/order_form.js"></script>
+	<script src="../js/area.js"></script>
+	<body>
+		<!--header======================================================-->
+		<div id="header">
+			<div class="header">
+				<div class="nav_left left">
+					<div class="mall left">
+						<a href="">时尚商城</a> 
+					</div>
+					<div class="mobile_buy left">
+						<a href="">手机优购</a>
+						<i class="mobile"></i>
+						<i class="tip">121</i>
+						<div class="buy_hidebox" style="position:absolute;left:0px;top:26px;">
+							<div class="hidebox_top">
+								<div class="top_code left"></div>
+								<div class="top_right left">
+									<div class="apple"></div>
+									<div class="android"></div>
+								</div>
+							</div>
+							<p><span class="load">下载安装</span><span class="app">优购客户端</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="nav_right right">
+					<ul>
+						<li>您好！18800158640</li>
+						<li><a class="login_link regist_link" href="">退出</a></li>
+						<li class="myBuy">
+							<a href="">我的优购</a><i class="i_01"></i>
+							<div class="mycollection">
+								<p>我的收藏</p>
+								<p>等待点评(<span class="red">0</span>)</p>
+								<p>站内消息(<span class="red">0</span>)</p>
+							</div>
+						</li>
+						<li><a href="">我的订单</a></li>
+						<li class="publicNotice">
+							公告<i class="i_02"></i>
+							<div class="public_hide">
+								<p><a href="">我是战靴</a></p>
+								<p><a href="">漫步于你的春天</a></p>
+								<p><a href="">潮流新款男女鞋</a></p>
+								<p><a href="">夹克/卫衣CP感满满</a></p>
+								<p><a href="">提醒会员谨防诈骗电话</a></p>
+							</div>
+						</li>
+						<li class="more">更多<i class="i_03"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--main_header==============================================================-->
+		<div id="main_header">
+			<div class="shop_logo left">
+				<a href=""><img src="../img/shop_logo.png" alt=""/></a>
+				<i></i>
+			</div>
+			<div class="shop_step left">
+				<ul>
+					<li>我的购物车<em></em><i></i></li>
+					<li class="current">提交订单中心<em></em><i></i></li>
+					<li>成功提交订单<em></em><i></i></li>
+				</ul>
+			</div>
+		</div>
+		<!--address==============================================================-->
+		<div id="address">
+			<div class="choose">
+				<h3>请填写您的收货地址</h3>
+				<span class="blue goCar"><a style="text-decoration:underline;">返回购物车</a></span>
+				<span class="blue opration"><a>管理收货地址</a></span>
+			</div>
+			<div class="detail_address">
+				<div class="height_32">
+					<div class="ipt_left left">收货人姓名<span class="red"> *</span></div>
+					<div class="ipt left">
+						<input class="ipt" type="text" name="" id="contacterName" value="" />
+						<span id="tipName" style="color:#939598;position:relative;"><i></i>（请使用真实姓名，不能全部是数字/英文/包含特殊符号（括号、井号等））</span>
+					</div>
+				</div>
+				<div class="height_32">
+					<div class="ipt_left left">收货人地址<span class="red"> *</span></div>
+					<div class="select left">
+						<select name="" id="s_province">
+							<!--<option value="">请选择省</option>-->
+						</select>
+						<select name="" id="s_city">
+							<!--<option value="">请选择城市</option>-->
+						</select>
+						<select name="" id="s_county">
+							<!--<option value="">请选择县区</option>-->
+						</select>
+					</div>
+					<div id="select"></div>
+					<div class="postcode left">
+						邮政编码:<input type="text" name="" id="postcode" value="" />
+						<span style="position:relative;"><i></i> （有助于快速确定送货地址）</span> 
+					</div>
+				</div>
+				<div class="height_32">
+					<div class="ipt_left left"><span>&nbsp;</span></div>
+					<div class="">
+						<input class="xxadd" type="text" name="" id="" value="" />（请填写详细地址，确保准确送达）
+					</div>
+				</div>
+				<div class="height_32">
+					<div class="ipt_left left">收货人手机<span class="red"> *</span></div>
+					<div class="contacterTel">
+						<input class="ipt" type="text" name="" id="contacterTel" value="" />
+						<span style="position:relative;"><i class="i_pic"></i><em style="width:200px;margin-left:20px;font-style:normal;"></em></span>
+					</div>
+				</div>
+				<div class="height_32">
+					<div class="ipt_left left">收货时间:<span class="red"> *</span></div>
+					<div class="day left">
+						<select name=""  class="ipt">
+							<option value="">只工作日送货（双休日、假日）</option>
+							<option value="">只工作日送货（双休日、假日不用送）</option>
+							<option value="">双休日、假日均可送</option>
+							<option value="">只双休日、假日送</option>
+						</select>
+						（送货时间仅供参考，快递公司会尽量满足您的要求）
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--payStyle========================================-->
+		<div id="payStyle">
+			<div class="choosePay">
+				<h3>请选择您的付款方式</h3><span class="blue"><a>查看银行限额及付款帮助</a></span>
+			</div>
+			<div class="pay_online">
+				在线支付<span class="red">(满99元在线支付免运费)</span>
+			</div>
+			<div class="bank">
+				<div class="linePay" style="font-size:12px;height:31px;">
+					网银支付 <span style="color:#999;">支持国内几乎所有银行的储蓄卡及信用卡进行支付（需开通网上银行）</span>
+				</div>
+				<div class="bank_pic">
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/zhaoshang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/gonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/nonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/jianshe.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/zhonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/jiaotong.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/youzheng.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/pufa.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/guangda.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/guangfa.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/minshegn.png"/>
+					</div>
+					<div style="font-size:12px;text-align:center;;line-height:40px;width:140px;height:40px;border:1px solid #ccc;">
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						更多网上银行》
+					</div>
+				</div>
+				<div class="linePay" style="font-size:12px;height:31px;">
+					支付平台 <span style="color:#999;">支持国内几乎所有银行的储蓄卡及信用卡进行支付（需开通网上银行）</span>
+				</div>
+				<div class="bank_pic">
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/zhaoshang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/gonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/nonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/jianshe.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/zhonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/jiaotong.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/youzheng.png"/>
+					</div>
+				</div>
+				<div class="linePay" style="font-size:12px;height:31px;">
+					信用卡<span style="color:#999;"></span>
+				</div>
+				<div class="bank_pic">
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/zhaoshang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/gonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/nonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/jianshe.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/zhonghang.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/jiaotong.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/youzheng.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/pufa.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/guangda.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/guangfa.png"/>
+					</div>
+					<div>
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						<img src="../img/minshegn.png"/>
+					</div>
+					<div style="font-size:12px;text-align:center;;line-height:40px;width:140px;height:40px;border:1px solid #ccc;">
+						<span><input type="radio" name="webbankpay" id="bank_zhaoshang" value="zhaoshang"></span>
+						更多快捷支付》
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="goods_money">
+			<input class="radio" type="radio" id="payment_3" name="payment" disabled="disabled">
+			<span style="color:#666;">货到付款</span>
+			<span style="color:#999;font-size:10px;">该商品所在的发货仓库不支持货到付款，请选择其他的支付方式</span>
+		</div>
+		<div id="conform_order">
+			<div class="conf-title">
+				确认订单信息
+			</div>
+			<div class="goods_info">
+				<div class="thread">
+					<span style="margin-left:185px;">商品名称</span>
+					<span style="margin:0 89px 219px;">颜色尺码</span>
+					<span>单价</span>
+					<span style="margin:0 123px 109px;">数量</span>
+					<span>小计（元）</span>
+				</div>
+				<div class="good_info" id="gd_info_model">
+					<div class="picture" style="width:90px;">
+						<img src="../img/tebu_mini01.jpg"/>
+					</div>
+					<div style="width:234px;padding-top:30px;">特步/xtep 男士涂鸦休闲时尚百搭板鞋</div>
+					<div style="width:144px;padding-top:30px;">
+						<P><span style="color:#999;">颜色：</span>白红</P>
+						<p><span style="color:#999;">尺码：</span>44</p>
+					</div>
+					<div style="width:161px;padding-top:30px;">169</div>
+					<div class="numChange" style="width:146px;padding-top:30px;">
+						<span class="num">1</span>
+					</div>
+					<div style="width:92px;padding-top:30px;">
+						<span class="red">169</span>
+					</div>
+				</div>
+				<div class="confr_btn">
+					<div class="confr_left left">
+						<div style="margin-bottom:30px;">
+							使用优惠券：<input type="text" value=""  placeholder="请输入线下优惠券编码"/>
+							<button>确认</button>
+						</div>
+						<div>
+							使用礼品卡：<input type="text" value=""  placeholder="请输入线下礼品卡编码"/>
+							<button>确认</button>
+						</div>
+					</div>
+					<div class="confr_right left">
+						<div><span>商品总金额：</span><em class="red">288</em></div>
+						<div><span>运费：</span><em class="red">15</em></div>
+						<div><span>满99元在线支付免运费：</span><em style="color:darkgreen;">-15</em></div>
+						<div class="jifen"><i style="margin-right:20px;">可获得优购积分：288 <i style="font-size:14px;">点应付金额：</i></i><i>¥</i><em class="red" style="font-size:18px;">288</em></div>
+						<div class="btn_confr_info">
+							<div class="blue left">返回购物车</div>
+							<div id="conform_btn" class="left"><a href="order_ok.html" style="color:#fff;">确认，提交订单</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--buySafe========================================================================-->
+		<div id="smtips">
+			<div class="buytips">
+				<span>购物保障：</span>
+				<span class="pra_span"><i class="i_01"></i>100%正品</span>
+				<span class="pra_span"><i class="i_02"></i>10天退换货</span>
+				<span class="pra_span"><i class="i_03"></i>10天补差价</span></div>
+			<p>优惠券/礼品卡在下一步使用</p>
+			<p><a>帮助我们改进购物流程</a></p>
+		</div>
+		<!--clear==========================-->
+		<div class="clear_float"></div>
+		<!--copyright===============================================-->
+		<div id="copyright">
+			Copyright © 2011-2014 Yougou Technology Co., Ltd. <a>粤ICP备09070608号-4</a> 增值电信业务经营许可证：<a>粤 B2-20090203</a>
+		</div>
+	</body>
+	
+	<!--城市三级联动菜单=============================================================================-->
+	<script type="text/javascript">_init_area();</script>
+	<script type="text/javascript">
+		var showArea = function(){
+//			alert(0);
+			$("#select").html() = "<h3>请选择省" + $('#s_province').val() + " 请选择城市" + 	
+			$('#s_city').val() + " 请选择县区" + 
+			$('#s_county').val() + "</h3>"
+		}
+		
+//		$('#s_county').attr('onchange','showArea()');
+		$('#s_county').change(function(){
+			showArea();
+		})
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

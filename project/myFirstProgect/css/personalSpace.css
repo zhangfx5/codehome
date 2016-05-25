@@ -1,0 +1,73 @@
+#main
+{
+	height: 670px;
+	width: 1000px;
+	margin: 34px auto 0px;
+}
+.mainLeft
+{
+	height: 600px;
+	width: 167px;
+	background: #fff;
+}
+.mainLeft .head
+{
+	height: 30px;
+	width: 157px;
+	background: #D41F2B;
+	line-height: 30px;
+	color: #fff;
+	font-weight: 900;
+	padding: 0 0 0 10px;
+	
+}
+.mainLeft .info1
+{
+	width: 135px;
+	height: 72px;
+	border: 1px solid #CCCCCC;
+	padding-left: 30px;
+	padding-top: 10px;
+	
+}
+.mainLeft .info2
+{
+	width: 135px;
+	height: 72px;
+	border: 1px solid #CCCCCC;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.mainLeft .info3
+{
+	height: 103px;
+	width: 135px;
+	border: 1px solid #CCCCCC;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.mainLeft .info4
+{
+	
+	height: 186px;
+	width: 135px;
+	border: 1px solid #CCCCCC;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+.infoList
+{
+	height: 30px;
+	width: 90px;
+	border-bottom: 1px dashed #ccc;
+	line-height: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.mainRight
+{
+	height: 600px;
+	width: 813px;
+	background: #fff;
+	margin-left: 20px;
+}

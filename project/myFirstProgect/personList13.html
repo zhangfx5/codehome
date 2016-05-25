@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person13main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person13main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#person13main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+			}
+			#personInfo13priceSub
+			{
+				cursor: pointer;
+			}
+			#person13main2 .btn2
+			{
+				position: absolute;
+				left: 200px;
+				top: 20px;
+				cursor: pointer;
+			}
+			#person13main3
+			{
+				height: 540px;
+				width: 811px;
+				line-height: 40px;
+			}
+			.person13main3infoList
+			{
+				min-height: 100px;
+				max-height: 260px;
+				overflow:auto;
+				width: 691px;
+				border-top: 1px solid #ccc;
+				border-bottom: 1px dashed #ccc;
+				border-left: 1px solid #CCCCCC;
+				background: #fff;
+				padding: 10px 0 0 100px;
+			}
+			
+			.person13main3infoListInfo
+			{
+				height: 50px;
+				width: 791px;
+			}
+			.person13main3infoListInfoDex
+			{
+				float: right;
+			}
+			#personInfo13price
+			{
+				height: 30px;
+				width: 200px;
+				border: 0px;
+				border: 1px solid #ccc;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+			#personInfo13priceSub
+			{
+				border: 0px;
+				border: 1px solid #AB1E1E;
+				height: 40px;
+				width: 100px;
+				background: #A90A0A;
+				color: #fff;
+				text-align: center;
+				line-height: 30px;
+				font-size: 14px;
+				margin: 10px 0 0 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="person13main1">
+			<a href="#">账户信息</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>在线充值</span>
+		</div>
+		<div id="person13main2">
+			<div class="btn1">在线充值</div>
+		</div>
+		<div id="person13main3">
+			<div class="person13main3infoList">
+				<span>请输入充值金额<input type="text"  id="personInfo13price"/>元</span><br />
+				<button id="personInfo13priceSub">立即充值</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script>
+		$("#person13main3 textarea").val("");
+		$("#person13main2 .btn1").css({"background":"#fff","color":"red"});
+		$("#person13main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person13main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person13main3").css("display","block");
+			$("#person13main4").css("display","none");
+		});
+		var i=0;
+		
+		$("#personInfo13priceSub").on("click",function()
+		{
+			if(!(/^[0-9]+$/.test($("#personInfo13price").val())))
+			{
+				alert("请输入充值金额！");
+			}
+			else
+			{
+				var d=new Date();
+				d.setTime(d.getTime()+12*24*3600*1000);
+				document.cookie="payPrice="+$("#personInfo13price").val()+";expires="+d;
+				window.location.href="onlinePay.html";
+			}
+		});
+	</script>
+</html>

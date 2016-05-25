@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人资料</title>
+		<style>
+			#person7main1
+			{
+				height: 21px;
+				width: 791px;
+				border: 1px solid #eee;
+				padding: 5px 0 0 20px;
+				background: #fff;
+			}
+			#person7main2
+			{
+				height: 40px;
+				width: 811px;
+				position: relative;
+			}
+			#person7main2 .btn1
+			{
+				position: absolute;
+				left: 0px;
+				top: 13px;
+				height: 29px;
+				width: 134px;
+				border: 1px solid #ccc;
+				border-radius: 10%;
+				border-bottom: 0;
+				text-align: center;
+				line-height: 29px;
+				cursor: pointer;
+				
+			}
+			#person7main2 .btn2
+			{
+				position: absolute;
+				left: 200px;
+				top: 20px;
+				cursor: pointer;
+			}
+			#person7main3
+			{
+				height: 540px;
+				width: 811px;
+				
+				line-height: 40px;
+			}
+			.person7main3infoList
+			{
+				min-height: 20px;
+				max-height: 260px;
+				overflow:auto;
+				width: 811px;
+				
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				background: #fff;
+			}
+			.person7main3infoList .allInfo
+			{
+				height: 40px;
+				width: 811px;
+			}
+			#person7main3 .insertInfo
+			{
+				height: 190px;
+				width: 480px;
+				border: 1px solid #999999;
+				margin-top: 20px;
+				margin-left: 40px;
+				padding: 10px 0 0 20px;
+				
+			}
+			#person7main3 .insertInfo textarea
+			{
+				height: 110px;
+				width: 400px;
+			}
+			#person7main3 .insertInfo p
+			{
+				height: 20px;
+				line-height: 20px;
+			}
+			#person7main3 .insertInfo .quesBtn
+			{
+				height: 40px;
+				width: 100px;
+				background: #A60D1C;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 900;
+				text-align: center;
+				line-height: 40px;
+				margin-top: -10px;
+				float: right;
+				margin-right: 20px;
+				cursor: pointer;
+			}
+			#person7main3 .infoNum
+			{
+				width: 811px;
+				height: 50px;
+			}
+			#person7main3 .infoNum .showInfoNum
+			{
+				width: 100px;
+				height: 50px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="person7main1">
+			<a href="#">售后服务</a>&nbsp;&nbsp;>&nbsp;&nbsp;<span>有问必答</span>
+		</div>
+		<div id="person7main2">
+			<div class="btn1">有问必答</div>
+			<div class="btn2">
+			<span >咨询情况：</span>
+				<select>
+					<option>全部</option>
+					<option>未回复</option>
+					<option>已回复</option>
+				</select>
+			</div>
+			
+		</div>
+		<div id="person7main3">
+			
+			<div class="person7main3infoList">
+			</div>
+			<div class="infoNum">
+				<div class="showInfoNum">
+					<span id="person7main3ListNum">0</span>条信息
+				</div>
+			</div>
+			<div class="insertInfo">
+				<p>我要咨询:</p>
+				<textarea>
+					
+				</textarea>
+				<div class="quesBtn">发送</div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script>
+		$("#person7main3 textarea").val("");
+		$("#person7main2 .btn1").css({"background":"#fff","color":"red"});
+		$("#person7main2").delegate(".btn1","click",function()
+		{
+			$(this).css({"background":"#fff","color":"red","border-bottom":"0px"});
+			$("#person10main2 .btn2").css({"background":"#eee","color":"","border-bottom":"1px solid #ccc"});
+			$("#person7main3").css("display","block");
+			$("#person7main4").css("display","none");
+		});
+		var i=0;
+		$("#person7main3 .quesBtn").on("click",function()
+		{
+			var nowDate=new Date();
+			var hour=nowDate.getHours();
+			var min=nowDate.getMinutes();
+			var second=nowDate.getSeconds();
+			if($("#person7main3 textarea").val()=="")
+			{
+				alert("请输入您的建议！");
+			}
+			else
+			{
+				i++;
+				$("#person7main3ListNum").html(i);
+				var timeStr=hour+":"+min+":"+second;
+				var str="<p class='allInfo'>"+$("#person7main3 textarea").val()+"<span class='right'>"+timeStr+"</span></p>";
+				$("#person7main3 .person7main3infoList").append(str);
+				
+			}
+		});
+	</script>
+</html>

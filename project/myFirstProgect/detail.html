@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/mainTop.css" />
+		<link rel="stylesheet" href="css/mainBot.css" />
+		<link rel="stylesheet" href="css/detail.css" />
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div id="border1">
+			<div class="border1All">
+				<div class="smallPic left">
+					<div class="smallDiv"></div>
+					<div class="mark"></div>
+					<img src="img/login_pic.png" style="height: 400px; width: 400px;" id="border1SmallPic" />
+				</div>
+				<div class="bigDiv left">
+					<img src="img/login_pic.png" style="height: 800px; width: 800px;" id="border1BigPic"/>
+				</div>
+			</div>
+			<div id="border1Btn">关闭</div>
+		</div>
+		<div id="border">
+			<div class="selecterBuyBorder">
+				<div class="selecterBuyBorderTop">
+				<span>选择规格和确定数量</span>	<img src="img/close.png" class="right selectBuyClose" />
+				</div>
+				<div class="selecterBuyBorderBot">
+					<p>选择颜色：</p>
+					<div class="colorSelect"></div>
+					<p>选择尺码：</p>
+					<div class="sizeSelect"></div>
+					<p>选择数量：</p>
+					<div class="numberSelect">
+						<div class="numberSelectLeft left">-</div>
+						<div class="numShow left">1</div>
+						<div class="numberSelectRight left">+</div>
+					</div>
+					<div class="btnsselect">
+						<img src="img/shoppingCarBtnSelect.png" class="left" />
+						<div class="left shoppingCarBtn"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Top">
+			<ul class="topLeft left">
+				<li class="left first"><img src="img/topPic1.png" class="left" /><span>收藏步淘</span></li>
+				<li class="left">
+					<p id="changeLogin" class="left">您好，欢迎来到步淘生活商城！&nbsp;&nbsp;<a href="login.html" ss>请登录</a></p><span class="left"></span></li>
+				<li class="left"><span>注册有礼</span></li>
+				<li  class="left" id="topLogin" style="position: relative;"><span class="left">快捷登陆</span><img src="img/topPic2.png" class="left loginPicBit" />
+					<ul class="loginList">
+						<li><img src="img/qkbaidu.png" /><span>百度登陆</span></li>
+						<li><img src="img/qkqq.png" /><span>QQ登录</span></li>
+						<li><img src="img/qkalipay.png" /><span>支付宝登陆</span></li>
+						<li><img src="img/qksina.png" /><span>微博登陆</span></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="right topRight">
+				<li class="left"><a>400-680-2212</a></li>
+				<li class="left" id="topRightMy">
+					<span class="left" id="shoppingCarHref1">购物车:<a style="color: red;" id="goodsNumTop">0</a>件商品</span>
+					<p  class="left" style="margin-left: 10px;" ><span>我的步淘</span><img src="img/topPic2.png" class="topRightBit" class="left"/><ul class="topRightul1">
+						<li><span>签到换礼</span></li>
+						<li><span>我的积分</span></li>
+						<li><span>我的订单</span></li>
+						<li><span>账户信息</span></li>
+						<li><span>我的淘币</span></li>
+					</ul></p>
+				</li>
+				<li class="left" style="margin-left: 10px;" id="topRightFocus">
+					<p class="left"><span>关注我们</span><img src="img/topPic2.png" class="topRightBit" class="left"/><ul class="topRightul2">
+						<li><img src="img/qkqq.png" /><span>腾讯微博</span></li>
+						<li><img  src="img/qksina.png"/><span>新浪微博</span></li>
+					</ul></p>
+				</li>
+			</ul>
+		</div>
+		<div id="Search">
+			<h3 class="searchLeft left">
+				<img src="img/searchLogo.png" />
+			</h3>
+			<div class="searchMiddle left">
+				<div class="searchMiddleTop">
+					<div class="search1 left">
+						<img src="img/search.png" />
+					</div>
+					<input type="text"  class="search3 left" id="txt"/>
+					<div class="search2 left">
+					</div>
+					<ul id="list">
+						<li></li>
+					</ul>
+				</div>
+				<ul class="searchMiddleBot">
+					<li class="left"><a href="#">森马</a></li>
+					<li class="left"><a href="#">巴拉巴拉</a></li>
+					<li class="left"><a href="#">迪士尼</a></li>
+					<li class="left"><a href="#">外套</a></li>
+					<li class="left"><a href="#">针织衫</a></li>
+					<li class="left"><a href="#">羽绒服</a></li>
+					<li class="left"><a href="#">牛仔裤</a></li>
+					<li class="left"><a href="#">女鞋</a></li>
+					<li class="left"><a href="#">男鞋</a></li>
+				</ul>
+			</div>
+			<div class="searchRight left">
+				
+				<img src="img/searchRightpic3.png" class="left" />
+			</div>
+		</div>
+		<div id="navLong">
+			<ul id="nav">
+				<li class="left"><a href="#" class="first">首页</a></li>
+				<li class="left"><a href="#">品牌特卖</a></li>
+				<li class="left"><a href="#">女装折扣</a></li>
+				<li class="left"><a href="#">品牌男装</a></li>
+				<li class="left"><a href="#">积分分类</a></li>
+				<li class="left"><a href="#">特价商品</a></li>
+				<li class="left"><a href="#">巴拉巴拉专区</a></li>
+				<li class="left"><a href="#" class="last" style="background: #A90A0A;">签到送礼</a></li>
+				<img src="img/hot.png" class="hotPic" /><img src="img/iPhone.png" class="iphonePic"/>
+				<div class="navInfo">
+					<p>连续签到：<span style="color: red;">0</span>天</p>
+					<p>今天签到可赚：<span style="color: red;">10</span>分</p>
+					<p>连续签到每日可赚：<span style="color: red;">20</span>分</p>
+					<p class="navInfoP2" style="color: #00f">80积分换1RMB</p>
+					<p class="navInfoP2" style="color: #00f">参与抽奖获得iPad&nbsp;Air>></p>
+					<p class="navInfoP2" style="color: #00f">新手任务轻松赚取积分>></p>
+				</div>
+			</ul>
+		</div>
+		<div id="fixWindow">
+			<ul>
+				<li><div class="fixWindowLi1"></div></li>
+				<li><div class="fixWindowLi2"></div></li>
+				<li><div class="fixWindowLi3"></div></li>
+				<li><div class="fixWindowLi4"></div></li>
+				<li style="position: relative;"><div class="fixWindowLi5">签到有礼</div><img src="img/iPhone.png"  style="position: absolute; left: 40px; top: 0px;"/></li>
+				<li><div class="fixWindowLi6"></div></li>
+				
+			</ul>
+		</div>
+		<div id="noChangeDiv">
+			<ul>
+				<li>
+					<div class="rightFixPic1"></div>
+					<p>我的</p>
+				</li>
+				<li>
+					<div class="rightFixPic2"></div>
+					<p>消息</p>
+				</li>
+				<li>
+					<div class="rightFixPic3"></div>
+					<p>客服</p>
+				</li>
+				<li id="shoppingCarHref2">
+					<div class="rightFixPic4"></div>
+					<p class="last"><span>购物车</span><p style="border-radius: 50%; height:20px; width: 20px; background: #f00; color: white; text-align: center; line-height: 20px;" class="circleRight" id="goodsNumRight">0</p></p>
+				</li>
+			</ul>
+		</div>
+		<div id="goodDetailInfo1">
+			<div class="goodDetailInfo1Top left">
+				森马棒球羽绒服2015冬装新款男士可脱卸帽拼接保暖外套韩版潮男
+			</div>
+			<div class="goodDetailInfo1Bot left">
+				<div class="goodDetailInfo1BotLef left">
+					<img src="img/detailpic1.png" style="height: 308px; width: 484px;" />
+				</div>
+				<div class="goodDetailInfo1BotRit left">
+					<ul>
+						<li style="height: 35px; padding-top: 10px;">
+							<div class="left" style="height: 40px; width: 140px;">
+							<span style="font-size: 30px; margin-left: 10px;">￥</span>
+							<span class="info11" style="font-weight: 900;">559元</span>
+							</div>
+							<div class="left" style="height: 40px; width: 160px;">
+							<span id="info12">10折</span>
+							<p style="text-decoration: line-through; margin-top: 4px;" class="beforePrice" >￥559</p>
+							</div>
+						</li>
+						<li style="height: 42px; padding-left: 10px; ">
+							<br />
+							<p class="left">商品评价：</p><div class="left startPicDiv"></div><span style="margin-left: 5px;" id="userGrade">5分</span>
+						</li>
+						<li style="height:102px ; padding-top: 18px; ">
+							<img src="img/buyQuick.jpg" class="left" id="rightNowBuy" />
+							<img src="img/addShoppingCar.jpg" class="left" id="addShoppingCar" style="margin-left: 20px;"/>
+							<br />
+							<div class="share left" style="position: relative;">
+								<div class="shareBorder">
+									<div class="shareTop">分享到</div>
+									<div class="shareMiddle">
+										<ul>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -2444px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -52px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -104px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -156px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -208px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -260px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -312px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -364px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -416px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -468px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -520px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -572px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -624px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -676px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -728px;"></div><p class="left">QQ空间</p></li>
+											<li class="left"><div class="sharePicDiv left" style="height: 16px; width: 16px; background: url(img/smallLog.png) no-repeat 0 -780px;"></div><p class="left">QQ空间</p></li>
+										</ul>
+									</div>
+									<div class="shareBot">
+										更多
+									</div>
+								</div>
+							</div>
+							<span style="color: #000; display: block; height: 16px; line-height: 16px; margin-left: 10px;" class="left">分享到</span>
+							<br />
+							<p id="timeGo">
+								
+							</p>
+							
+						</li>
+						<li  class="info4Li">
+							<a href="consumeSafe.html"><p class="left">服务承诺：</p><img src="img/detailpic2.png"  class="left"/><p class="left">正品保证</p><img src="img/detailpic3.png"  class="left"/><p class="left">七天无理由包换</p><img src="img/detailpic3.png"  class="left"/><p class="left">送iPad&nbsp;Air赢积分</p></a>
+						</li>
+						<li style="height: 50px; line-height: 50px ; font-size: 20px;">
+							<span style="margin-left: 100px;" id="buyCount">6</span>人已购买
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="goodDetailInfo2">
+			<div class="goodDetailInfo2Left left">
+				<div class="detailBtns">
+					<div class="left btns1" style="width: 85px; height: 35px;">商品详情</div>
+					<div class="left bg1" style="width: 2px; height: 36px;"></div>
+					<div class="left btns1" style="width: 128px; height: 35px; position: relative;">用户点评<span>(3)</span></div>
+					<div class="left bg1" style="width: 2px; height: 36px;"></div>
+					<div class="left btns1" style="width: 85px; height: 35px;">发货快递</div>
+					<div class="left bg1" style="width: 2px; height: 36px;"></div>
+					<div class="left btns1" style="width: 86px; height: 35px;">售后保障</div>
+					<div class="left bg1" style="width: 2px; height: 36px;"></div>
+					<div class="left btns1" style="width: 437px; height: 35px;position: relative;">已有<span style="color: red; " id="buyCount1">6</span>人购买<img src="img/detailBuying.png" style="position: absolute; left: 300px; top: 0px;"/></div>
+				</div>
+				<div class="goodsDetailInfo1">
+					<img src="img/detailBigPic1.png" />
+					<img src="img/detailBigPic2.png" />
+					<img src="img/detailBigPic3.png" />
+					<img src="img/detailBigPic4.png" />
+					
+				</div>
+				<div class="goodsDetailInfo2">
+					<div class="goodsDetailInfo21">
+						<span style="color: blue; text-decoration: underline;">qq123222</span><span style="margin-left: 30px;">我感觉真的很不错</span><span style="float: right;">2015.07.08</span>
+					</div>
+					<div class="goodsDetailInfo21"><span style="color: blue; text-decoration: underline;">qq123222</span><span style="margin-left: 30px;">我感觉真的很不错</span><span style="float: right;">2015.07.08</span></div>
+					<div class="goodsDetailInfo21"><span style="color: blue; text-decoration: underline;">qq123222</span><span style="margin-left: 30px;">我感觉真的很不错</span><span style="float: right;">2015.07.08</span></div>
+					<div class="goodsDetailInfo22">
+						3条信息
+					</div>
+				</div>
+				<div class="goodsDetailInfo3">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td class="td1">快递费用</td>
+							<td class="td2">每单收取8元快递费。</td>
+						</tr>
+						<tr>
+							<td class="td1">默认快递</td>
+							<td class="td2">中通，不支持自选快递。</td>
+						</tr>
+						<tr>
+							<td class="td1">配送范围</td>
+							<td class="td2">等地邮费另算，具体可咨询客服</td>
+						</tr>
+						<tr>
+							<td class="td1">发货城市</td>
+							<td class="td2">浙江杭州</td>
+						</tr>
+						<tr>
+							<td class="td1">发货时间</td>
+							<td class="td2">发货时间付款后下3个工作日内发货，3个工作日内整理并上传快递单号，发货后一般3~7天左右收到。</td>
+						</tr>
+						<tr>
+							<td class="td1">签收提示</td>
+							<td class="td2">请在收到商品时检查包装是否完好，以及商品是否与自己的订购信息相符。包装损坏或订购信息不相符，可拒收。有问题请联系步淘客服，电话：400-680-2212</td>
+						</tr>
+					</table>
+				</div>
+				<div class="goodsDetailInfo4">
+					
+				</div>
+				<div class="goodsDetailInfoBot">
+					<ul>
+						<li class="left li1">
+							<p>原价</p>
+							<p class="beforePrice" style="margin-top: 10px;"></p>
+						</li>
+						<li class="left li1">
+							<p>折扣</p>
+							<p id="discount" style="margin-top: 10px;">10</p>
+						</li>
+						<li class="left li1">
+							<p>节省</p>
+							<p class="savePrice" style="margin-top: 10px;"></p>
+						</li>
+						<li class="left li2">
+							￥128
+						</li>
+						<li class="left li3">
+							<img src="img/deal_buy_01.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="commendation">
+					<div class="commendationTop">
+						同类推荐<span class="right" style="margin-right: 20px;">查看更多》</span>
+					</div>
+					<div class="commendationBot">
+						<dl class="style3 left">
+							<dt>
+								<div class="style3TopPic">
+									<img src="img/detailBotLinkpic1.png" />
+								</div>
+							</dt>
+							<dd>
+								<p class="style3BotInfo1">金牛皮蝴蝶结单鞋</p>
+								<p class="style3BotInfo2">
+									<span>￥119.00</span><span class="span2">999</span><a>已购买</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="style3 left">
+							<dt>
+								<div class="style3TopPic">
+									<img src="img/detailBotLinkpic2.png" />
+								</div>
+							</dt>
+							<dd>
+								<p class="style3BotInfo1">单鞋平跟驾车鞋</p>
+								<p class="style3BotInfo2">
+									<span>￥129.00</span><span class="span2">999</span><a>已购买</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="style3 left">
+							<dt>
+								<div class="style3TopPic">
+									<img src="img/detailBotLinkpic3.png" />
+								</div>
+							</dt>
+							<dd>
+								<p class="style3BotInfo1">展风甜美坡跟单鞋</p>
+								<p class="style3BotInfo2">
+									<span>￥129.00</span><span class="span2">999</span><a>已购买</a>
+								</p>
+							</dd>
+						</dl>
+						<dl class="style3 left">
+							<dt>
+								<div class="style3TopPic">
+									<img src="img/detailBotLinkpic4.png" />
+								</div>
+							</dt>
+							<dd>
+								<p class="style3BotInfo1">展风鱼嘴坡跟女单鞋</p>
+								<p class="style3BotInfo2">
+									<span>￥135.00</span><span class="span2">999</span><a>已购买</a>
+								</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="goodDetailInfo2Right left">
+				<div class="goodDetailInfo2Right1">
+					<img src="img/detailBotRightpic1.png" class="left" />
+					<br /><br /><br /><br />
+					<div style="border-bottom: 1px dashed #999999; height: 70px;" >
+						<div class="left divsInfoPic">
+							<img src="img/detailBotRightpic2.png" />
+						</div>
+						<div class="left divsInfoTxt" >
+							<p class="p1" style="color:red;">消费发生纠纷先行赔付</p>
+							<p class="p2">以顾客的利益为先，一旦出现问题，优先为顾客赔偿解决</p>
+						</div>
+					</div>
+					<div style="border-bottom: 1px dashed #999999; height: 75px;">
+						<div class="left divsInfoPic">
+							<img src="img/detailBotRightpic3.png" />
+						</div>
+						<div class="left divsInfoTxt">
+							<p class="p1">闪电发货速度</p>
+							<p class="p2">3工作日内发货，晚发一天赔付5元步淘币(自然灾害除外)</p>
+						</div>
+					</div>
+					<div style="border-bottom: 1px dashed #999999; height: 80px;">
+						<div class="left divsInfoPic">
+							<img src="img/detailBotRightpic4.png" />
+						</div>
+						<div class="left divsInfoTxt">
+							<p class="p1">七天无条件退换货</p>
+							<p class="p2">商品质量问题，不喜欢，尺码选择不对，7天内无条件退款！</p>
+						</div>
+					</div>
+					<div style="border-bottom: 1px dashed #999999; height: 85px;">
+						<div class="left divsInfoPic">
+							<img src="img/detailBotRightpic5.png" />
+						</div>
+						<div class="left divsInfoTxt">
+							<p class="p1">商品质量严格把关</p>
+							<p class="p2">所有产品上线前，经过严格质量把关，让顾客放心购买！</p>
+						</div>
+					</div>
+					<div>
+						<img src="img/detailBotRightpic6.png" />
+					</div>
+				</div>
+				<div class="goodDetailInfo2Right2">
+					<div class="goodDetailInfo2Right2Top">
+						同类推荐<span class="right" style="margin-right: 20px;">更多》</span>
+					</div>
+					<div class="style4">
+						<dl>
+							<dt>
+								森马楼空毛衣，2015秋装新款，女士套装还有很多的
+							</dt>
+							<dd>
+								<div class="ddInfopic left">
+									<img src="img/categorypic1.png" />
+								</div>
+								<div class="ddInfo left">
+									<p class="p1">￥239.00</p>
+									<p class="p2 left">原价：</p><span>239</span><br />
+									<img src="img/style3BuyBtn.png" />
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="style4">
+						<dl>
+							<dt>
+								森马楼空毛衣，2015秋装新款，女士套装还有很多的
+							</dt>
+							<dd>
+								<div class="ddInfopic left">
+									<img src="img/categorypic1.png" />
+								</div>
+								<div class="ddInfo left">
+									<p class="p1">￥239.00</p>
+									<p class="p2 left">原价：</p><span>239</span><br />
+									<img src="img/style3BuyBtn.png" />
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="style4">
+						<dl>
+							<dt>
+								森马楼空毛衣，2015秋装新款，女士套装还有很多的
+							</dt>
+							<dd>
+								<div class="ddInfopic left">
+									<img src="img/categorypic1.png" />
+								</div>
+								<div class="ddInfo left">
+									<p class="p1">￥239.00</p>
+									<p class="p2 left">原价：</p><span>239</span><br />
+									<img src="img/style3BuyBtn.png" />
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="style4">
+						<dl>
+							<dt>
+								森马楼空毛衣，2015秋装新款，女士套装还有很多的
+							</dt>
+							<dd>
+								<div class="ddInfopic left">
+									<img src="img/categorypic1.png" />
+								</div>
+								<div class="ddInfo left">
+									<p class="p1">￥239.00</p>
+									<p class="p2 left">原价：</p><span>239</span><br />
+									<img src="img/style3BuyBtn.png" />
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="style4">
+						<dl>
+							<dt>
+								森马楼空毛衣，2015秋装新款，女士套装还有很多的
+							</dt>
+							<dd>
+								<div class="ddInfopic left">
+									<img src="img/categorypic1.png" />
+								</div>
+								<div class="ddInfo left">
+									<p class="p1">￥239.00</p>
+									<p class="p2 left">原价：</p><span>239</span><br />
+									<img src="img/style4BuyBtn.png" />
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="links">
+			<div class="links1">
+				<dl class="left first">
+					<dt>
+						<img src="img/linkspic1.png" class="left" /><span>用户相关</span>
+					</dt>
+					<dd>
+						<ul>
+							<li><div class="linksBit"></div><span>玩转步淘商城</span></li>
+							<li><div class="linksBit"></div><span>生活商城常见问题</span></li>
+							<li><div class="linksBit"></div><span>网站的保障计划</span></li>
+							<li><div class="linksBit"></div><span>本站意见建议</span></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="left">
+					<dt>
+						<img src="img/linkspic2.png" class="left" /><span>购物相关</span>
+					</dt>
+					<dd>
+						<ul>
+							<li><div class="linksBit"></div><span>网站购物向导</span></li>
+							<li><div class="linksBit"></div><span>本站订单操作题</span></li>
+							<li><div class="linksBit"></div><span>汇款&转账</span></li>
+							<li><div class="linksBit"></div><span>验收与签收</span></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="left">
+					<dt>
+						<img src="img/linkspic3.png" class="left" /><span>商务合作</span>
+					</dt>
+					<dd>
+						<ul>
+							<li><div class="linksBit"></div><span>本站商户入驻</span></li>
+							<li><div class="linksBit"></div><span>本站商户登录题</span></li>
+							<li><div class="linksBit"></div><span>本站合作案例</span></li>
+							<li><div class="linksBit"></div><span>步淘友情链接</span></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="left">
+					<dt>
+						<img src="img/linkspic4.png" class="left" /><span>关于步淘</span>
+					</dt>
+					<dd>
+						<ul>
+							<li><div class="linksBit"></div><span>关于生活商城</span></li>
+							<li><div class="linksBit"></div><span>步淘网诚聘英才</span></li>
+							<li><div class="linksBit"></div><span>联系步淘网</span></li>
+							<li><div class="linksBit"></div><span>生活商城用户协议</span></li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="left last">
+					<dt>
+						<img src="img/linkspic5.png" class="left" /><span>客服热线</span><span style="font-size: 12px; color: #C95C61;">(免长途费)</span>
+					</dt>
+					<dd>
+						<ul>
+							<li><span style="font-size: 20px;">400-680-2212</span></li>
+							<li><span class="left" style="font-weight: 900;">QQ在线客服</span><img src="img/qq_qy.png" class="left"/></li>
+							<li><span>(周一到周日:8:30-18:30)</span></li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+			<div class="links2">
+				<ul class="links2Info">
+					<li class="left"><a href="#" class="first">关于步淘网</a></li>
+					<li class="left"><a href="#">联系我们</a></li>
+					<li class="left"><a href="#">网站诚聘英才</a></li>
+					<li class="left"><a href="#">友情链接</a></li>
+					<li class="left"><a href="#">隐私条款</a></li>
+					<li class="left"><a href="#" class="last">网站地图</a></li>
+				</ul>
+			</div>
+			<div class="links3">
+				<div>Copyright@&nbsp;2010-2012&nbsp;butao.com&nbsp;All&nbsp;Right&nbsp;Reserved&nbsp;版权所有&nbsp;浙B2-20090126-17</div>
+				<div style="width: 600px;"><img src="img/rzl.png" class="left left1" /><img src="img/zfb.png" class="left left1" /><img src="img/linksBot1.png" class="left" /><img src="img/360green.png" class="left" /></div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script type="text/javascript" src="js/detail.js" ></script>
+	<script type="text/javascript" src="js/common.js" ></script>
+	<script type="text/javascript" src="js/TopJavascripe.js" ></script>
+	<script>
+		init();
+		init1();
+		
+		
+	</script>
+	<script>
+		
+	</script>
+</html>

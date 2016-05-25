@@ -1,0 +1,98 @@
+#Step
+{
+	height: 100px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+#Step .space
+{
+	height: 40px;
+	width: 1000px;
+}
+#Step .line
+{
+	height: 1px;
+	width: 1000px;
+	background: #eeeeee;
+}
+#Step ul
+{
+	position: absolute;
+	left: 100px;
+	top: 25px;
+	
+}
+#Step ul li
+{
+	margin-right: 340px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #999999;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-family: "新宋体";
+	font-weight: 900;
+	font-size: 15px;
+}
+#Step ul .last
+{
+	margin-right: 0px;
+	
+}
+#Step ul .first
+{
+	background: #C20525;
+	color: ;
+		
+}
+#Step .info1
+{
+	position: absolute;
+	left: -10px;
+	top: 40px;
+}
+#Step .info2
+{
+	position: absolute;
+	left: 360px;
+	top: 40px;
+}
+#Step .info3
+{
+	position: absolute;
+	left: 730px;
+	top: 40px;
+	white-space: nowrap;
+}
+#showInfo
+{
+	height: 200px;
+	width: 1000px;
+	border: 1px solid #eee;
+	margin: 26px auto 26px;
+}
+.showInfoSuccess
+{
+	height: 50px;
+	width: 200px;
+	background: #A60D1C;
+	margin:  50px auto;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 20px;
+}
+.showInfoSuccessTime
+{
+	height: 30px;
+	width: 200px;
+	margin: -40px auto 0px;
+	text-align: center;
+	line-height: 30px;
+	color: red;
+	font-size: 16px;
+}

@@ -1,0 +1,266 @@
+
+body
+{
+	background: #fff;
+}
+#Step
+{
+	height: 100px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+#Step .space
+{
+	height: 40px;
+	width: 1000px;
+}
+#Step .line
+{
+	height: 1px;
+	width: 1000px;
+	background: #eeeeee;
+}
+#Step ul
+{
+	position: absolute;
+	left: 100px;
+	top: 25px;
+	
+}
+#Step ul li
+{
+	margin-right: 340px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #999999;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-family: "新宋体";
+	font-weight: 900;
+	font-size: 15px;
+}
+#Step ul .last
+{
+	margin-right: 0px;
+	
+}
+#Step ul .first
+{
+	background: #C20525;
+	color: ;
+		
+}
+#Step .info1
+{
+	position: absolute;
+	left: -10px;
+	top: 40px;
+}
+#Step .info2
+{
+	position: absolute;
+	left: 360px;
+	top: 40px;
+}
+#Step .info3
+{
+	position: absolute;
+	left: 730px;
+	top: 40px;
+	white-space: nowrap;
+}
+#addressForm
+{
+	min-height: 300px;
+	width: 1000px;
+	border: 1px solid #999999;
+	margin: 0 auto;
+	margin-top: 26px;
+}
+.addressFormTop
+{
+	height: 25px;
+	width: 988px;
+	border: 1px solid #BBBBBB;
+	line-height: 25px;
+	padding-left: 10px;
+	background: #F7F7F7;
+}
+.addressFormTop span
+{
+	margin-right: 30px;
+	cursor: pointer;
+}
+.addressFormBotTop
+{
+	width: 998px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.addressFormBotTop1
+{
+	width: 998px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.addressFormBotBot
+{
+	width: 808px;
+	height: 200px;
+	line-height: 30px;
+}
+.addressFormBotBot textarea
+{
+	height: 150px;
+	width: 300px;
+	margin: 10px 0 0 20px;
+	text-align: left;
+}
+.addressFormBot1 textarea
+{
+	height: 150px;
+	width: 300px;
+	margin: 10px 0 0 20px;
+	text-align: left;
+}
+.addressFormBotBot p
+{
+	width: 100px;
+	text-align: right;
+	line-height: 30px;
+	
+}
+.addressFormBotBot .subBtn
+{
+	height: 30px;
+	width: 113px;
+	background: url(../img/shopping_cart.png) no-repeat 0 -180px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	cursor: pointer;
+	margin-left: 100px;
+}
+.addressFormBot
+{
+	height: 251px;
+	width: 898px;
+	border: 1px solid #BBBBBB;
+	padding: 20px 0 0 100px;
+}
+.addressFormBot1
+{
+	min-height: 251px;
+	width: 898px;
+	border: 1px solid #BBBBBB;
+	padding: 20px 0 0 100px;
+	display: none;
+	line-height: 30px;
+	font-size: 14px;
+}
+#mainShopping
+{
+	min-height:29px;*+height:100%;_height:29px;
+}
+#mainShopping table
+{
+	
+	width: 996px;
+	margin: 26px auto 0px;
+}
+#mainShopping table img
+{
+	height: 55px;
+	width: 88px;
+}
+#mainShopping .delete
+{
+	cursor: pointer;
+}
+#mainShopping thead
+{
+	height: 30px;
+	background: #FAF7F8;
+}
+#mainShopping thead td
+{
+	text-align: center;
+	line-height: 30px;
+}
+#mainShopping tbody .first
+{
+	height: 88px;
+	width: 480px;
+	padding-left: 20px;
+}
+.shoppingPic
+{
+	height: 55px;
+	width: 88px;
+	border: 1px solid #BBBBBB;
+}
+.shoppingInfo
+{
+	height: 55px;
+	width: 375px;
+}
+#mainShopping tfoot 
+{
+	height: 50px;
+}
+.numShow
+{
+	height: 20px;
+	width: 45px;
+	text-align: center;
+	line-height: 20px;
+}
+.numShopping
+{
+	color: red;
+}
+.priceShopping
+{
+	color: red;
+}
+#activePay
+{
+	height: 70px;
+	width: 1000px;
+	margin: 20px auto 0px;
+	position: relative;
+}
+.activePayBtn
+{
+	height: 63px;
+	width: 224px;
+	background: url(../img/shopping_cart.png) no-repeat 0 -70px;
+	position: absolute;
+	left: 400px;
+	top: 2px;
+	cursor: pointer;
+}
+.addressFormBot1 .addressList
+{
+	width: 890px;
+	min-height:60px ;
+}
+.addressFormBot1 .addressList div
+{
+	height: 30px;
+	width: 146px;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #ccc;
+}
+.errorInfo
+{
+	color: red;
+	display: none;
+}

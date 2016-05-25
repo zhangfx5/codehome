@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				height: 100%;
+				width: 100%;
+				background: hotpink;
+			}
+			div{
+				position: relative;
+				transform-style: preserve-3d;
+				transform: perspective(800px);
+				/*border: 1px solid #FF0000;*/
+				margin: 100px auto;
+				width: 100%;
+				height: 400px;
+				animation: an 10s infinite linear;
+				
+			}
+			img{
+				width: 200px;
+				height: 300px;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			}
+			.view1{
+				transform:rotateY(0deg) translateZ(300px) ;
+			}
+			
+			.view2{
+				transform:rotateY(40deg) translateZ(300px) ;
+			}
+			.view3{
+				transform:rotateY(80deg) translateZ(300px) ;
+			}
+			
+			.view4{
+				transform:rotateY(120deg) translateZ(300px) ;
+			}
+			
+			.view5{
+				transform:rotateY(160deg) translateZ(300px) ;
+			}
+			
+			.view6{
+				transform:rotateY(200deg) translateZ(300px) ;
+			}
+			
+			.view7{
+				transform:rotateY(240deg) translateZ(300px) ;
+			}
+			
+			.view8{
+				transform:rotateY(280deg) translateZ(300px) ;
+			}
+			
+			.view9{
+				transform:rotateY(320deg) translateZ(300px) ;
+			}
+			
+			@-webkit-keyframes an{
+				from{transform: rotateY(0deg);}
+				to{transform:rotateY(360deg);}
+			}
+			
+			@-webkit-keyframes ani{
+				from{transform: rotateY(0deg);}
+				to{transform:rotateY(-360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/pic1.jpg" alt="" class="view1" />
+			<img src="img/pic2.jpg" alt="" class="view2" />
+			<img src="img/pic3.jpg" alt="" class="view3" />
+			<img src="img/pic4.jpg" alt="" class="view4" />
+			<img src="img/pic5.jpg" alt="" class="view5" />
+			<img src="img/pic6.jpg" alt="" class="view6" />
+			<img src="img/pic7.jpg" alt="" class="view7" />
+			<img src="img/pic8.jpg" alt="" class="view8" />
+			<img src="img/pic9.jpg" alt="" class="view9" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		var oImg = document.getElementsByTagName('img');
+		/*遍历一下，给每个图片都添加一个点击函数*/
+		for (var i = 0;i <oImg.length;i ++) {
+			oImg[i].onclick = function(){
+				if (this.style.webkitTransform=="") {
+					for (var j = 0;j<oImg.length;j++) {
+						oImg[j].style.webkitTransform="";
+						oImg[j].style.webkitAnimation="";
+					}
+					this.style.webkitTransform ="translate(600px) scale(2)"
+					/*this.style.webkitAnimation = "ani 5s infinite linear"
+					this.style.zIndex = 1000*/
+					
+				} 
+			}
+		}
+		
+	</script>
+	
+	
+	
+</html>

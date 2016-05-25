@@ -1,0 +1,151 @@
+#payDiv1
+{
+	height: 25px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background: #F1FFEA;
+}
+.payDiv11
+{
+	height: 25px;
+	width: 1000px;
+	color: #95B886;
+	font-size: 16px;
+	font-weight: 900;
+	margin: 0 auto;
+}
+#payDiv2
+{
+	height: 31px;
+	width: 990px;
+	background: #FFFFE0;
+	border: 1px solid #F9DFB2;
+	margin: 0 auto 10px;
+	color: #D41F2B;
+	font-weight: 900;
+	font-size: 12px;
+	line-height: 31px;
+	padding-left: 10px;
+}
+.payDiv21
+{
+	height:30px;
+	width: 980px;
+	background: #FAF7F8;
+	border-bottom: 1px solid #999999;
+	padding-left: 20px;
+	line-height: 30px;
+	color: #5E5058;
+	font-weight: 900;
+	
+}
+.payDiv22 input
+{
+	
+	
+}
+.payDiv22 img
+{
+	
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.payDiv22
+{
+	height: 300px;
+	width: 980px;
+	padding: 20px 0 0 20px;
+}
+#payDiv3
+{
+	width: 1000px;
+	height: 361px;
+	border: 1px solid #999999;
+	margin: 0 auto 139px;
+}
+#buyStyleBtn
+{
+	height: 70px;
+	width: 1000px;
+	margin: 0 auto 20px;
+}
+.buyStyleBtn1
+{
+	height: 63px;
+	width: 224px;
+	margin: 0 auto;
+	background: url(../img/shopping_cart.png) no-repeat 0px -70px;
+	cursor: pointer;
+	
+}
+#Step
+{
+	height: 100px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+#Step .space
+{
+	height: 40px;
+	width: 1000px;
+}
+#Step .line
+{
+	height: 1px;
+	width: 1000px;
+	background: #eeeeee;
+}
+#Step ul
+{
+	position: absolute;
+	left: 100px;
+	top: 25px;
+	
+}
+#Step ul li
+{
+	margin-right: 340px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #999999;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-family: "新宋体";
+	font-weight: 900;
+	font-size: 15px;
+}
+#Step ul .last
+{
+	margin-right: 0px;
+	
+}
+#Step ul .first
+{
+	background: #C20525;
+	color: ;
+		
+}
+#Step .info1
+{
+	position: absolute;
+	left: -10px;
+	top: 40px;
+}
+#Step .info2
+{
+	position: absolute;
+	left: 360px;
+	top: 40px;
+}
+#Step .info3
+{
+	position: absolute;
+	left: 730px;
+	top: 40px;
+	white-space: nowrap;
+}

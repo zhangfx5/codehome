@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/shoppingCar.css"/>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script src="../js/shoppingCar.js"></script>
+	<body>
+		<!--header======================================================-->
+		<div id="header">
+			<div class="header">
+				<div class="nav_left left">
+					<div class="mall left">
+						<a href="">时尚商城</a> 
+					</div>
+					<div class="mobile_buy left">
+						<a href="">手机优购</a>
+						<i class="mobile"></i>
+						<i class="tip">121</i>
+						<div class="buy_hidebox" style="position:absolute;left:0px;top:26px;">
+							<div class="hidebox_top">
+								<div class="top_code left"></div>
+								<div class="top_right left">
+									<div class="apple"></div>
+									<div class="android"></div>
+								</div>
+							</div>
+							<p><span class="load">下载安装</span><span class="app">优购客户端</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="nav_right right">
+					<ul>
+						<li>您好！18800158640</li>
+						<li><a class="login_link regist_link" href="">退出</a></li>
+						<li class="myBuy">
+							<a href="">我的优购</a><i class="i_01"></i>
+							<div class="mycollection">
+								<p>我的收藏</p>
+								<p>等待点评(<span class="red">0</span>)</p>
+								<p>站内消息(<span class="red">0</span>)</p>
+							</div>
+						</li>
+						<li><a href="">我的订单</a></li>
+						<li class="publicNotice">
+							公告<i class="i_02"></i>
+							<div class="public_hide">
+								<p><a href="">我是战靴</a></p>
+								<p><a href="">漫步于你的春天</a></p>
+								<p><a href="">潮流新款男女鞋</a></p>
+								<p><a href="">夹克/卫衣CP感满满</a></p>
+								<p><a href="">提醒会员谨防诈骗电话</a></p>
+							</div>
+						</li>
+						<li class="more">更多<i class="i_03"></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--main_header==============================================================-->
+		<div id="main_header">
+			<div class="shop_logo left">
+				<a href=""><img src="../img/shop_logo.png" alt=""/></a>
+				<i></i>
+			</div>
+			<div class="shop_step left">
+				<ul>
+					<li class="current">我的购物车<em></em><i></i></li>
+					<li>提交订单中心<em></em><i></i></li>
+					<li>成功提交订单<em></em><i></i></li>
+				</ul>
+			</div>
+		</div>
+		<!--none_goods 购物车为空时显示，不为空时隐藏=======================================================-->
+		<div id="none_goods">
+			<div class="car left"></div>
+			<div class="car_cont left">
+				<p class="par1">您的购物车中暂无商品，赶快选择心爱的商品吧！</p>
+				<p class="par2"><a>回到首页</a></p>
+				<p class="par3">您可以：</p>
+				<p class="par3">查看<a class="blue">我的收藏夹</a></p>
+				<p class="par3">查看<a class="blue">我已购买的商品</a></p>
+			</div>
+		</div>
+		<!--main_goods 购物车不为空时显示，为空时隐藏============================================================-->
+		<div id="main_goods">
+			<div class="model_title">
+				<div class="allCheck">
+					<i></i><span>全选</span>
+				</div>
+				<div style="width:252px;">商品名称</div>
+				<div style="width:122px;">颜色尺码</div>
+				<div style="width:109px;">单价</div>
+				<div style="width:98px;">数量</div>
+				<div style="width:128px;">小计（元）</div>
+				<div style="">操作</div>
+			</div>
+			<div class="addModel">
+				<div class="picture" style="width:134px;">
+					<i></i>
+					<img src="../img/tebu_mini01.jpg"/>
+				</div>
+				<div style="width:322px;padding-top:30px;">特步/xtep 男士涂鸦休闲时尚百搭板鞋</div>
+				<div style="width:130px;padding-top:30px;">
+					<P><span style="color:#999;">颜色：</span>白红</P>
+					<p><span style="color:#999;">尺码：</span>44</p>
+				</div>
+				<div style="width:81px;padding-top:30px;" id="unitPrice">169</div>
+				<div class="numChange" style="width:136px;padding-top:30px;">
+					<span class="reduce">-</span>
+					<span class="num">1</span>
+					<span class="add">+</span>
+				</div>
+				<div style="width:92px;padding-top:30px;">
+					<span class="red" id="totalPrices">169</span>
+				</div>
+				<div style="padding-top:30px;" class="addFile">
+					<p><a>移入收藏夹</a></p>
+					<p class="delete" style="text-align:center;"><a>删除</a></p>
+				</div>
+			</div>
+			<div class="addModel">
+				<div class="picture" style="width:134px;">
+					<i></i>
+					<img src="../img/tebu_mini01.jpg"/>
+				</div>
+				<div style="width:322px;padding-top:30px;">特步/xtep 男士涂鸦休闲时尚百搭板鞋</div>
+				<div style="width:130px;padding-top:30px;">
+					<P><span style="color:#999;">颜色：</span>白红</P>
+					<p><span style="color:#999;">尺码：</span>43</p>
+				</div>
+				<div style="width:81px;padding-top:30px;">249</div>
+				<div class="numChange" style="width:136px;padding-top:30px;">
+					<span class="reduce">-</span>
+					<span class="num">1</span>
+					<span class="add">+</span>
+				</div>
+				<div style="width:92px;padding-top:30px;">
+					<span class="red">249</span>
+				</div>
+				<div style="padding-top:30px;" class="addFile">
+					<p><a>移入收藏夹</a></p>
+					<p class="delete" style="text-align:center;"><a>删除</a></p>
+				</div>
+			</div>
+			<div class="addModel">
+				<div class="picture" style="width:134px;">
+					<i></i>
+					<img src="../img/tebu_mini01.jpg"/>
+				</div>
+				<div style="width:322px;padding-top:30px;">特步/xtep 男士涂鸦休闲时尚百搭板鞋</div>
+				<div style="width:130px;padding-top:30px;">
+					<P><span style="color:#999;">颜色：</span>白黑</P>
+					<p><span style="color:#999;">尺码：</span>44</p>
+				</div>
+				<div style="width:81px;padding-top:30px;">139</div>
+				<div class="numChange" style="width:136px;padding-top:30px;">
+					<span class="reduce">-</span>
+					<span class="num">1</span>
+					<span class="add">+</span>
+				</div>
+				<div style="width:92px;padding-top:30px;">
+					<span class="red">139</span>
+				</div>
+				<div style="padding-top:30px;" class="addFile">
+					<p><a>移入收藏夹</a></p>
+					<p class="delete" style="text-align:center;"><a>删除</a></p>
+				</div>
+			</div>
+			<div class="addModel">
+				<div class="picture" style="width:134px;">
+					<i></i>
+					<img src="../img/tebu_mini01.jpg"/>
+				</div>
+				<div style="width:322px;padding-top:30px;">特步/xtep 男士涂鸦休闲时尚百搭板鞋</div>
+				<div style="width:130px;padding-top:30px;">
+					<P><span style="color:#999;">颜色：</span>白红</P>
+					<p><span style="color:#999;">尺码：</span>43</p>
+				</div>
+				<div style="width:81px;padding-top:30px;">249</div>
+				<div class="numChange" style="width:136px;padding-top:30px;">
+					<span class="reduce">-</span>
+					<span class="num">1</span>
+					<span class="add">+</span>
+				</div>
+				<div style="width:92px;padding-top:30px;">
+					<span class="red">599</span>
+				</div>
+				<div style="padding-top:30px;" class="addFile">
+					<p><a>移入收藏夹</a></p>
+					<p class="delete" style="text-align:center;"><a>删除</a></p>
+				</div>
+			</div>
+			<div class="addModel">
+				<div class="picture" style="width:134px;">
+					<i></i>
+					<img src="../img/tebu_mini01.jpg"/>
+				</div>
+				<div style="width:322px;padding-top:30px;">特步/xtep 男士涂鸦休闲时尚百搭板鞋</div>
+				<div style="width:130px;padding-top:30px;">
+					<P><span style="color:#999;">颜色：</span>白红</P>
+					<p><span style="color:#999;">尺码：</span>41</p>
+				</div>
+				<div style="width:81px;padding-top:30px;">149</div>
+				<div class="numChange" style="width:136px;padding-top:30px;">
+					<span class="reduce">-</span>
+					<span class="num">1</span>
+					<span class="add">+</span>
+				</div>
+				<div style="width:92px;padding-top:30px;">
+					<span class="red">249</span>
+				</div>
+				<div style="padding-top:30px;" class="addFile">
+					<p><a>移入收藏夹</a></p>
+					<p class="delete" style="text-align:center;"><a>删除</a></p>
+				</div>
+			</div>
+			<div class="model_footer">
+				<div class="allCheck2">
+					<div class="all_check"><i></i><span>全选</span></div>
+					<div>移入收藏夹</div>
+					<div>删除</div>
+				</div>
+			</div>
+		</div>
+		<div class="total">
+			<div class="total_left left">
+				<span class="continueBuy">继续购物</span>
+				<span class="blue">清空购物车</span>
+			</div>
+			<div class="total_right left">
+				<span>总计（不含运费）：</span>
+				<span style="color:#aaa;font-size:16px;">￥<i style="color:#E60012;font-style:normal;font-size:20px;" id="zj">1405</i></span>
+				<span><a class="pay" href="order_form.html">去结算</a></span>
+			</div>
+		</div>
+		<!--buySafe========================================================================-->
+		<div id="smtips">
+			<div class="buytips">
+				<span>购物保障：</span>
+				<span class="pra_span"><i class="i_01"></i>100%正品</span>
+				<span class="pra_span"><i class="i_02"></i>10天退换货</span>
+				<span class="pra_span"><i class="i_03"></i>10天补差价</span></div>
+			<p>优惠券/礼品卡在下一步使用</p>
+			<p><a>帮助我们改进购物流程</a></p>
+		</div>
+		<!--othersBuy======================================================-->
+		<div id="othersBuy">
+			<div class="other_look">
+				购买了您购物车中商品的顾客还买了
+			</div>
+			<div class="othersBuy">
+				<dl>
+					<dt><img src="../img/recmd_01.jpg"/></dt>
+					<dd class="names">男鞋春季韩版透气休闲鞋板鞋时尚男士运动鞋子</dd>
+					<dd class="price"><span class="red">￥198</span> <span class="line_through">￥479</span></dd>
+					<dd class="addCar">加入购物车</dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/recmd_02.jpg"/></dt>
+					<dd class="names">鸿星尔克erke时尚复古男鞋滑板鞋</dd>
+					<dd class="price"><span class="red">￥119</span> <span class="line_through">￥259</span></dd>
+					<dd class="addCar">加入购物车</dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/recmd_03.jpg"/></dt>
+					<dd class="names">【1℃ONLY2016春季潮男士修身牛仔外套韩版牛仔夹克</dd>
+					<dd class="price"><span class="red">￥119</span> <span class="line_through">￥259</span></dd>
+					<dd class="addCar">加入购物车</dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/recmd_04.jpg"/></dt>
+					<dd class="names">意尔康2016春季新款简约大气商务休闲皮鞋系带男单鞋</dd>
+					<dd class="price"><span class="red">￥119</span> <span class="line_through">￥259</span></dd>
+					<dd class="addCar">加入购物车</dd>
+				</dl>
+				<dl>
+					<dt><img src="../img/recmd_05.jpg"/></dt>
+					<dd class="names">男鞋2016新品男士休闲鞋透气跑步鞋运动鞋男潮流板鞋</dd>
+					<dd class="price"><span class="red">￥119</span> <span class="line_through">￥259</span></dd>
+					<dd class="addCar">加入购物车</dd>
+				</dl>
+			</div>
+		</div>
+		<!--clear==========================-->
+		<div class="clear_float"></div>
+		<!--copyright===============================================-->
+		<div id="copyright">
+			Copyright © 2011-2014 Yougou Technology Co., Ltd. <a>粤ICP备09070608号-4</a> 增值电信业务经营许可证：<a>粤 B2-20090203</a>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

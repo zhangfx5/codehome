@@ -1,0 +1,99 @@
+.overview-tit{
+	background-image: url(../images/overview_tit.png);
+}
+.mypage-overview{
+	height: 95px;
+	width: 900px;
+	border-left: 1px solid #CCCCCC;
+}
+.mypage-overview-li{
+	height: 55px;
+	width: 149px;
+	border-right: 1px solid #CCCCCC;
+	padding-top: 40px;
+	background-position:62px 5px ;
+	background-repeat:no-repeat ;
+}
+.mypage-overview-li-tit{
+	height: 29px;
+	text-align: center;
+}
+.mypage-overview-li-value{
+	height: 10px;
+	text-align: center;
+	font-size: 10px;
+}
+.mypage-overview-li-allmoney{
+	background: url(../images/mypage_overview_li_allmoney.png) 62px 5px no-repeat;
+}
+.mypage-overview-li-allorder{
+	background: url(../images/mypage_overview_li_allorder.png) 62px 5px no-repeat;
+}
+.mypage-overview-li-allgoods{
+	background: url(../images/mypage_overview_li_allgoods.png) 62px 5px no-repeat;
+}
+.mypage-overview-li-allcoupon{
+	background: url(../images/mypage_overview_li_allcoupon.png) 62px 5px no-repeat;
+}
+.mypage-overview-li-allintegral{
+	background: url(../images/mypage_overview_li_allintegral.png) 62px 5px no-repeat;
+}
+.mypage-overview-li-alladvances{
+	background: url(../images/mypage_overview_li_alladvances.png) 62px 5px no-repeat;
+}
+.mypage-overview-user{
+	height: 58px;
+	width: 900px;
+	margin-top: 25px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+.mypage-overview-user-name{
+	width: 400px;
+	line-height:58px ;
+	padding-left: 40px;
+}
+.mypage-overview-user-name span{
+	color: #2DB5FF;
+}
+.mypage-overview-user-grade{
+	height: 24px;
+	width: 200px;
+	border: 1px solid #CCCCCC;
+	line-height: 24px;
+	text-align: center;
+	margin: 15px 10px 17px 0;
+	position: relative;
+}
+.mypage-overview-user-grade-point{
+	position: absolute;
+	height: 24px;
+	width: 200px;
+	z-index: 100;
+}
+.mypage-overview-user-grade-color{
+	position: absolute;
+	height: 24px;
+	width: 0;
+	z-index: 99;
+	background: #61CAD0;
+}
+.mypage-overview-user-gradeinfo{
+	height: 58px;
+	width: 181px;
+	line-height: 58px;
+}
+.mypage-overview-user-gradeinfo a{
+	color: #000000;
+}
+.mypage-overview-user-btn{
+	height: 20px;
+	width: 50px;
+	line-height: 20px;
+	text-align: center;
+	background: #000000;
+	color: #FFFFFF;
+	float: left;
+	cursor: pointer;
+	margin-top: 20px;
+}

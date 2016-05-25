@@ -1,0 +1,85 @@
+#selectGoodsStyle
+{
+	height: 142px;
+	width: 998px;
+	border: 1px solid #eeeeee;
+	margin: 20px auto 20px;
+	
+}
+#selectGoodsStyle .select
+{
+	background: #6A5ACD;
+	color: #fff;
+}
+#sortStyle
+{
+	height: 30px;
+	width: 990px;
+	background: #eeeeee;
+	margin: 0 auto 26px;
+	padding: 5px 0 0 10px;
+	
+}
+#sortStyle button
+{
+	margin-left: 20px;
+	border: 0px;
+	border: 1px solid #6A5ACD;
+	height: 20px;
+	width: 60px;
+}
+#GoodsList
+{
+	height: 3650px;
+	width: 1000px;
+	margin: 0px auto 26px;
+}
+.selectGoodsStyleLeft
+{
+	height: 127px;
+	width: 55px;
+	padding: 15px 0 0 10px;
+}
+.selectGoodsStyleRight
+{
+	height: 142px;
+	width: 928px;
+}
+.selectGoodsStyleRight1
+{
+	height: 19px;
+	width: 928px;
+	padding-top: 15px;
+}
+.selectGoodsStyleRight1 a
+{
+	padding: 0px 20px 0 20px;
+	color: #999999;
+}
+.selectGoodsStyleRight2 a
+{
+	padding: 0px 20px 0 20px;
+	color: #999999;
+}
+.selectGoodsStyleRight3 a
+{
+	padding: 0px 20px 0 20px;
+	color: #999999;
+}
+.selectGoodsStyleRight2
+{
+	height: 24px;
+	width: 928px;
+	padding-top: 10px;
+	background: #eee;
+}
+.selectGoodsStyleRight3
+{
+	height: 53px;
+	width: 928px;
+	background: #eee;
+	padding-top: 5px;
+	line-height: 20px;
+	margin-top: 10px;
+}
+

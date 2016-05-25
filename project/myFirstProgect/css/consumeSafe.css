@@ -1,0 +1,60 @@
+#consumeSafeTop
+{
+	
+	height: 423px;
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+#consumeSafeTop .bannerPic1
+{
+	
+	
+	position: absolute;
+	left: 0px;
+	top: ;0px
+	
+}
+#consumeSafeTop .bannerPic2
+{
+	
+	
+	position: absolute;
+	left: 0px;
+	top: 140px;
+	
+}
+#consumeSafeTop .bannerPic3
+{
+	
+	
+	position: absolute;
+	left: 0px;
+	top: 280px;
+	
+}
+#consumeSafeBot
+{
+	height: 2000px;
+	width: 1006px;
+	margin: 20px auto 0px;
+	padding-left: 4px;
+}
+#consumeSafeBot .consumeSafeBot1
+{
+	height: 140px;
+	width: 960px;
+	background: url(../img/consumeInfoBotTxtBg2.png) repeat-y -4px;
+	margin-top: -4px;
+	line-height: 20px;
+	padding: 10px 0 0 50px ;
+}
+#consumeSafeBot .consumeSafeBot1 p
+{
+	width: 750px;
+	line-height: 20px;
+	color: #999999;
+	font-size: 14px;
+	
+}

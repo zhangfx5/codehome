@@ -1,0 +1,282 @@
+#integralTop
+{
+	height: 30px;
+	width: 1000px;
+	background: #fff;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	
+}
+#integralTop ul li
+{
+	height: 28px;
+	width: 100px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	color: #999;
+	cursor: pointer;
+}
+#integralBot1
+{
+	min-height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+}
+#integralBot2
+{
+	min-height: 700px;
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+}
+#integralBot3
+{
+	min-height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+}
+#integralBot4
+{
+	min-height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+}
+#integralBot5
+{
+	min-height: 500px;
+	width: 1000px;
+	margin: 0 auto;
+	display: none;
+}
+.integralBotInfoTop
+{
+	height: 50px;
+	width: 1000px;
+	border-bottom: 1px solid #ccc;
+	line-height: 70px;
+	font-size: 16px;
+	font-weight: 900;
+}
+.integralBot1Style
+{
+	height: 325px;
+	width: 303px;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	line-height: 70px;
+	padding-left: 12px;
+	padding-top: 12px;
+}
+.integralBot1StylePic
+{
+	height: 190px;
+	width: 290px;
+	background: url(../img/integralBot1StylePic.png);
+	
+}
+.integralBot2Left
+{
+	height: 500px;
+	width: 330px;
+}
+.integralBot2LeftTop
+{
+	height: 224px;
+	width: 309px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 20px 0 0 20px;
+	
+}
+.integralBot2LeftBot
+{
+	height: 200px;
+	width: 329px;
+}
+.integralBot2LeftBotBorder
+{
+	height: 90px;
+	width: 280px;
+	margin: 20px auto 0px;
+	padding: 10px 0 0 10px;
+}
+.integralBot2LeftBotBorderSmall
+{
+	height: 60px;
+	width: 270px;
+	margin: 10px 0 0 10px;
+}
+.integralBot2Right
+{
+	min-height: 500px;
+	width: 670px;
+
+}
+.integralBot2RightTop
+{
+	width: 650px;
+	height: 195px;
+
+	line-height: 40px;
+	padding: 20px 0 0 20px;
+}
+.integralBot2RightTopBuyBtn
+{
+	height: 30px;
+	width: 80px;
+	background: #A90A0A;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-size: 16px;
+}
+.integralBot2RightBotTab
+{
+	height: 28px;
+	width: 670px;
+	border-bottom: 1px solid #AB1E1E;
+	position: relative;
+}
+.integralBot2RightBotTab1
+{
+	cursor: pointer;
+	height: 25px;
+	width: 77px;
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	background: #eee;
+	text-align: center;
+	line-height: 25px;
+}
+.integralBot2RightBotTab2
+{
+	cursor: pointer;
+	height: 25px;
+	position: absolute;
+	width: 77px;
+	left: 110px;
+	top: 3px;
+	background: #eee;
+		text-align: center;
+		line-height: 25px;
+}
+.integralBot2RightBotInfo1
+{
+	margin-top: 10px;
+	height: 400px;
+	width: 640px;
+	line-height: 30px;
+	padding: 0 0 0 30px;
+}
+.integralBot2RightBotInfo2
+{
+	margin-top: 10px;
+	height: 400px;
+	width: 670px;
+	display: none;
+}
+.integralBot2RightBotInfo2Top
+{
+	height: 32px;
+	width: 630px;
+	background: #eee;
+}
+.integralBot2RightBotInfo2Top div
+{
+	height: 32px;
+	width: 315px;
+	background: #eee;
+	float: left;
+	text-align: center;
+	line-height: 32px;
+}
+.integralBot2RightBotInfo2Bot
+{
+	height: 20px;
+	width: 630px;
+	background: #fff;
+}
+.integralBot2RightBotInfo2Bot div
+{
+	height: 20px;
+	width: 315px;
+	background: #fff;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+}
+.integralBot4Info1
+{
+	height: 172px;
+	width: 978px;
+	border-bottom: 27px solid #F2F3ED;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.integralBot4Info1Top
+{
+	height: 44px;
+	width: 963px;
+	background: #EDEDED;
+	font-size: 27px;
+	font-family: "黑体";
+	padding:15px 0 0 15px;
+}
+.integralBot4Info1Bot
+{
+	height: 113px;
+	width: 976px;
+	border: 1px solid #ccc;
+	
+}
+.integralBot4Info1Bot1
+{
+	height: 89px;
+	width: 69px;
+	padding: 24px 0 0 20px;
+}
+.integralBot4Info1Bot2
+{
+	height: 89px;
+	width: 748px;
+	padding: 24px 0 0 0;
+}
+.integralBot4Info1Bot3
+{
+	height: 89px;
+	width: 129px;
+	padding: 24px 0 0 10px;
+}
+.integralBot4Info1Bot3 div
+{
+	height: 39px;
+	width: 107px;
+	border-radius: 10%;
+	border: 1px solid #ccc;
+	background: #FFFCE9;
+	text-align: center;
+	line-height: 39px;
+	cursor: pointer;
+}
+.integralBot4Info2
+{
+	height: 230px;
+	width: 978px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.integralBot2RightTopBuyBtn
+{
+	cursor: pointer;
+}
+.box-shadow-6{  
+    box-shadow:-10px 0 10px #ccc, /*左边阴影*/  
+    10px 0 10px #ccc, /*右边阴影*/  
+    0 -10px 10px #ccc, /*顶部阴影*/  
+    0 10px 10px #ccc; /*底边阴影*/  
+}  

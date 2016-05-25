@@ -1,0 +1,94 @@
+.changeuserinfo-tit {
+	background-image: url(../images/changeuserinfo_tit.png);
+}
+
+.mypage-changeuserinfo {
+	height: 694px;
+	width: 850px;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 20px;
+	padding-left: 48px;
+	background: url(../images/mypage_nav_li_hover.png) 22px 24px no-repeat;
+}
+
+.mypage-changeuserinfo-tit {
+	height: 60px;
+	width: 802px;
+	line-height: 60px;
+	font-size: 17px;
+	margin-bottom: 26px;
+	border-bottom: 1px #CCCCCC dashed;
+}
+
+.mypage-changeuserinfo-li {
+	height: 34px;
+	width: 802px;
+	margin-bottom: 10px;
+}
+
+.mypage-changeuserinfo-li-tit {
+	height: 34px;
+	width: 90px;
+	line-height: 34px;
+	float: left;
+}
+
+.mypage-changeuserinfo-li-value {
+	height: 34px;
+	width: 585px;
+	line-height: 34px;
+	float: left;
+}
+
+.mypage-changeuserinfo-city,.mypage-changeuserinfo-pro {
+	width: 118px;
+	height: 32px;
+	margin-right: 5px;
+	padding-left: 5px;
+	/*background: url(../images/mypage_changeuserinfo_sel_bg.png) no-repeat 95px 6px;*/
+}
+.mypage-changeuserinfo-address,.mypage-changeuserinfo-mail{
+	height: 30px;
+	width: 212px;
+	border: 1px solid #CCCCCC;
+}
+.mypage-changeuserinfo-radio{
+	margin: 10px 4px 0 4px;
+}
+.mypage-changeuserinfo-phone,.mypage-changeuserinfo-date{
+	height: 30px;
+	width: 102px;
+	border: 1px solid #CCCCCC;
+}
+
+.mypage-changeuserinfo-dateli{
+	position: relative;
+}
+._mypage-changeuserinfo-date{
+	position: absolute;
+	left: 0;
+	top: 5px;
+	width: 102px;
+	opacity: 0;
+}
+.mypage-changeuserinfo-income,.mypage-changeuserinfo-job{
+	height: 32px;
+	width: 118px;
+	border: 1px solid #CCCCCC;
+	padding-left: 5px;
+}
+.mypage-changeuserinfo-submit{
+	height: 82px;
+	width: 82px;
+	background: #000000;
+	margin-left: 490px;
+	padding: 18px 0 0 18px;
+	color: #FFFFFF;
+	font-weight: 900;
+	font-size: 30px;
+	cursor: pointer;
+}
+.changeuserinfo-error{
+	color: red;
+	display: none;
+}

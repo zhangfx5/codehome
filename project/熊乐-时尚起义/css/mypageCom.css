@@ -1,0 +1,55 @@
+#mypage-main{
+	width: 1160px;
+	margin: 40px auto 55px;
+}
+.mypage-tit{
+	width: 1160px;
+	height: 45px;
+	border-bottom: 1px solid #CCCCCC;
+	background-position: 16px 0 ;
+	background-repeat: no-repeat;
+	margin-bottom: 32px;
+}
+.mypage-box{
+	overflow: hidden;
+}
+
+.mypage-nav{
+	width: 200px;
+	height: 500px;
+
+}
+.mypage-nav-li{
+	height: 30px;
+	margin-bottom: 2px;
+	padding-left:59px ;
+	line-height: 30px;
+	background-position: 23px 9px;
+	background-repeat: no-repeat;
+}
+.mypage-nav-li a{
+	color: #000000;
+}
+.mypage-nav-li-overview{
+	margin-bottom: 16px;
+}
+.mypage-nav-li-return{
+	margin-bottom: 20px;
+}
+.mypage-nav-li-changeaddress{
+	margin-bottom: 18px;
+}
+.mypage-nav-li-active{
+	background-image:url(../images/mypage_nav_li_bg.png) ;
+}
+.mypage-nav .mypage_nav_li_hover{
+	background-image:url(../images/mypage_nav_li_hover.png);
+}
+
+.mypage-showbox{
+	border-left: 1px solid #CCCCCC;
+	width:  930px;
+	padding-left: 29px;
+	min-height: 500px;
+	_height:500px
+}

@@ -1,0 +1,259 @@
+#confirm-userinfo-box{
+	width: 1160px;
+	margin: 0 auto;
+
+}
+.confirm-userinfo-titimg{
+	height: 152px;
+	background: url(../images/confirm_userinfo_titimg.png) no-repeat center;
+}
+.confirm-userinfo-form-tit{
+	height: 35px;
+	background: #000;
+	line-height: 35px;
+	padding-left: 25px;
+	color: #FFFFFF;
+	font-weight: 900;
+}
+.confirm-userinfo-form-body{
+	border: 1px solid #CCCCCC;
+	border-top: none;
+	padding: 0 30px;
+}
+.confirm-consignee-info,.confirm-deliver-info{
+	/*height: 425px;*/
+	border-bottom: 1px dashed #CCCCCC;
+	
+}
+.confirm-consignee-info-tit,.confirm-deliver-info-tit{
+	height: 82px;
+	/*background: url(../images/confirm_editing.png) no-repeat 104px center;*/
+	line-height: 82px;
+	font-weight: 900;
+	font-size: 17px;
+	position: relative;
+}
+.confirm-consignee-info-tit{
+	border-bottom: 1px dashed #CCCCCC;
+}
+.confirm-userinfo-form-tit-btn,.confirm-deliver-form-tit-btn{
+	/*margin: 30px 0 0 120px;*/
+	position: absolute;
+	cursor: pointer;
+	top: 31px;
+}
+.confirm-userinfo-form-tit-btn{
+	left: 110px;
+}
+.confirm-deliver-form-tit-btn{
+	left: 140px;
+}
+.confirm-consignee-info-body{
+	height: 342px;
+	padding-left: 40px;
+	overflow: hidden;
+}
+.confirm-consignee-input-box{
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+}
+.confirm-consignee-input-box-first{
+	margin-top: 15px;
+}
+.confirm-consignee-input{
+	height: 30px;
+	border: 1px solid #CCCCCC;
+	
+}
+.confirm-consignee-input-tit{
+	display: block;
+	float: left;
+	width: 76px;
+	margin-right: 14px;
+	height: 32px;
+	line-height: 32px;
+	text-align:  right;
+}
+.confirm-consignee-name{
+	width: 82px;
+}
+
+.confirm-consignee-province-box{
+	width: 130px;
+	line-height: 30px;
+	padding-left: 8px;
+	font-size: 13px;
+	background: #FFFFFF;
+	position: relative;
+	margin-right: 10px;
+	background: url(../images/confirm_select_bg.png) no-repeat 127px center;
+}
+.confirm-consignee-city-box{
+	width: 130px;
+	background: #FFFFFF;
+	position: relative;
+	background: url(../images/confirm_select_bg.png) no-repeat 127px center;
+	line-height: 30px;
+	padding-left: 8px;
+	font-size: 13px;
+}
+.confirm-consignee-seladdress{
+	position: relative;
+}
+.confirm-consignee-city,.confirm-consignee-province{
+	width: 138px;
+	height: 30px;
+	position: absolute;
+	opacity: 0;
+	padding-left: 8px;
+	z-index: 100;
+}
+.confirm-consignee-province{
+	left: 90px;
+	top: 1px;
+}
+.confirm-consignee-city{
+	left: 241px;
+	top: 1px;
+}
+.confirm-consignee-address{
+	width: 392px;
+}
+.confirm-consignee-mail{
+	width: 62px;
+}
+.confirm-consignee-phone{
+	width: 112px;
+}
+.confirm-consignee-call{
+	width: 112px;
+}
+.confirm-consignee-submit{
+	height: 40px;
+	width: 170px;
+	background: #33B7FF;
+	border-radius: 20px;
+	margin: 25px 0 0 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: 900;
+	cursor: pointer;
+}
+.confirm-consignee-info-show,.confirm-deliver-info-show{
+	height: 80px;
+	line-height: 80px;
+	padding-left: 40px;
+	font-size: 15px;
+	display: none;
+}
+.confirm-consignee-info-select{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 40px;
+	font-size: 15px;
+	display: none;
+	position: relative;
+}
+.confirm-consignee-info-select-btn{
+	position: absolute;
+	height: 21px;
+	width: 21px;
+	background: url(../images/confirm-consignee-info-select-btn.png) no-repeat;
+	left: 600px;
+	top: 14px;
+	cursor: pointer;
+	display: none;
+}
+.confirm-consignee-input-error{
+	color: red;
+	margin-left: 5px;
+	font-size: 15px;
+	display: none;
+}
+.confirm-deliver-info-body{
+	padding:5px 0 0  53px;
+	overflow: hidden;
+	font-size: 13px;
+}
+.confirm-deliver-info-body span{
+	padding-top: 8px;
+	
+}
+.confirm-deliver-time-tit{
+	height: 120px;
+	width: 65px;
+	text-align: right;
+	margin-top: 17px;
+	font-size: 13px;
+}
+.confirm-deliver-time-box{
+	height: 151px;
+	width: 900px;
+	margin-top: 17px;
+}
+.confirm-deliver-time{
+	margin-bottom: 17px;
+}
+.confirm-deliver-time-box .confirm-deliver-time-last{
+	margin-bottom: 8px;
+}
+.confirm-deliver-time-other{
+	height: 30px;
+	width: 492px;
+	border: 1px solid #CCCCCC;
+	
+}
+.confirm-deliver-money{
+	height: 31px;
+	width: 1080px;
+}
+.confirm-deliver-submit{
+	width: 170px;
+	height: 40px;
+	background: #33B7FF;
+	border-radius: 20px;
+	margin: 11px 0 10px 30px;
+	line-height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: 900;
+	cursor: pointer;;
+}
+.confirm-pay-info-body{
+	height: 80px;
+	padding: 15px 0 0 50px;
+	font-size: 13px;
+}
+.confirm-ordershow{
+	width: 1160px;
+	margin: 20px auto 0;
+}
+.confirm-ordershow .mycar-main-list-theader .confirm-show-number{
+	width: 235px;	
+}
+.confirm-ordershow .mycar-main-list-tbody .confirm-show-number{
+	width: 233px;
+}
+.confirm-order-notic-box{
+	height: 73px;
+	border-bottom: 1px solid #CCCCCC;
+	padding-top: 27px;
+}
+.confirm-order-notic{
+	height: 73px;
+	width: 340px;
+	font-size: 13px;
+}
+.confirm-order-notic span{
+	color: #33B7FF;
+}
+.confirm-order-notic input{
+	margin: 10px 0 0 20px;
+}
+.confirm-order-notic .confirm-order-notic-firstinp{
+	margin-left: 70px;
+}

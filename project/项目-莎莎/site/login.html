@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登陆</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+	<!--状态栏-->
+		<div id="topbar_box">
+			<div id="topbar">
+				<div id="topbar_left" class="left">
+					<span class="topbar_box_sp">欢迎光临莎莎官网！</span>
+					<a href="#">登录</a> 
+					<span style="color:#6C6C6C;">或</span>
+					<a href="register.html">免费注册</a> 
+				</div>
+				<ul id="topbar_rig" class="left">
+					<li class="topbar_rig_li">
+						<a href="#" class="topbar_rig_a topbar_rig_bo">
+							<img class="topbar1" src="img/pic/topbar1.png" /> 我的账户 <img src="img/pic/topbar2.png">
+						</a>
+							<ul class="topbar_rig_con">
+								<li class="topbar_rig_con_li"><a href="#" style="margin-top:8px;">我的订单</a></li>
+								<li class="topbar_rig_con_li"><a href="#">我的积分</a></li>
+								<li class="topbar_rig_con_li"><a href="#">我的优惠券</a></li>
+								<li class="topbar_rig_con_li"><a href="#">我的收藏</a></li>
+								<li class="topbar_rig_con_li"><a href="#" style="height:50px;">我的评价</a></li>
+							</ul>
+						
+					</li>
+					<li class="topbar_rig_li"><a class="topbar_rig_a" href="#"><img class="topbar3" src="img/pic/topbar3.png" /> 我的收藏</a></li>
+					<li class="topbar_rig_li"><a class="topbar_rig_a" href="#"><img class="topbar4" src="img/pic/topbar4.png"/> 我的站内信</a></li>
+					<li class="topbar_rig_li"><a class="topbar_rig_a" href="#">积分中心</a></li>
+					<li class="topbar_rig_li"><a class="topbar_rig_a" href="#">Global site</a></li>
+					<li class="topbar_rig_li">
+						<a class="topbar_rig_a topbar_rig_bo" href="#">关注我们 <img src="img/pic/topbar2.png"></a>
+						<ul class="topbar_rig_con" style="left:-27px;width:110px;">
+							<li class="topbar_rig_con_li"><a href="#" style="margin-top:8px;"><img src="img/pic/lx1.png"/>我的订单</a></li>
+							<li class="topbar_rig_con_li"><a href="#"><img src="img/pic/lx2.png"/>新浪微博</a></li>
+							<li class="topbar_rig_con_li"><a href="#"><img src="img/pic/lx3.png"/>莎莎微信</a></li>
+							<li class="topbar_rig_con_li"><a href="#" style="height:24px;"><img src="img/pic/lx4.png"/>优酷微信</a></li>
+							<div class="topbar_rig_flo"><img src="img/pic/er1.jpg"/></div>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--logo-->
+		<div id="logo">
+			<a href="index.html"><img src="img/logotm.png"/></a>
+		</div>
+		<!--主体-->
+		<div id="loginmain">
+			<div class="loginmain_left left">
+				<img src="img/loginimg.png"/>
+			</div>
+			<div class="loginmain_rig left">
+				<div class="logincon">
+					<div class="logincon_top">
+						<h3 class="left">用户登录</h3>
+						<p class="left">还没有莎莎账号？<a href="register.html">立即注册</a></p>
+					</div>
+					<div class="logincon_con">
+						<form action="" method="get">
+							<input type="text" id="username" class="input1" value="邮箱/手机" />
+							<input type="text" id="userpassword" class="input1" value="填写密码" />
+							<div class="remember">
+								<input type="checkbox" name="remember" id="rememeber" class="left" checked="cheched"/>
+								<span class="left">记住我 </span>
+								<a href="#" class="left">忘记密码 ?</a>
+							</div>
+							<button class="login_sub">登录</button>
+						</form>
+					</div>
+					<div class="logincon_b">
+						<p>第三方账号登录</p>
+						<div class="userother">
+							<a href="#"><img src="img/userother1.png"/></a>
+							<a href="#"><img src="img/userother2.png"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--版权信息-->
+		<p id="copy">
+			<span class="copyleft">&copy;Copyright 2000-2016 Sa Sa dot Com Limited 版权所有</span>
+			<span class="copyrig">莎莎国际控股有限公司成员</span>
+		</p>
+		<!--用户名密码不正确弹窗-->
+		<div id="usershade">
+			<p class="userbox">
+				用户名或密码输入错误！
+			</p>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/sidebar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		sidebarInit();//侧边栏js
+		loginInit(); //单独js
+		baseInit(); //通用jS [状态栏&购物车]
+	</script>
+</html>

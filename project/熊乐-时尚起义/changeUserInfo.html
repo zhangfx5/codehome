@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心-修改个人信息</title>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/headcom.css" />
+		<link type="text/css" rel="stylesheet" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" href="css/modalDiv.css" />
+		<link type="text/css" rel="stylesheet" href="css/footercom.css" />
+		<link type="text/css" rel="stylesheet" href="css/rightNavCom.css" />
+		<link type="text/css" rel="stylesheet" href="css/navcom.css" />
+		<link type="text/css" rel="stylesheet" href="css/mypageCom.css" />
+		<link type="text/css" rel="stylesheet" href="css/changeUserInfo.css" />
+	</head>
+
+	<body>
+		<div class="rightnav-login-box">
+			<div class="rightnav-login-window">
+				<div class="rightnav-login-window-btn rightnav-login-window-btn-log-active">
+					<div class="rightnav-login-window-btn-log left"></div>
+					<div class="rightnav-login-window-btn-reg left"></div>
+				</div>
+				<div class="rightnav-login-window-logbox">
+					<span class="rightnav-error left"></span>
+					<form name="login-form" class="rightnav-login-window-logform" method="post" action="#">
+						<input type="text" placeholder="电子邮件" class="rightnav-login-window-logform-txt login-email left" />
+						<div class="rightnav-login-window-logform-sub right"></div>
+						<input type="password" placeholder="密码" class="left rightnav-login-window-logform-txt login-pwd" />
+						<label class="rightnav-login-window-logform-savemail left">
+							<input type="checkbox" />保存电子邮件
+						</label>
+						<a href="#" class="right rightnav-login-window-logform-forgetpwd">忘记密码</a>
+					</form>
+					<div class="rightnav-login-window-logbox-other left">
+						<span>使用合作网站账户登陆</span>
+						<img src="images/zfb-login.png" class="zfb-login" />
+					</div>
+				</div>
+				<div class="rightnav-login-window-regbox">
+					<span class="rightnav-error left"></span>
+					<form name="register-form" class="rightnav-login-window-regform" method="post" action="">
+						<input class="rightnav-login-window-regform-inp rightnav-login-window-regform-mail left" type="text" placeholder="电子邮件" />
+						<input class="rightnav-login-window-regform-inp rightnav-login-window-regform-pwd left" type="password" placeholder="密码" />
+						<input class="rightnav-login-window-regform-inp rightnav-login-window-regform-pwdagain left" type="password" placeholder="再次输入确定密码" />
+						<input class="rightnav-login-window-regform-inp rightnav-login-window-regform-name left" type="text" placeholder="用户名" />
+						<select class="rightnav-login-window-regform-inp rightnav-login-window-regform-sex left">
+							<option selected value="0">性别</option>
+							<option>男</option>
+							<option>女</option>
+						</select>
+						<div class="rightnav-login-window-regform-agree-div left">
+							<input type="checkbox" class="rightnav-login-window-regform-agree left" /> 我已阅读并同意《
+							<a href="#">时尚起义用户使用条款</a>》
+						</div>
+						<div class="rightnav-login-window-regbox-regbtn left"></div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="rightnav">
+			<div class="rightnav-tit"></div>
+			<div class="rightnav-login">
+				<span>登陆注册</span>
+			</div>
+			<div class="rightnav-mypage">
+				<span>我的账户</span>
+			</div>
+			<div class="rightnav-border"></div>
+			<div class="rightnav-seach">
+
+			</div>
+			<div class="rightnav-border"></div>
+			<div class="rightnav-btn rightnav-shoppingcar">
+				<span class="rightnav-shoppingcar-num">0</span>
+				<div class="rightnav-btn-bg rightnav-btn-bg-shoppingcar"><a href="myCar.html">我的购物车</a></div>
+
+			</div>
+			<div class="rightnav-btn rightnav-love">
+				<div class="rightnav-btn-bg "><a href="wishList.html">我的暂存架</a></div>
+			</div>
+			<div class="rightnav-btn rightnav-data">
+				<div class="rightnav-btn-bg "><a href="#">签到领积分</a></div>
+			</div>
+			<div class="rightnav-btn rightnav-today">
+				<div class="rightnav-btn-bg "><a href="#">今日浏览</a></div>
+			</div>
+			<div class="rightnav-border"></div>
+			<div class="rightnav-btn rightnav-weixin">
+				<div class="rightnav-btn-bg rightnav-btn-bg-weixin"></div>
+			</div>
+			<div class="rightnav-btn rightnav-backtop"></div>
+		</div>
+		<div id="header-box">
+			<div class="header">
+				<a href="index.html">
+					<img src="images/header-logo.png" class="header-logo left" />
+				</a>
+				<div class="header-nav left">
+					<a class="left header-nav-btn header-nav-btn-active" href="#">女装站</a>
+					<a class="left header-nav-btn" href="#">男装站</a>
+				</div>
+				<a href="#" class="header-links right"><img src="images/header-link1.png" /></a>
+				<a href="#" class="header-links right"><img src="images/header-link2.png" /></a>
+				<a href="#" class="header-links right"><img src="images/header-link3.png" /></a>
+			</div>
+		</div>
+		
+		<div id="mypage-main">
+			<div class="mypage-tit changeuserinfo-tit "></div>
+			<div class="mypage-box">
+				<div class="mypage-nav left">
+					<ul>
+						<li class="mypage-nav-li mypage-nav-li-overview "><a href="overView.html">账户总览</a></li>
+						<li class="mypage-nav-li  "><a href="myOrder.html">我的订单</a></li>
+						<li class="mypage-nav-li mypage-nav-li-return"><a href="#">退货申请</a></li>
+						<li class="mypage-nav-li"><a href="#">优惠券明细</a></li>
+						<li class="mypage-nav-li"><a href="#">积分明细</a></li>
+						<li class="mypage-nav-li"><a href="#">预付款明细</a></li>
+						<li class="mypage-nav-li"><a href="wishList.html">暂存架</a></li>
+						<li class="mypage-nav-li mypage-nav-li-active"><a href="changeUserInfo.html">修改个人信息</a></li>
+						<li class="mypage-nav-li"><a href="changePassword.html">修改密码</a></li>
+						<li class="mypage-nav-li mypage-nav-li-changeaddress"><a href="#">修改收货地址</a></li>
+						<li class="mypage-nav-li"><a href="#">商品评论</a></li>
+						<li class="mypage-nav-li"><a href="#">收件箱</a></li>
+						<li class="mypage-nav-li"><a href="#">1:1会员留言</a></li>
+						<li class="mypage-nav-li"><a href="#">留言回复</a></li>
+					</ul>
+				</div>
+				<div class="mypage-showbox left">
+					<div class="mypage-changeuserinfo">
+						<div class="mypage-changeuserinfo-tit left">修改个人信息</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">用户名：</div>
+							<div class="mypage-changeuserinfo-li-value">XL</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">注册邮箱：</div>
+							<div class="mypage-changeuserinfo-li-value">123456789@qq.com</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">居住地：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<select class="mypage-changeuserinfo-pro left"></select>
+								<select class="mypage-changeuserinfo-city left"></select>
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">详细地址：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<input type="text" class="mypage-changeuserinfo-address"/>
+								<span class="changeuserinfo-error">*请填写详细地址</span>
+							</div>
+							
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">邮政编码：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<input type="text"  class="mypage-changeuserinfo-mail"/>
+								<span class="changeuserinfo-error">*请输入正确的邮政编码格式</span>
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">性别：</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<input type="radio" name="sex" value="0" class="mypage-changeuserinfo-radio" checked />女 <input type="radio" name="sex" value="1" class="mypage-changeuserinfo-sex"/>男
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">移动电话：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<input type="text"  class="mypage-changeuserinfo-phone"/>
+								<span class="changeuserinfo-error">*请输入正确的手机号码格式</span>
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">出生日期：*</div>
+							<div class="mypage-changeuserinfo-li-value mypage-changeuserinfo-dateli">
+								<input type="text"  style="height: 30px;border-color: #CCCCCC;" class=" Wdate mypage-changeuserinfo-date"  onFocus="WdatePicker({lang:'zh-cn',maxDate:'%y-%M-%d'})"/>
+								<span class="changeuserinfo-error">*请选择出生日期</span>
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">职业类别：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<select class="mypage-changeuserinfo-job">
+									<option value="0" selected>-请选择-</option>
+									<option>IT行业</option>
+									<option>金融行业</option>
+									<option>建筑行业</option>
+									<option>教育行业</option>
+								</select>
+								<span class="changeuserinfo-error">*请选择您的职业</span>
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">收入范围：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<select class="mypage-changeuserinfo-income">
+									<option value="0" selected>-请选择-</option>
+									<option>5000以下</option>
+									<option>5000到8000</option>
+									<option>8000到12000</option>
+									<option>12000到20000</option>
+									<option>20000以上</option>
+								</select>
+								<span class="changeuserinfo-error">*请选择您的收入范围</span>
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-li left">
+							<div class="mypage-changeuserinfo-li-tit">接收邮件：*</div>
+							<div class="mypage-changeuserinfo-li-value">
+								<input type="radio" class="mypage-changeuserinfo-radio"  value="1" checked/>是
+								<input type="radio" class="mypage-changeuserinfo-radio"  value="0"/>否
+							</div>
+						</div>
+						<div class="mypage-changeuserinfo-submit left">提交修改</div>
+					</div>
+				</div>
+			</div>	
+				
+		</div>
+		
+		<div id="footer" class="ginfo-footer">
+			<div class="footer-declaration-box">
+				<div class="footer-declaration">
+					<div class="footer-top-btn"></div>
+					<img src="images/footer-declaration.png" />
+				</div>
+			</div>
+			<div class="footer-links-box">
+				<div class="footer-links">
+					<div class="footer-links-info left">
+						<img src="images/footer-links-info-call.png" class="footer-links-info-call left" />
+						<div class="footer-links-info-show left">
+							<span>工作日 8:00AM~17:00PM / 午休 12:00PM~13:00PM</span>
+							<br />
+							<span>周六日、法定节假日休息</span>
+						</div>
+						<div class="footer-links-info-show left">
+							<span>退货地址：上海市闵行区万源路2158号 泓毅大厦413室</span>
+							<br />
+							<span>邮编：201103</span>
+						</div>
+						<div class="footer-links-info-show left">
+							<span class="footer-links-info-show-num ">新商品数量<em>184</em>件</span>
+							<span class="footer-links-info-show-num ">热卖商品数量<em>5,809</em>件</span>
+						</div>
+					</div>
+					<div class="footer-links-mail left">
+						<input type="text" class="footer-links-mail-inptxt left" placeholder="订阅我们的邮件" />
+						<div class="left footer-links-mail-inpbtn"></div>
+						<div class="footer-links-mail-type left">男装</div>
+						<div class="footer-links-mail-type left">女装</div>
+					</div>
+					<div class="footer-links-linklist left">
+						<ul class="footer-links-linklist-ul left">
+							<li class="footer-links-linklist-ul-tit">新手上路</li>
+							<li class="footer-links-linklist-ul-li"><a href="#"> 怎样下订单</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">会员等级制度</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">积分制度</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">优惠券制度</a></li>
+						</ul>
+						<ul class="footer-links-linklist-ul left">
+							<li class="footer-links-linklist-ul-tit">关于订购</li>
+							<li class="footer-links-linklist-ul-li"><a href="#">支付方式</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">配送时间</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">配送费用</a></li>
+						</ul>
+						<ul class="footer-links-linklist-ul left">
+							<li class="footer-links-linklist-ul-tit">售后服务</li>
+							<li class="footer-links-linklist-ul-li"><a href="#">退货政策</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">退货申请</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">1:1留言答复</a></li>
+						</ul>
+						<ul class="footer-links-linklist-ul left">
+							<li class="footer-links-linklist-ul-tit">帮助中心</li>
+							<li class="footer-links-linklist-ul-li"><a href="#">找回密码</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">常见问题</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">公告栏</a></li>
+						</ul>
+						<ul class="footer-links-linklist-ul left footer-links-linklist-ul-last">
+							<li class="footer-links-linklist-ul-tit">关于我们</li>
+							<li class="footer-links-linklist-ul-li"><a href="#">平台介绍</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">联系我们</a></li>
+							<li class="footer-links-linklist-ul-li"><a href="#">加入我们</a></li>
+						</ul>
+					</div>
+					<div class="footer-links-copyright left">
+						上海智桓市场营销策划有限公司 / 网站经营许可证号 沪ICP备06036963号
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/changeUserInfo.js"></script>
+		<script type="text/javascript" src="js/orderSubmit.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/rightNavCom.js"></script>
+		<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,23 @@
+*{padding: 0; margin: 0;}
+ul,ol
+{
+	list-style: none;
+}
+a{text-decoration: none; color: #000;}
+body
+{
+	font-family: "宋体";
+	font-size: 12px;
+}
+.left
+{
+	float: left;
+}
+.right
+{
+	float: right;
+}
+img
+{
+	border: 0;
+}

@@ -1,0 +1,14 @@
+#logo{width:1088px;height:95px;padding-top:20px;margin:0 auto;}
+/*主体*/
+#loginmain{width:1088px;height:500px;margin:0 auto;margin-bottom: 40px;}
+.loginmain_left{width:600px;height:420px;padding-top:80px;}
+.loginmain_rig{height:500px;width:455px;}
+.logincon{width:387px;height:448px;padding:37px 0 0 33px;box-shadow: 1px 1px 20px #aaa;}
+.logincon_top{width:387px;height:57px;}
+.logincon_top h3{width:200px;font-size: 18px;}
+.logincon_top p a{color:#EC3E7D}
+
+.logincon_con{width:387px;height:257px;}
+.input1{width:343px;height:34px;border:1px solid #ccc;display: block;margin-bottom: 25px;padding:5px;color: #C3C4C6;}
+.login_sub{width:350px;height:40px;background:#EC3E7D;margin-top:30px;border:0;cursor: pointer;color:#fff;}
+.logincon_con a{color:#3E3E3E;}

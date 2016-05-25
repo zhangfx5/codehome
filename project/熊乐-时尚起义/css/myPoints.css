@@ -1,0 +1,67 @@
+.mypoints-tit{
+	background-image: url(../images/mypoints_tit_bg.png);
+}
+.mypoints-explain{
+	height: 137px;
+	width: 858px;
+	border: 1px solid #CCCCCC;
+	padding-left: 48px;
+	background: url(../images/mypage_nav_li_hover.png) no-repeat 22px 23px;
+	margin-bottom: 30px;
+}
+.mypoints-explain-tit{
+	height: 60px;
+	width: 802px;
+	border-bottom: 1px dashed #CCCCCC;
+	line-height: 60px;
+	font-weight: 900;
+	font-size: 15px;
+}
+.mypoints-explain-txt{
+	width: 802px;
+	height: 76px;
+	line-height: 76px;
+}
+.mypoints-table{
+	width: 900px;
+}
+.mypoints-table-theader,.mypoints-table-tbody{
+	width: 899px;
+	height: 35px;
+}
+.mypoints-table-theader{
+	border-left: 1px #000000 solid;
+	
+}
+.mypoints-table-tbody{
+	border-left: 1px #CCCCCC solid;	
+}
+.mypoints-table-theader-td,.mypoints-table-tbody-td{
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+.mypoints-table-theader-td{
+	background: #000000;
+	color: #FFFFFF;
+	border-right: 1px #000000 solid;
+	
+}
+.mypoints-table-tbody-td{
+	border-right: 1px #CCCCCC solid;
+	border-bottom: 1px #CCCCCC solid;
+}
+.points-date-td{
+	width: 248px;
+}
+.points-td{
+	width: 199px;
+}
+.points-state-td{
+	width: 449px;
+}
+.changepage-btn-box{
+	height: 24px;
+	width: 802px;
+	margin-top:20px ;
+}

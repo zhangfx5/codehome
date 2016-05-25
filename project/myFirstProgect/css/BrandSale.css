@@ -1,0 +1,203 @@
+#brandSaleLogos
+{
+	height: 141px;
+	width: 1000px;
+	margin: 20px auto 20px;
+	border: 1px solid #ccc;
+}
+#brandSaleLogos li
+{
+	height: 70px;
+	width: 138px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#brandSaleLogos li img
+{
+	margin: 6px 0 0 6px;
+}
+#main1
+{
+	height: 695px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main2
+{
+	height: 695px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main3
+{
+	height: 695px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main4
+{
+	height: 695px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main5
+{
+	height: 50px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main6
+{
+	height: 695px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main7
+{
+	height: 370px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main8
+{
+	height: 50px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main9
+{
+	height: 50px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main10
+{
+	height: 695px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+#main11
+{
+	height: 50px;
+	width: 1000px;
+	margin: 0 auto 26px;
+}
+.mainTopStyle1
+{
+	height: 40px;
+	width: 1000px;
+	border-bottom: 1px solid #5E5058;
+}
+.mainTopStyle1 img
+{
+	height: 40px;
+	width: 89px;
+}
+.mainTopStyle1 p
+{
+	height: 40px;
+	line-height: 40px;
+	font-size: 24px;
+	font-weight: 900;
+	margin-left: 20px;
+	
+}
+.mainTopStyle1 span
+{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	float: right;
+	
+	
+}
+.mainStyle1
+{
+	height: 287px;
+	width: 308px;
+	border-radius: 3%;
+	border: 1px solid #999;
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+	padding: 10px 0 0 10px;
+	position: relative;
+	cursor: pointer;
+}
+.mainStyle1 .mainStyleTopBtns
+{
+	position: absolute;
+	left: 50px;
+	top: -20px;
+	height: 30px;
+	width: 246px;
+	background: #ccc;
+	border: 1px solid #999;
+	display: none;
+}
+.mainStyle1 .mainStyleTopBtns ul li a
+{
+	padding: 0 3px 0 3px;
+	display: block;
+	height: 30px;
+	border-right: 1px solid #333333;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+.mainStyle1 .mainStyleTopBtns ul li:hover
+{
+	background: #fff;
+}
+.mainStyle1 .mainStyleTopBtns ul li .last
+{
+	border:0;
+}
+.mainStyle1 .mainStyle1Info1
+{
+	height: 51px;
+	width: 301px;
+	font-size: 13px;
+	padding-top: 11px;
+	color: #333;
+}
+.mainStyle1 .mainStyle1Info2
+{
+	height: 40px;
+	width: 301px;
+}
+.mainStyle1 .mainStyle1Info2 .mainStyle1Info2Left
+{
+	height: 40px;
+	width: 88px;
+	
+	font-size: 22px;
+	color: red;
+}
+.mainStyle1 .mainStyle1Info2 .mainStyle1Info2Center
+{
+	height: 40px;
+	width: 129px;
+	
+}
+.mainStyle1 .mainStyle1Info2 .mainStyle1Info2Center p
+{
+	color: #999;
+}
+.mainStyle1 .mainStyle1Info2 .mainStyle1Info2Center .delete
+{
+	text-decoration: line-through;
+	font-size: 11px;
+}
+.mainStyle1 .mainStyle1Info2 .mainStyle1Info2Center span
+{
+	color: red;
+	
+}
+.mainStyle1 .mainStyle1Info2 .mainStyle1Info2Right
+{
+	height: 35px;
+	width: 84px;
+	
+	padding-top: 5px;
+}

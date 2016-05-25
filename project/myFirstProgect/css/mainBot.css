@@ -1,0 +1,288 @@
+#links
+{
+	height: 363px;
+	width: 100%;
+	background: #F7F7F7;
+	border-top: 1px solid #eeeeee;
+	z-index: 0;
+	clear: both;
+}
+#links li
+{
+	cursor: pointer;
+}
+#links li:hover
+{
+	color: red;
+}
+.links1
+{
+	height: 150px;
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.links1 dl
+{
+	height: 130px;
+	width: 155px;
+	border-left: 1px solid #FDFDFD;
+	border-right: 1px solid #E9E1E8;
+	padding-left: 30px;
+
+}
+.links1 dt
+{
+	height: 40px;
+	width: 185px;
+	font-size: 16px;
+	font-weight: 900;
+	color: #C95C61;
+}
+.links1 dd li 
+{
+	height: 22px;
+	line-height: 22px;
+}
+.links1 dd li
+{
+	color: #999;
+}
+.links1 .linksBit
+{
+	margin-top: 7px;
+	margin-right: 10px;
+	float: left;
+	background: #bbb;
+	height: 4px;
+	width: 4px;
+}
+.links1>.first
+{
+	margin-left: 25px;
+	border-left: 0;
+}
+.links1>.last
+{
+	border-right: 0;
+}
+.links2
+{
+	height: 36px;
+	width: 100%;
+	background: #D31C28;
+	margin: 0 auto;
+}
+.links2Info
+{
+	height: 24px;
+	width: 735px;
+	margin: 0 auto;
+	padding: 12px 0 0 265px;
+}
+.links2Info li a
+{
+	padding: 0px 10px 0 10px;
+	border-left:1px solid #EE1C28;
+	border-right: 1px solid #F8FFDD;
+	color: #fff;
+	font-size: 12px;
+}
+.links2Info li .first
+{
+	border-left:0;
+}
+.links2Info li .last
+{
+	border-right: 0;
+}
+.links3
+{
+	height: 152px;
+	width: 100%;
+	
+}
+.links3 div
+{
+	font-size: 11px;
+	color: #999;
+	margin: 0 auto;
+	height: 48px;
+	width: 460px;
+	line-height: 48px;
+}
+.links3 img
+{
+	margin-right: 10px;
+}.links3 .left1
+{
+	margin-top: 8px;
+}
+#noChangeDiv
+{
+	height: 100%;
+	width: 28px;
+	background: #000000;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	padding-left: 2px;
+}
+#noChangeDiv ul
+{
+	position: absolute;
+	top: 40%;
+}
+#noChangeDiv ul li
+{
+	margin-top: 20px;
+	cursor: pointer;
+}
+#noChangeDiv ul li:hover
+{
+	
+	background: #f00;
+	
+	
+}
+#noChangeDiv ul li p
+{
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+}
+#noChangeDiv ul li .last
+{
+	width: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+#noChangeDiv ul li div
+{
+	height: 22px;
+	width: 25px;
+}
+#noChangeDiv ul li .rightFixPic1
+{
+	background: url(../img/rightFixPic.png) no-repeat 0px 0px;
+}
+#noChangeDiv ul li .rightFixPic2
+{
+	background: url(../img/rightFixPic.png) no-repeat 0px -25px;
+}
+#noChangeDiv ul li .rightFixPic3
+{
+	background: url(../img/rightFixPic.png) no-repeat 0px -50px;
+}
+#noChangeDiv ul li .rightFixPic4
+{
+	background: url(../img/rightFixPic.png) no-repeat 0px -75px;
+}
+#fixWindow
+{
+	height: 230px;
+	width: 100px;
+	position: fixed;
+	top: 200px;
+	right: 40px;
+	background: #fff;
+	border: 1px solid #666666;
+	border-top: #A60D1C solid 2px;
+	
+}
+#fixWindow li
+{
+	cursor: pointer;
+	
+}
+.fixWindowLi1
+{
+	height: 43px;
+	width: 90px;
+	border-bottom: 1px dashed #333333;
+	margin: 0 auto;
+	background:url(../img/fixDiv.png) no-repeat 0px -61px;
+}
+.fixWindowLi2
+{
+	width: 80px;
+	height: 21px;
+	border-bottom: 1px dashed #333333;
+	margin: 0 auto;
+	background:url(../img/fixDiv.png) no-repeat -28px -36px;
+}
+.fixWindowLi3
+{
+	width: 90px;
+	height: 46px;
+	border-bottom: 1px dashed #333333;
+	margin: 0 auto;
+	background:url(../img/fixDiv.png) no-repeat -95px -61px;
+}
+.fixWindowLi4
+{
+	width: 90px;
+	height: 43px;
+	border-bottom: 1px dashed #333333;
+	margin: 0 auto;
+	background:url(../img/fixDiv.png) no-repeat 0px -107px;
+}
+.fixWindowLi5
+{
+	width: 100px;
+	height: 43px;
+	border-bottom: 1px dashed #333333;
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+	line-height: 63px;
+}
+.fixWindowLi6
+{
+	width: 100px;
+	height: 27px;
+	margin: 0 auto;
+	background:url(../img/fixDiv.png) no-repeat -95px -110px;
+}
+#fixDivLeft
+{
+	height: 342px;
+	width: 97px;
+	border: 1px solid #ccc;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	background: #fff;
+	
+}
+#fixDivLeft li
+{
+	height: 41px;
+	width: 95px;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	line-height: 41px;
+	font-size: 16px;
+	color: red;
+	cursor: pointer;
+}
+#fixDivLeft li:hover
+{
+	border-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

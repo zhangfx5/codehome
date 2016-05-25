@@ -1,0 +1,268 @@
+#rightnav{
+	height: 100%;
+	width: 40px;
+	position: fixed;
+	right: 0;
+	background: #3F3F3F;
+	z-index: 2;
+}
+.rightnav-tit{
+	height: 115px;
+	border-bottom: 2px #fff solid;
+	background: url(../images/rightnav-tit.png) no-repeat;
+	cursor: pointer;
+}
+.rightnav-login,.rightnav-mypage{
+	height: 50px;
+	padding: 40px 0 0 9px;
+	cursor: pointer;
+	color: #fff;
+}
+.rightnav-login{
+	background: url(../images/rightnav-login.png) no-repeat 10px 14px;
+	
+}
+.rightnav-mypage{
+	display: none;
+	background: url(../images/rightnav-mypage.png) no-repeat 10px 14px;
+}
+.rightnav-border{
+	height: 13px;
+	background: url(../images/rightnav-border.png) no-repeat center;
+}
+.rightnav-seach{
+	height: 58px;
+	background: url(../images/rightnav-seach.png) no-repeat center;
+	cursor: pointer;
+}
+.rightnav-shoppingcar{
+	height: 35px;
+	margin-top: 20px;
+	cursor: pointer;
+	background: #FF51A3 url(../images/rightnav-shoppingcer.png) no-repeat 7px 13px;
+	padding: 10px 0 0 22px;
+}
+.rightnav-shoppingcar-num{
+	color: #fff;
+	font-weight: 900;
+}
+.rightnav-btn{
+	height: 39px;
+	cursor: pointer;
+	position: relative;
+}
+.rightnav-love{
+	background: url(../images/rightnav-love.png) no-repeat center;
+	margin: 14px 0 18px;
+}
+
+.rightnav-data{
+	background: url(../images/rightnav-date.png) no-repeat center;
+}
+.rightnav-today{
+	background: url(../images/rightnav-today.png) no-repeat center;
+	margin: 14px 0 16px;
+}
+.rightnav-weixin{
+	background: url(../images/rightnav-weixin.png) no-repeat center;
+	margin: 20px 0 95px;
+}
+.rightnav-backtop{
+	background: url(../images/rightnav-backtop.png) no-repeat center;
+}
+.rightnav-btn-bg{
+	height: 47px;
+	width: 109px;
+	position: absolute;
+	left: -101px;
+	top: -3px;
+	background: url(../images/rightnav-btn-bg.png) no-repeat ;
+	line-height: 47px;
+	text-align: center;
+	display: none;
+}
+.rightnav-btn-bg a{
+	color: #000000;
+}
+
+.rightnav-btn-bg a:hover{
+	color: #33B0F0;
+	text-decoration: underline;
+}
+.rightnav-btn-bg-weixin{
+	width: 168px;
+	height: 219px;
+	background: url(../images/rightnav-btn-bg-weixin.png) no-repeat;
+	left: -161px;
+}
+.rightnav-btn-bg-shoppingcar{
+	background: url(../images/rightnav-btn-bg-shoppingcar.png) no-repeat;
+	top: 4px;
+}
+.rightnav-login-box{
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 1000;
+	display: none;
+}
+.rightnav-login-window{
+	height: 400px;
+	width: 412px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin: -210px 0 0 -230px;
+	background: #fff;
+	padding: 21px 0 0 48px;
+}
+.rightnav-login-window-btn{
+	height: 62px;
+	width: 363px;
+	cursor: pointer;
+}
+.rightnav-login-window-btn-log-active .rightnav-login-window-btn-log{
+	height: 62px;
+	width: 187px;
+	background: url(../images/rightnav-login-window-btn-log-active.png);
+}
+.rightnav-login-window-btn-log-active .rightnav-login-window-btn-reg{
+	background: url(../images/rightnav-login-window-btn-reg.png);
+	height: 62px;
+	width: 176px;	
+}
+.rightnav-login-window-btn-reg-active .rightnav-login-window-btn-log{
+	height: 62px;
+	width: 177px;
+	background: url(../images/rightnav-login-window-btn-log.png);
+}
+.rightnav-login-window-btn-reg-active .rightnav-login-window-btn-reg{
+	background: url(../images/rightnav-login-window-btn-reg-active.png);
+	height: 62px;
+	width: 186px;	
+}
+.rightnav-login-window-regbox,.rightnav-login-window-logbox{
+	height: 283px;
+	width: 363px;
+	margin-top:30px ;
+}
+.rightnav-error{
+	height: 25px;
+	width: 355px;
+	line-height: 25px;
+	padding-left: 8px;
+	color: red;
+}
+.rightnav-login-window-logbox{
+	display: block;
+}
+.rightnav-login-window-regbox{
+	display: none;
+}
+.rightnav-login-window-logform-txt{
+	width: 255px;
+	height: 38px;
+	color:#9C9C9C ;
+	background: #EDEDED;
+	border: 1px solid #ccc;
+	margin-bottom: 8px;
+	padding-left: 7px;
+}
+.rightnav-login-window-logform-sub{
+	height: 88px;
+	width: 88px;
+	background: url(../images/rightnav-login-window-logform-sub.png);
+	margin-bottom: 8px;
+}
+.rightnav-login-window-logform-savemail{
+	display: block;
+	color: #9C9C9C;
+	margin-left: 8px;
+}
+.rightnav-login-window-logform-savemail input{
+	float: left;
+	margin-right: 3px;
+}
+.rightnav-login-window-logform-forgetpwd{
+	display: block;
+	color: #9C9C9C;
+	padding:0 25px 0 20px;
+	background: url(../images/rightnav-login-window-logform-forgetpwd.png) no-repeat left center;
+}
+.rightnav-login-window-logbox-other{
+	height: 30px;
+	width: 320px;
+	border-top: 1px solid #CCCCCC;
+	margin-top: 20px;
+	padding: 40px 0 0 44px;
+	font-weight: 900;
+	line-height: 30px;
+}
+.zfb-login{
+	float: right;
+	margin-right: 45px;
+	cursor: pointer;
+}
+.rightnav-login-window-regform .rightnav-login-window-regform-mail{
+	height: 38px;
+	width: 346px;
+	border: 1px solid #ccc;
+	padding-left: 7px;
+	margin-bottom: 8px;
+	background: #EDEDED;
+}
+.rightnav-login-window-regform-inp{
+	width: 166px;
+	height: 38px;
+	border: 1px solid #ccc;
+	padding-left: 7px;
+	margin: 0 5px 8px 0;
+	color: #9C9C9C;
+	background: #EDEDED;
+}
+.rightnav-login-window-regform-pwd{
+	
+}
+.rightnav-login-window-regform-pwdagain{
+	
+}
+.rightnav-login-window-regform-name{
+	
+}
+.rightnav-login-window-regform-sex{
+	width: 175px;
+	height: 40px;
+	padding-left:3px ;
+}
+.rightnav-login-window-regform-agree-div{
+	height: 17px;
+	line-height: 17px;
+	width: 250px;
+	margin: 8px 0 0 57px ;
+}
+.rightnav-login-window-regform-agree-div a{
+	color: #2B2B2B;
+}
+.rightnav-login-window-regform-agree-div a:hover{
+	text-decoration: underline;
+	color: #33B0F0;
+}
+.rightnav-login-window-regform-agree{
+	height: 13px;
+	width: 13px;
+	margin: 2px;
+}
+.rightnav-login-window-regbox-regbtn{
+	height: 46px;
+	width: 360px;
+	background: url(../images/rightnav-login-window-regbox-regbtn.png) no-repeat;
+	margin-top: 25px;
+	cursor: pointer;
+}
+
+
+
+
+
+

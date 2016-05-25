@@ -1,0 +1,25 @@
+#logo{width:1088px;height:95px;padding-top:20px;margin:0 auto;}
+/*主体*/
+#loginmain{width:1088px;height:500px;margin:0 auto;margin-bottom: 40px;}
+.loginmain_left{width:600px;height:420px;padding-top:80px;}
+.loginmain_rig{height:500px;width:455px;}
+.logincon{width:387px;height:448px;padding:37px 0 0 33px;box-shadow: 1px 1px 20px #aaa;}
+.logincon_top{width:387px;height:57px;}
+.logincon_top h3{width:200px;font-size: 18px;}
+.logincon_top p a{color:#EC3E7D}
+
+.logincon_con{width:387px;height:257px;}
+.input1{width:318px;height:34px;border:1px solid #ccc;display: block;margin-bottom: 25px;padding-left:30px;color: #C3C4C6;}
+#username{background:url(../img/pic/username.png) no-repeat 3px 4px;}
+#userpassword{background:url(../img/pic/userpassword.png) no-repeat 3px 3px;}
+.remember{margin-top:10px;}
+.remember input{margin:0 10px;display: block;}
+.remember a{display: block;margin-left: 20px;color:#EC3E7D;}
+.login_sub{width:350px;height:40px;background:#EC3E7D;margin-top:20px;border:0;cursor: pointer;color:#fff;}
+.logincon_b p{height:20px;}
+.userother{height:30px;padding-left: 5px;}
+.userother img{margin-right:15px;}
+
+/*账号密码正确弹窗*/
+#usershade{width:100%;height:100%;position: fixed;background:rgba(0,0,0,0.5);top: 0;left: 0;opacity: 0;display: none;}
+.userbox{width:240px;height:100px;position: fixed;top:50%;left:50%;background:#fff;margin:-50px 0 0 -120px;text-align: center;line-height: 100px;}
